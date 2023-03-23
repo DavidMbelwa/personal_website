@@ -39,7 +39,7 @@
 
           <figure class="code-fig">
             <code>
-              # {
+              #_some_container {
                 display: flex;
                 justify-content: center;
               }
@@ -88,16 +88,16 @@
             <code>
 
               <!-- HTML -->
-              <div class="img_container">
-                <div class="img_1">
+              <div id="img_container">
+                <div class="side_element">
                   <img src="some_link" />
                 </div>
 
-                <div class="img_2">
+                <div id="center_element">
                   <img src="some_link" />
                 </div>
 
-                <div class="img_3">
+                <div class="side_element">
                   <img src="some_link" />
                 </div>
               </div>
@@ -105,14 +105,26 @@
 
               /* CSS */
 
-              .img_container {
+              #img_container {
                 width: 300px;
                 height: 50px;
                 display: flex;
                 justify-content: center;
               }
+
+              .side_element {
+                flex-grow: 1;
+              }
+
+              #center_element {
+                flex-grow: 2;
+              }
             </code>
           </figure>
+
+          <p>In the code above, the center element will expand to take twice the empty space that each
+            of the side elements will take.
+          </p>
         </ul>
       </article>
     </section>
