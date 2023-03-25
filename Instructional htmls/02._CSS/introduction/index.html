@@ -528,24 +528,36 @@
                                 }
                             </code>
                         </figure>
-      
-                        <li><code>justify-content</code> can take any of the following values: 
+                    </ul>
+
+                    <h4>Properties of Flex Containers</h4>
+
+                    <h5>Justify-content</h5>
+
+                    <ul>
+                        <li>It is a property that is declared on the container in order to align the items within the container horizontally. 
+                            It can take any of the following values: 
                             <ul>
                                 <li><code>flex-start</code>: Which will align everything in the flex container to the left.</li>
-                                <li><code>flex-end</code>: which will align all items in the flex container to the right.</li>
+                                <li><code>flex-end</code>: Which will align all items in the flex container to the right.</li>
                                 <li><code>center</code>: As is self-explanatory, will center the content of a flex container</li>
-                                <li><code>space-around</code>: which will put equal space on the sides (left-right) of each element, with
+                                <li><code>space-around</code>: This will put equal space on the sides (left-right) of each element, with
                                 regard to margins also.</li>
-                                <li><code>space-between</code>: which will put equal space between items themselves, but no space at the 
+                                <li><code>space-between</code>: This will put equal space between items themselves, but no space at the 
                                 right side of the left-most item and the left-side of the right-most item (the last item)</li>
                             </ul>
                         </li>
       
-                        <li>With <code>justify-content</code>, you're basically instructing the browser to stuck together items in an 
-                            inline fashion in the event the screen is squeezed out. Read further down to learn how you can stretch the items
-                            vertically or horizontally.</li>
-      
-                        <li><code>align-itmes</code>: is another property applied to the container. It aligns the items vertically and takes 
+                        <li>With <code>justify-content</code>, you're basically instructing the browser to stuck together the items within 
+                            the flex container in an inline fashion in the event the screen is squeezed in. Read further down to learn how 
+                            you can stretch the items vertically or horizontally.</li>                       
+                    </ul>
+
+
+                    <h5>"align-items"</h5>
+
+                    <ul>
+                        <li><code>align-items</code>: is another property applied to the container, and it aligns the items vertically and takes 
                             the following rulesets: 
       
                             <ul>
@@ -557,7 +569,65 @@
                                     beyond the <code>max-height</code> instructions though.).</li>
                             </ul>
                         </li>
+
+                    
+                    <h4>"flex-wrap"</h4>
+
+                    <ul>
+                        <li>Another property of containers, this one instructs the item that doesn't fit into the current
+                            container size to move down a line, still inside the container.
+                        </li>
+
+                        <li>It is declared as follows:  
+                            <figure>
+                                <code>
+
+                                    <!-- The HTML-->
+                                    <div class="container">
+                                        <div class="items">
+                                            <img src="" >
+                                            <p>Item 1</p>
+                                        </div>
+
+                                        <div class="items">
+                                            <img src="">
+                                            <p>Item 2</p>
+                                        </div>
+                                    </div>
+
+
+                                    /* The CSS */
+
+                                    .container {
+                                        display: flex;
+                                        width: 200px;
+                                        flex-wrap: wrap;
+                                    }
+
+                                    .items {
+                                        width: 150px;
+                                    }
+                                </code>
+                            </figure>
+                        </li>
+
+                        <p>From the code above, the second item won't fit in the container. The result is it being
+                            put in a new line, under the first item.
+                        </p>
+
+                        <li><code>flex-wrap</code> takes in: <code>wrap</code>, <code>wrap-reverse</code>, and <code>nowrap</code> 
+                        as rules.</li>
+
+                        <li><code>wrap-reverse</code> does exactly what <code>wrap</code> does, it just puts the overflowing item on top 
+                        instead of the bottom. <code>nowrap</code> specifies that no wrapping should be done on the element.</li>
+                    </ul>
       
+
+                    <h4>Properties For Flex Items.</h4>
+
+                    <h5>"flex-grow"</h5>
+
+                    <ul>
                         <li>The <code>flex-grow</code> property allows items to expand and fill the unused space in the container in both 
                             the vertical and horizontal direction. It is set in numbers, and when you set <code>display: flex;</code> it is automatically
                             set to <code>0</code>.</li>
@@ -608,19 +678,41 @@
                         <p>In the code above, the center element will expand to take twice the empty space that each
                             of the side elements will take.
                         </p>
-      
+                    
+                    </ul>
+
+                    <h5>"flex-shrink"</h5>
+
+                    <ul>
                         <li><code>flex-shrink: </code> is exactly like <code>flex-grow</code> but in the opposite way. It is 
                             used to control how much a flex item can shrink if there isn't enough space in the flex-container.</li>
+                    </ul>
+
+
+                    <h5>"flex-basis"</h5>
+
+                    <ul>
+                        <li><code>flex-basis</code></li>
       
-                        <li>flex-basis</li>
+                        <li><code>flex</code></li>
       
-                        <li>flex</li>
-      
-                        <li>flex-wrap</li>
+                        <li><code>flex-wrap</code> moves an item to a next line within the container in the event that the container
+                        is squeezed.</li>
+                    </ul>
+
+
+                    <h5>"align-content"</h5>
+
+                    <ul>
+                        <li>This is used when the flex container has got items in multiple rows (because of flex-wrap maybe..).</li>
+
+                        <li>It just aligns the items vertically in different rows. <code>flex-</code></li>
+
+                        <li><code>align-content: flex-start</code></li>
                     </ul>
 
                 </article>
-
+                
             </article>
             
         </section>
