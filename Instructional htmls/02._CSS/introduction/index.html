@@ -514,112 +514,115 @@
                         </li>
       
                         <li><code>display: flex;</code> will make the container a block element while the
-                  <code>display: inline-flex;</code> will make it an inline-block.</li>
+                        <code>display: inline-flex;</code> will make it an inline-block.</li>
       
-                <li>Once that is done; you can go inside and start commanding how the elements within the container
-                  should behave. The first property is <code>justify-content</code>.
-                </li>
+                        <li>Once that is done; you can go inside and start commanding how the elements within the container
+                        should behave. The first property is <code>justify-content</code>.
+                        </li>
       
-                <figure class="code-fig">
-                  <code>
-                    #_some_container {
-                      display: flex;
-                      justify-content: center;
-                    }
-                  </code>
-                </figure>
+                        <figure class="code-fig">
+                            <code>
+                                #_some_container {
+                                    display: flex;
+                                    justify-content: center;
+                                }
+                            </code>
+                        </figure>
       
-                <li><code>justify-content</code> can take any of the following values: 
-                  <ul>
-                    <li><code>flex-start</code>: Which will align everything in the flex container to the left.</li>
-                    <li><code>flex-end</code>: which will align all items in the flex container to the right.</li>
-                    <li><code>center</code>: As is self-explanatory, will center the content of a flex container</li>
-                    <li><code>space-around</code>: which will put equal space on the sides (left-right) of each element, with
-                    regard to margins also.</li>
-                    <li><code>space-between</code>: which will put equal space between items themselves, but no space at the 
-                    right side of the left-most item and the left-side of the right-most item (the last item)</li>
-                  </ul>
-                </li>
+                        <li><code>justify-content</code> can take any of the following values: 
+                            <ul>
+                                <li><code>flex-start</code>: Which will align everything in the flex container to the left.</li>
+                                <li><code>flex-end</code>: which will align all items in the flex container to the right.</li>
+                                <li><code>center</code>: As is self-explanatory, will center the content of a flex container</li>
+                                <li><code>space-around</code>: which will put equal space on the sides (left-right) of each element, with
+                                regard to margins also.</li>
+                                <li><code>space-between</code>: which will put equal space between items themselves, but no space at the 
+                                right side of the left-most item and the left-side of the right-most item (the last item)</li>
+                            </ul>
+                        </li>
       
-                <li>With <code>justify-content</code>, you're basically instructing the browser to stuck together items in an 
-                inline fashion in the event the screen is squeezed out. Read further down to learn how you can stretch the items
-              vertically or horizontally.</li>
+                        <li>With <code>justify-content</code>, you're basically instructing the browser to stuck together items in an 
+                            inline fashion in the event the screen is squeezed out. Read further down to learn how you can stretch the items
+                            vertically or horizontally.</li>
       
-                <li><code>align-itmes</code>: is another property applied to the container. It aligns the items vertically and takes 
-                  the following rulesets: 
+                        <li><code>align-itmes</code>: is another property applied to the container. It aligns the items vertically and takes 
+                            the following rulesets: 
       
-                    <ul>
-                      <li><code>flex-start</code>: which aligns the items on the top of the container.</li>
-                      <li><code>flex-end</code>: which aligns the items on the bottom.</li>
-                      <li><code>center</code>: centers, as it says.</li>
-                      <li><code>baseline</code>: which aligns the bottoms of each element</li>
-                      <li><code>stretch</code>: which stretches the items the whole height of the container (will not go
-                        beyond the <code>max-height</code> instructions though.).</li>
-                    </ul>
-                </li>
+                            <ul>
+                                <li><code>flex-start</code>: which aligns the items on the top of the container.</li>
+                                <li><code>flex-end</code>: which aligns the items on the bottom.</li>
+                                <li><code>center</code>: centers, as it says.</li>
+                                <li><code>baseline</code>: which aligns the bottoms of each element</li>
+                                <li><code>stretch</code>: which stretches the items the whole height of the container (will not go
+                                    beyond the <code>max-height</code> instructions though.).</li>
+                            </ul>
+                        </li>
       
-                <li>The <code>flex-grow</code> property allows items to expand and fill the unused space in the container in both 
-                the vertical and horizontal direction. It is set in numbers, and when you set <code>display: flex;</code> it is automatically
-                set to <code>0</code>.</li>
+                        <li>The <code>flex-grow</code> property allows items to expand and fill the unused space in the container in both 
+                            the vertical and horizontal direction. It is set in numbers, and when you set <code>display: flex;</code> it is automatically
+                            set to <code>0</code>.</li>
                 
-                <li>It is also used to regulate the rate of how much an item expands in relation to other items in the same container, so 
-                  if there were two items in the flex container, and one was assigned the value of 1 and the other 2, the second will expand twice
-                  as much as the first one. And not to forget, <code>flex-grow</code> is set on a flex item, not container.
-                </li>
+                        <li>It is also used to regulate the rate of how much an item expands in relation to other items in the same container, so 
+                            if there were two items in the flex container, and one was assigned the value of 1 and the other 2, the second will expand twice
+                            as much as the first one. And not to forget, <code>flex-grow</code> is set on a flex item, not container.
+                        </li>
       
-                <figure class="code-fig">
-                  <code>
+                        <figure class="code-fig">
+                            <code>
       
-                    <!-- HTML -->
-                    <div id="img_container">
-                      <div class="side_element">
-                        <img src="some_link" />
-                      </div>
+                                <!-- HTML -->
+                                <div id="img_container">
+                                    <div class="side_element">
+                                        <img src="some_link" />
+                                    </div>
       
-                      <div id="center_element">
-                        <img src="some_link" />
-                      </div>
+                                    <div id="center_element">
+                                        <img src="some_link" />
+                                    </div>
       
-                      <div class="side_element">
-                        <img src="some_link" />
-                      </div>
-                    </div>
+                                    <div class="side_element">
+                                        <img src="some_link" />
+                                    </div>
+                                </div>
       
       
-                    /* CSS */
+                                /* CSS */
       
-                    #img_container {
-                      width: 300px;
-                      height: 50px;
-                      display: flex;
-                      justify-content: center;
-                    }
+                                #img_container {
+                                    width: 300px;
+                                    height: 50px;
+                                    display: flex;
+                                    justify-content: center;
+                                }
       
-                    .side_element {
-                      flex-grow: 1;
-                    }
+                                .side_element {
+                                    flex-grow: 1;
+                                }
       
-                    #center_element {
-                      flex-grow: 2;
-                    }
-                  </code>
-                </figure>
+                                #center_element {
+                                    flex-grow: 2;
+                                }
+                            </code>
+                        </figure>
       
-                <p>In the code above, the center element will expand to take twice the empty space that each
-                  of the side elements will take.
-                </p>
+                        <p>In the code above, the center element will expand to take twice the empty space that each
+                            of the side elements will take.
+                        </p>
       
-                <li><code>flex-shrink: </code> is exactly like <code>flex-grow</code> but in the opposite way. It is 
-                  used to control how much a flex item can shrink if there isn't enough space in the flex-container.</li>
+                        <li><code>flex-shrink: </code> is exactly like <code>flex-grow</code> but in the opposite way. It is 
+                            used to control how much a flex item can shrink if there isn't enough space in the flex-container.</li>
       
-                <li>flex-basis</li>
+                        <li>flex-basis</li>
       
-                <li>flex</li>
+                        <li>flex</li>
       
-                <li>flex-wrap</li>
-              </ul>
-            </article>
+                        <li>flex-wrap</li>
+                    </ul>
 
+                </article>
+
+            </article>
+            
         </section>
 
     </body>
