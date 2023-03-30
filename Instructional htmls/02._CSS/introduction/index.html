@@ -19,6 +19,15 @@
                 <h2 class="secSubHeading">Types of CSS Styling</h2>
 
                 <ul>
+                    <li>There are three ways you can style an HTML using CSS:, by using <em><strong>in-line</strong></em>
+                    <em><strong><code>style</code></strong></em> tag, or by linking an external CSS style sheet to your
+                    HTML</li>
+
+                
+                </ul>
+
+                <h3>In-line</h3>
+                <ul>
                     <li></li>
                 </ul>
 
@@ -196,16 +205,17 @@
 
             <article>
 
-                <h2 class="secSubHeading">Properties</h2>
+                <h3 class="secSubHeading">Properties</h3>
 
                 <ul>
                     <li>These are properties of the HTML that you'll be styling (font-families, font-size, font-color, etc)</li>
                     </ul>
 
-                <h3 class="low-titles">Color</h3>
+                <h4 class="low-titles">Color</h4>
 
                 <ul>
-                    <li>In CSS, you can use either the <a href="https://developer.mozilla.org/en-US/docs/Web/CSS/named-color" target="_blank">named</a> colors, the hexadecimal colors and rgb colors to create a color out of a 
+                    <li>In CSS, you can use either the <a href="https://developer.mozilla.org/en-US/docs/Web/CSS/named-color" target="_blank">named</a> 
+                        colors, the hexadecimal colors and rgb colors to create a color out of a 
                         mixture of red, blue and green, or use the HSL colors to create colors by controlling their hue, saturation and lightness.</li>
 
                     <li>All colors among named colors have their respective hexadecimal and rgb values, but since the hexadecimal
@@ -226,7 +236,7 @@
                 </ul>
 
                 
-                <h4>Hexadecimal Colors</h4>
+                <h5>Hexadecimal Colors</h5>
 
                 <ul>
                     <li>These are numerical and lettered representations of the red , blue, and green combination.</li>
@@ -238,20 +248,33 @@
                 </ul>
 
 
-                <h4>RGB Colors</h4>
+                <h5>RGB Colors</h5>
 
-                <h4>HSL</h4>
+                <ul>
+                    <li>These are like hexadecimals, except you choose the value of each of the three colors from a range of 0 to 255</li>
+                </ul>
 
-                <h4>Opacity</h4>
+                <h5>HSL</h5>
 
-                <h3 class="low-titles">Font</h3>
+                <h5>Opacity</h5>
+
+                <h4 class="low-titles">Font</h4>
 
                 <ul>
                     <li>You can style the typeface by using the following properties:  
                         <ul>
-                            <li><code>font-family</code>: for the type of typeface you want</li>
+                            <li><code>font-family</code>: for the type of typeface you want.</li>
+                            <li><code>font-weight</code>: for a light, regular, or bold font. Keywords are: 
+                                <code>bold</code>, <code>normal</code>, <code>lighter</code>, <code>bolder</code></li>
+                            <li><code>font-weight</code> can also use numbers to indicate the font weight desired, 1 being the lightest
+                            and 1000 the boldest. People usually use increments of 100. Look if the font you are using accepts
+                            numeric values though; Not all of them accept numerical values and not all numerical values can be 
+                            expressed to all fonts.</li>
                             <li><code>font-size</code>: for the size. Make sure to add the "px" at the end of the font size
                             you just entered. Eg <code>p {font-size: 18px;} </code></li>
+                            <li>With <code>font-style</code>, you can italicize an entire block of text. The default style is 
+                                <code>normal</code>. The fancier one is <code>italic</code></li>
+                            <li><code>text-transform</code> changes text to all uppercase or lowercase. Eg. <code>p { text-transform: uppercase; }</code></li>
                             <li><code>text-align</code>: for text alignment. It accepts <em>left</em>, 
                             <em>center</em>, <em>right</em>, and <em>justify</em> as arguments. Eg. </li>
 
@@ -533,6 +556,11 @@
             <article>
 
                 <h2>Layout</h2>
+
+
+                <article>
+                    <h3>Breadcrumb Navigation</h3>
+                </article>
 
                 <article>
                     <h3>Rows, Columns, and Gutters</h3>
