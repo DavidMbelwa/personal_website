@@ -279,8 +279,42 @@
                             <em>center</em>, <em>right</em>, and <em>justify</em> as arguments. Eg. </li>
 
                             <figure class="code-fig">
-                                <code>
+                                <code class="css">
                                     p {text-align: justify;}
+                                </code>
+                            </figure>
+
+                            <li><code>letter-spacing</code> puts space between letters. The value is give in pixels. Eg: </li>
+                            
+                            <figure>
+                                <code class="css">
+                                    p {
+                                        letter-spacing: 2px;
+                                    }
+                                </code>
+                            </figure>
+
+                            <li><code>word-spacing</code> puts spacing btn words, as it says. The value is also given in pixels. Eg:</li>
+
+                            <figure class="code-fig">
+                                <code class="css">
+                                    p {
+                                        word-spacing: 5px;
+                                    }
+                                </code>
+                            </figure>
+
+                            <li><code>line-height</code> controls how tall are our lines. A line of text is comprised of 1). The font size, and 2). 
+                                the leading. <code>line-height</code> controls the height of the combination of those two, by mainly increasing the 
+                                height of the leading space. The value can either be given in unitless values, pixels, or ems, but unitless values are 
+                                preferred as they are responsive to the change in font size (changing the font-size will automally change the 
+                                line height)</li>
+
+                            <figure class="code-fig">
+                                <code class="css">
+                                    p {
+                                        line-height: 1.4;
+                                    }
                                 </code>
                             </figure>
 
@@ -297,7 +331,7 @@
                                 used, so you should also develop a habit of avoiding it. Eg </li>
 
                             <figure class="code-fig">
-                                <code>
+                                <code class="css">
                                     p {
                                         font-family: Verdana;
                                         color: white !important;
@@ -558,11 +592,11 @@
                 <h2>Layout</h2>
 
 
-                <article>
+                <article id="breadcrumb_nav">
                     <h3>Breadcrumb Navigation</h3>
                 </article>
 
-                <article>
+                <article id="rows_columns">
                     <h3>Rows, Columns, and Gutters</h3>
                 </article>
 

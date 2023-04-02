@@ -4,3 +4,29 @@
     padding: 0;
     margin: 0;
 }
+
+
+/* The Home Button */
+
+#home-button {
+    display: inline-flex;
+}
+
+
+
+/* Nav */
+
+#top-nav li {
+    display: inline;
+}
+
+/* Classes */
+
+.big-head {
+    display: flex;
+    justify-content: flex-start;
+    border-style: none;
+    font-familiy: 'Roboto', sans-serif;
+    font-size: 42;
+    color:black;
+}
