@@ -22,9 +22,12 @@
 
 /* Classes */
 
-.big-head {
+.main-header {
     display: flex;
     justify-content: flex-start;
+}
+
+.main-header h2 {
     border-style: none;
     font-familiy: 'Roboto', sans-serif;
     font-size: 42;
