@@ -3,22 +3,28 @@
 * {
     padding: 0;
     margin: 0;
+    box-sizing: border-box;
 }
 
 
-/* The Home Button */
+/* Header */
+
+.header {
+    height: 300px;
+}
 
 #home-button {
     display: inline-flex;
+    width: 300px;
 }
-
-
-
-/* Nav */
 
 #top-nav li {
     display: inline;
+    width: 500px;
 }
+
+
+
 
 /* Classes */
 
