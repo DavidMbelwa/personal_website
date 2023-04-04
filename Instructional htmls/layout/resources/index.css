@@ -10,12 +10,12 @@
 /* Header */
 
 .top-nav {
-    height: 300px;
+    height: 70px;
 }
 
 #home-button {
     display: inline;
-    width: 70px;
+    width: 100px;
 }
 
 #internal-pages li {
