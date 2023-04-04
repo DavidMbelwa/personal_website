@@ -9,7 +9,7 @@
 
 /* Header */
 
-.header {
+.top-nav {
     height: 300px;
 }
 
@@ -19,7 +19,7 @@
 }
 
 #top-nav li {
-    display: inline;
+    /*display: inline;*/
     width: 500px;
 }
 
