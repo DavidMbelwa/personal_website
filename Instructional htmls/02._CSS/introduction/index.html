@@ -241,8 +241,8 @@
                 <ul>
                     <li>These are numerical and lettered representations of the red , blue, and green combination.</li>
 
-                    <li>They operate in the hexadecimal space, which has 16 decimal points (different from the 10, 0-9) mathematical ones; 
-                        so the letters are used to represent the remaining 10-15 decimal points that can be represented by numbers.
+                    <li>They operate in the hexadecimal space, which has 16 decimal points (different from the 10, 0-9, mathematical ones); 
+                        so the letters are used to represent the remaining 10-15 decimal points that can't be represented by numbers.
                     </li>
 
                 </ul>
@@ -256,7 +256,54 @@
 
                 <h5>HSL</h5>
 
+                <ul>
+                    <li>As mentioned before, HSL controls the amount of hue (the color itself), saturation (strong or pale), and lightness (brightness).</li>
+
+                    <li>With it, you can play around with a particular color and see how many shades of it you can create by just adjusting its levels 
+                        of saturation and lightness. You can then copy the hexadecimal value of this color and use it somewhere else if you wish.
+                    </li>
+
+                    <li>The code is as follows: </li>
+
+                    <figure class="code-fig">
+                        <code class="css">
+                            h1 {
+                                color: hsl(240, 50%, 20%)
+                            }
+                        </code>
+                    </figure>
+
+                    <li>In the code above, the hue value is represented as a value in degrees btn 0 to 360, representing the circle of colors
+                        in the color wheel. Red is at 0 degrees, green at 120, and blue at 240. In between you'll find purple, yellow, and others.
+                    </li>
+
+                    <li>The <code>50%</code> represents the value of saturation in decimal. Just play around with this to see what you come end-up 
+                        with. 
+                    </li>
+
+                    <li>The <code>20%</code> represents the value of lightness in percentage. The normal brightness of any color starts at 50%, so any
+                        value below or above that represents a lighter or dimmer version of the color. Play with this also to see what you can end-up
+                        with. 
+                    </li>
+                </ul>
+
                 <h5>Opacity</h5>
+
+                <ul>
+                    <li>Control the level of opacity in your colors by adding an "a" to the rgb() or hsl() declaration:</li>
+
+                    <figure class="code-fig">
+                        <code class="css">
+                            .container {
+                                background-color: hsla(240, 50%, 30%, 0.3)
+                            }
+                        </code>
+                    </figure>
+
+                    <li>The background color of the container element in the code above will have an opacity level of 0.3. Going closer to 1 makes a color opaque 
+                        (less-transparent), while moving closer to 0 makes it more transparent.
+                    </li>
+                </ul>
 
                 <h4 class="low-titles">Font</h4>
 
