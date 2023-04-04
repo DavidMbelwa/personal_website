@@ -14,12 +14,12 @@
 }
 
 #home-button {
-    display: inline-flex;
+    display: inline;
     width: 300px;
 }
 
-#top-nav li {
-    /*display: inline;*/
+#internal-pages li {
+    display: inline;
     width: 500px;
 }
 
