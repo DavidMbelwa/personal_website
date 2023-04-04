@@ -1,0 +1,1 @@
+- These are some challenges that I skipped while learning how to make a website. Do them when you get the time.
