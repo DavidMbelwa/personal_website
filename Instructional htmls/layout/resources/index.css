@@ -26,7 +26,7 @@
 
 
 
-/* Classes */
+/* body */
 
 .main-header {
     display: flex;
@@ -35,7 +35,7 @@
 
 .main-header h2 {
     border-style: none;
-    font-familiy: 'Roboto', sans-serif;
+    font-family: 'Roboto', sans-serif;
     font-size: 42;
     color:black;
 }
