@@ -16,6 +16,8 @@
 #home-button {
     display: inline;
     width: 100px;
+    color: white;
+    background-color: black;
 }
 
 #internal-pages li {
