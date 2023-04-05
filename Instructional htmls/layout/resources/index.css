@@ -23,6 +23,7 @@
 #internal-pages li {
     display: inline;
     width: 150px;
+    padding: 10px;
 }
 
 
@@ -48,6 +49,3 @@
     color:black;
 }
 
-.navigation {
-    display: block;
-}
