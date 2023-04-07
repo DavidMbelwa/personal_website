@@ -58,9 +58,80 @@
 
             <li>They are: 
                 <ul>
-                    <li>The <code>&&</code> operator (Check if each of the two arguments evaluated to <code>true</code></li>
+                    <li>The <code>&&</code> operator: Checks if each of the two arguments evaluated to <code>true</code>. When it does, the statement 
+                        itself will evaluate to <code>true</code></li>
+                    <li>The <code>||</code> operator: Checks if one of the two statements given evalueates to true. If it does, 
+                        the whole statement evalueates to true and the subsequent code is run. </li>
+                    <li>The <code>!</code> operator: negates the condition put inside the brackets. If the condition is false, the <code>!</code> bang 
+                        operator will bring it as true and vice versa.</li>
                 </ul>
             </li>
+
+            <h3>Truthy and Falsy Values</h3>
+
+            <ul>
+                <li>This is when the if-statement is used to evaluate the existance of a value in a variable. Some values
+                    are easily identified as existing, while others.. not so much..
+                </li>
+
+                <li>For eg; A variable with a string value, a number greater than 0, and boolean types such as true or false, these will 
+                    evaluate as <code>true</code>. Codes with 0, nulls, undefined, empty strings and NaN will evaluate to <code>false</code>. Eg: 
+                </li>
+
+                <figure class="code-fig">
+                    <code class="js input">
+                        let someVar = 'There is something here.';
+
+                        if (someVar) {
+                            console.log('There is something there.');
+                        } else {
+                            console.log("Don't worry, there's nothing there.");
+                        }
+                    </code>
+                </figure>
+
+                <li>Since the string isn't empty in the code above, the console will print "There is something here.".</li>
+
+                <li>If we change the code to </li>
+
+                <figure class="code-fig">
+                    <code class="js input">
+
+                        let someVariable = "";
+
+                        if (someVariable) {
+                            console.log('There is something here!')
+                        } else {
+                            console.log("There's nothing here!")
+                        }
+
+                    </code>
+                </figure>
+
+                <p><code>"There's nothing here!"</code> will be printed, since someVariable will evaluate <em>falsy</em>. </p>
+            </ul>
+
+            <h3>Assign Values To <em>Falsy</em> Statements</h3>
+
+            <ul>
+                <li>You can use the <code>||</code> operator to assign values to variables which evaluate falsy. 
+                Look at the following code:</li>
+
+                <figure class="code-fig">
+                    <code class="js">
+
+                        let userName = '';
+
+                        let defaultName = userName || 'Stranger';
+
+                        console.log(``)
+                    </code>
+                </figure>
+
+                <li>The code above</li>
+            </ul>
+
         </article>
+        
     </body>
 </html>
