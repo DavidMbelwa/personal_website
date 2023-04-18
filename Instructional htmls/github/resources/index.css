@@ -1,0 +1,47 @@
+/* Global */
+
+* {
+    padding: 0;
+    margin: 0;
+    /*border: 1px solid black;*/
+}
+
+html {
+    margin-left: 10px;
+    font-family: Roboto;
+}
+
+
+p {
+    line-height: 1.5;
+    font-size: 17px;
+}
+
+ul {
+    margin-left: 40px;
+    list-style-type: disc;
+    line-height: 1.5;
+    font-family: Roboto, sans-serif;
+    font-size: 17px;
+}
+
+/* Main Headings */
+
+h2 {
+    font-family: Roboto;
+    letter-spacing: 1.2px;
+    margin-bottom: 10px;
+}
+
+
+.inline-code {
+    font-size: 15px;
+    background-color: gainsboro;
+    padding: 1px 4px;
+    border-radius: 3%;
+}
+
+/* Modifying section Characteristics */
+section {
+    margin-bottom: 40px;
+}
