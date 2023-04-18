@@ -10,14 +10,36 @@
 /* Header */
 
 .top-nav {
+    display: flex;
     height: 70px;
+    background-color:aquamarine;
+    justify-content: flex-end;
+    align-items: center;
 }
 
+/*
+.top-nav div {
+    display: inline-flex;
+}
+*/
+
+
 #home-button {
+    position: relative;
+    right: 25%;
+    list-style-type: none;
+    list-style-position: inside;
     display: inline;
     width: 100px;
     color: white;
     background-color: black;
+}
+
+
+#internal-pages {
+    position: relative;
+    /*left: 50%;*/
+
 }
 
 #internal-pages li {
@@ -25,7 +47,6 @@
     width: 150px;
     padding: 10px;
 }
-
 
 
 
