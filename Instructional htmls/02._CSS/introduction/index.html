@@ -723,6 +723,139 @@
                         CSS value of all elements is "<code>content-box</code>". So, when the boxes are in content-box mode,
                         the values of height and width you specify are applied to the contents of the box, not the box itself.</li>
                 </ul>
+
+                <h4>Box Positioning</h4>
+                
+                <ul>
+                    <li>Sometimes you don't want the item you just made in the HTML to appear on the default position it does on the page.
+                        You can use the <code class="inline-code">position</code> property to deal with this.
+                    </li>
+                    <li>The property takes: <code class="inline-code">static</code>, <code class="inline-code">relative</code>, 
+                        <code class="inline-code">absolute</code>, and <code class="inline-code">fixed</code> as arguments and then uses 
+                        sub-properties such as <code class="inline-code">top: ;</code>, <code class="inline-code">bottom: ;</code>, 
+                        <code class="inline-code">left: ;</code>, and <code class="inline-code">right: ;</code> to determine how much and from 
+                        which side the element will be offsetted.</li>
+                    <li><code class="inline-code">position: static;</code> is the default position of an element in HTML. This is usually the 
+                        upper-most left.
+                    </li>
+                    <li><code class="inline-code">position: relative;</code> is used if we want to offset an element from its default position.
+                        Use that and then follow-up with the <code class="inline-code">top: ;</code>, <code class="inline-code">right: ;</code>, 
+                        <code class="inline-code">left: ;</code>, and <code class="inline-code">right: ;</code> to set which direction and by how 
+                        much an element should be offset.
+                    </li>
+                    <li><code class="inline-code">position: absolute;</code> will pluck an element out the normal flow of a document and allow you 
+                        to offset it even above other elements. This is usually not possible under default settings of a document due to a layout character 
+                        we'll see in a shortwhile. After you've done this, you can then follow-up with the sub-properties of direction and determine how much
+                        and where you want to offset your element to.
+                    </li>
+                    <li><code class="inline-code">position: fixed;</code> allows you to stick an element on the page even if the user scrolls. This is usually 
+                        used on the top navigation bar of some webpages, and I'm sure you've seen it already.</li>
+                    <li><code class="inline-code">z-index: ;</code> is a property that allows you to set priority on what element will be shown first in the event
+                        that one element is on top of another.</li>
+                    <li>It takes integer values, with an element with a higher integer being displayed top most.</li>
+
+                    <figure>
+                        <code class="css block-code">
+                            #background-box {
+                                position: relative;
+                                color: blue;
+                                z-index: 1;
+                            }
+
+                            #foreground-box {
+                                position: absolute;
+                                color: red;
+                                z-index: 2;
+                            }
+                        </code>
+                    </figure>
+
+                    <li>In the code above, the foreground box will appear first and on-top of the blue background box.</li>
+
+                    <li><code class="inline-code">0</code> is the default value for <code class="inline-code">z-index: ;</code>, and this particular property has to 
+                        be set when the <code class="inline-code">position: ;</code> is any value except its default value of 
+                        <code class="inline-code">static</code>
+                    </li>
+                </ul>
+
+                <h4>Box Layout</h4>
+
+                <ul>
+                    <li>
+                        Any HTML element is either a <strong><em>block</em></strong> or an <strong><em>inline</em></strong> element.
+                    </li>
+
+                    <li>
+                        Block elements are the ones that takes the whole width of the screen i.e., they span the whole horizontal space 
+                        of the part of the page they are located at. Inline elements share the horizontal space with other elements in the 
+                        HTML.
+                    </li>
+
+                    <li>
+                        Elements such as headings, tables, and paragraphs, are by default block elements, while elements such as 
+                        <code class="inline-code">strong</code>, <code class="inline-code">em</code> and the like are by default inline
+                        elements.
+                    </li>
+
+                    <li>
+                        The <code class="inline-code">display</code> property can be used to make a block element an inline one and vice versa.
+                    </li>
+
+                    <figure class="code-fig">
+                        <code class="css block-code">
+                            .description p {
+                                display: inline;
+                                padding: 2px;
+                            }
+
+                            .description img {
+                                width: 500px;
+                                position: relative;
+                                left: 20px;
+                            }
+                        </code>
+                    </figure>
+
+                    <li>
+                        In the code above, the <code class="inline-code">p</code> element will share the horizontal space with the 
+                        <code class="inline-code">img</code> element, displaying them side by side in the browser.
+                    </li>
+
+                    <li><code class="inline-code">display: inline;</code> however, doesn't allow you to modify the width and height of the 
+                        element. To achieve that, you use <code class="inline-code">display: inline-block;</code>
+                    </li>
+
+                    <li>
+                        <code class="inline-code">inline-block</code> allows you to make a block element an inline, but formats the element 
+                        such that it can be modified as if it is a block element.
+                    </li>
+
+                    <li>You can then modify the height and width, not only padding, margin, and border as it is for an <em>inline</em> ruleset.</li>
+                </ul>
+
+                <h5>Box Float</h5>
+
+                <ul>
+                    <li>This is a layout property used to push an HTML element's box as far left or right as possible.</li>
+                    <li>It takes only two arguments: <code class="inline-code">left</code> and <code class="inline-code">right</code>. </li>
+                    <li>The width of the element must be specified however. If it hasn't, the floated element will assume the whole 
+                        width of its containing element.
+                    </li>
+                </ul>
+
+                <h5><em><strong>"Clear"</strong></em></h5>
+
+                <ul>
+                    <li>This is used to control the behaviour of floated elements (most of the time) by specify how an element should
+                        behave in a situation where it is going to bump into another element horizontally.
+                    </li>
+
+                    <li>Bumping can easly happen with the <code class="inline-code">float</code> property, but if you add the 
+                        <code class="inline-code">clear</code> property to any of the floated element and set it to either <code class="inline-code">left</code>, 
+                        or <code class="inline-code">right</code>, or <code class="inline-code">both</code>, that element won't touch any other element it finds to its left, right 
+                        or both sides.
+                    </li>
+                </ul>
             </article>
 
 
@@ -1078,9 +1211,151 @@
 
                         </ul>
 
-
                     </article>
 
+                </article>
+
+                <article class="css-grid">
+                    <h2 class="main-sub-headers">CSS Grid</h2>
+
+                    <article>
+                        <ul>
+                            <li>It is a styling property that enables you to create a container element with two dimensions: Rows and Columns.</li>
+
+                            <li>
+                                The difference between this and the flex box is that the flex box is a one-dimensional element which can have 
+                                either a row or a column. CSS Grid allows you to have both.
+                            </li>
+                            <li>
+                                The grid is defined by setting the <code class="inline-code">display</code> property to 
+                                <code class="inline-code">grid</code>. By default, it will start with one column and several rows depending on the 
+                                number of items in the container. 
+                            </li>
+                            <li>
+                                To set the number of columns you want; use the <code class="inline-code">grid-template-columns: ;</code> property of 
+                                CSS Grid. It takes any number of arguments as the size of each column.
+                            </li>
+
+                            <p>For Example</p>
+
+                            <figure class="code-fig">
+                                <code class="block-code">
+                                    .some-class {
+                                        display: grid;
+                                        grid-template-columns: 100px 20% 30%;
+                                    }
+                                </code>
+                            </figure>
+
+                            <li>
+                                In the code above, 3 columns will be made; the first one with a width of 100px, a second with a width that is 20%
+                                of the total width of the grid, and the third which is 30%.
+                            </li>
+
+                            <li>To create new empty rows; use the <code class="inline-code">grid-template-rows</code></li>
+
+                            <li>There's a shorthand for these two commands: the <code class="inline-code">grid-template</code> property.</li>
+
+                            <li><code class="inline-code">grid-template</code> takes first the values that represent rows, the there is a forward slash after 
+                                that, and then values representing columns. Check the code below:</li>
+
+                            <figure class="code-fig css">
+                                <code class="css block-code">
+                                    .a-random-grid {
+                                        display: grid;
+                                        width: some-pixls;
+                                        height: some-pixls;
+                                        grid-template: 10% 20% 10% 60% / 20% 30% 20% 20% 10%;
+                                    }
+                                </code>
+                            </figure>
+
+                            <li>As usual, the percentage on the row side represent the percentage of the grid's height, while on the column side 
+                                the percentage of the grid's width.
+                            </li>
+
+                            <li>
+                                It is possible for one to set the height or width of rows / columns such that they are more than the height / width of the grid container.
+                                When that happens, there's a way to control the overflow that we'll learn in a bit.
+                            </li>
+
+                            <li>There's also another way to short-hand the <code class="inline-code">grid-template-columns</code> and 
+                                the <code class="inline-code">grid-template-rows</code> properties by using the <code class="inline-code">repeat()</code> 
+                                function that takes two arguments: the number of rows / columns and their size. In the code below: </li>
+
+                            <figure class="code-fig">
+                                <code class="css block-code">
+                                    .grid {
+                                        display: grid;
+                                        grid-template-columns: repeat(2, 100px);
+                                    }
+                                </code>
+                            </figure>
+
+                            <p>Two columns with the width of 100px each will be created.</p>
+
+                            <li>There's also a way to use the <code class="inline-code">repeat()</code> function for 
+                                rows and columns with different sizes. Refer the code below:
+                            </li>
+
+                            <figure class="code-fig">
+                                <code class="css block-code">
+
+                                    .grid {
+                                        display: grid;
+                                        grid-template-columns: repeat(2, 20px 50px);
+                                    }
+                                </code>
+                            </figure>
+
+                            <li>The code above will create four columns, with the first and third having 20px while the second and fourth 
+                                50.
+                            </li>
+
+                            <li><code class="inline-code">repeat()</code> is especially useful to use with the <code class="inline-code">fr</code> 
+                                scaling. The <code class="inline-code">fr</code> gives size to columns or rows by dividing the available space in the 
+                                grid into fractions (depending on how many columns or rows and how many fractions specified) and then giving the specified 
+                                row / column the specified number of fractions. For example: 
+                            </li>
+
+                            <figure class="code-fig">
+                                <code class="css block-code">
+                                    .a-grid {
+                                        display: grid;
+                                        width: 1000px;
+                                        height: 800px;
+                                        grid-template-rows: repeat(5, 1fr);
+                                        grid-template-columns: repeat(1, 2fr 3fr 2fr); 
+                                    }
+                                </code>
+                            </figure>
+
+                            <li>In the code above, the width of the grid will be divided into 7 fractions, of which 2 will be taken by 
+                                the first, 3 the second, and the remaining 2 the third column.
+                            </li>
+                        </ul>
+
+                        <h3>Making the Grid Responsive</h3>
+
+                        <ul>
+                            <li>You can do this by setting the <code class="inline-code">minmax()</code> function on one or multiple columns of your choice.</li>
+
+                            <li><code class="inline-code">minmax()</code> function takes values of the minimum width a column can reach, and also the maximum, 
+                                allowing the column to stretch according to the size of the browser within those limits.
+                            </li>
+
+                            <li>The <code class="inline-code">minmax()</code> function doesn't work when the <code class="inline-code">width</code> ruleset is set though, 
+                                so remove that ruleset if you're going to go forward with the <code class="inline-code">minmax()</code> function.</li>
+                        </ul>
+                    </article>
+
+                    <h3>Beautifying The Grid A Little Bit</h3>
+
+                    <h4>Adding gaps between Items.</h4>
+
+                    <ul>
+                        <li>This</li>
+                    </ul>
                 </article>
 
             </article>
