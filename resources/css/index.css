@@ -86,7 +86,7 @@ to have a total of 40px of margin */
 
 #welcome h1 {
     /* border: 1px dotted blue; */
-    background-color: dimgrey;
+    background-color: darkslategray;
     color: white;
     display: flex;
     height: 86%;
@@ -150,9 +150,20 @@ to have a total of 40px of margin */
 
 /* Languages */
 #languages {
+
     padding: 30px 27px;
 }
 
+
+.sec-Heading {
+    border: 1px solid purple;
+    margin-top: 10px;
+    margin-bottom: 30px;
+    font-family: 'Roboto Slab';
+    font-size: 32px;
+    font-weight: 400;
+    text-align: center;
+}
 
 #language-gallery {
     display: grid;
