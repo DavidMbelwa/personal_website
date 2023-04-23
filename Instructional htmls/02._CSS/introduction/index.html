@@ -1354,7 +1354,100 @@
                     <h4>Adding gaps between Items.</h4>
 
                     <ul>
-                        <li>This</li>
+                        <li>This is achieved by using the <code class="inline-code">gap: ;</code> ruleset on the grid container.</li>
+
+                        <li>You can set gaps for rows specifically (using <code class="inline-code">row-gap: ;</code> ruleset); for 
+                            columns (using the <code class="inline-code">column-gap: ;</code> ruleset); or both by using the 
+                            <code class="inline-code">gap: row-gap-width-goes-here column-gap-width-goes-here;</code>
+                        </li>
+                    </ul>
+
+                    <h4>Centering The Content within the Grid</h4>
+
+                    <h5>On the horizontal Axis</h5>
+
+                    <ul>
+                        <li>Done with the combination of <code class="inline-code">justify-content: ;</code> and <code class="inline-code">justify-items: ;</code> rulesets</li>
+                        <li><code class="inline-code">justify-items</code> align items within the columns, that is, whether the item is on the left of the column, right,
+                            centered etc. It takes values of <code class="inline-code">start</code> for a left alignment, <code class="inline-code">end</code> for a right alignment, 
+                            <code class="inline-code">center</code> for a centered alignment, and <code class="inline-code">stretch</code> for the item to stretch the whole width of the 
+                            column.
+                        </li>
+
+                        <li><code class="inline-code">justify-content</code> aligns the whole of the grid horizontally within the grid container itself.</li>
+
+                        <li>Assume a grid container had the width of 1300px and 2 columns, each one 500px. The <code class="inline-code">justify-content: ;</code> ruleset will instruct
+                            the browser to either align to the left, right or center, the 2 columns of the grid, such that the remaining 300px are used as the designer intended.</li>
+
+                        <li><code class="inline-code">justify-content: ;</code> accepts <code class="inline-code">start</code>, <code class="inline-code">end</code>, 
+                            <code class="inline-code">center</code>, <code class="inline-code">stretch</code>, <code class="inline-code">space-around</code>, <code class="inline-code">space-between</code>, and
+                            <code class="inline-code">space-evenly</code> as arguments.</li>
+                    </ul>
+
+                    <h5>On the vertical axis</h5>
+
+                    <ul>
+                        <li>A combination of <code class="inline-code">align-items</code> and <code class="inline-code">align-content</code> is used.</li>
+
+                        <li>The usage is the same as <code class="inline-code">justify-items</code> / <code class="inline-code">justify-content</code>, and even the arguments are 
+                            the same. So use them as you would use those, except everything is done row-wise rather than column wise.</li>
+                    </ul>
+
+                    <h5>Justify-self / align-self</h5>
+
+                    <ul>
+                        <li>These are values declared on grid items, rather than the container, to instruct a particular item to deviate away from the styling declared on the container 
+                            using <code class="inline-code">justify-items</code> / <code class="inline-code">align-items</code>
+                        </li>
+
+                        <li>They accept the same values as <code class="inline-code">justify-items</code>  and <code class="inline-code">align-items</code>, just that their customization 
+                            applies to just one grid item on which they're declared.</li>
+                    </ul>
+
+
+                    <h4>Grid-auto-flow</h4>
+
+                    <ul>
+                        <li>This is a property set on a grid container when the developer doesn't know exactly how many rows / columns the grid will 
+                            have.
+                        </li>
+
+                        <li>Take an example of a grid that comes as a result of a search inquiry on a site. Sometimes, these grids have an option of how 
+                            many search results one wants displayed at a time, making it impossible for the developer to guess how many items will be in that 
+                            grid in a particular point in time. To deal with this, the <code class="inline-code">grid-auto-flow</code> ruleset is used to specify 
+                            whether the additional content that is more that what is specified in the original grid is placed on new columns or rows automatically.
+                        </li>
+
+                        <li>By the way, the grid we have seen so far is called the <em><strong>explicit grid</strong></em>, because it has been explicity designed and structured 
+                            in terms of the number of rows / columns and their sizes.
+                        </li>
+
+                        <li>The additional rows / columns that are added by <code class="inline-code">grid-auto-flow</code> are known as the 
+                            <em><strong>implicit grid</strong></em>. The width and height of the columns and rows of these grids fit the width / height of the content by default, but 
+                            can be specified by using the <code class="inline-code">grid-auto-rows</code> / <code class="inline-code">grid-auto-columns</code> rulesets. More on them 
+                            in a bit.
+                        </li>
+
+                        <li><code class="inline-code">grid-auto-flow</code> accepts <code class="inline-code">row</code>, <code class="inline-code">column</code>, <code class="inline-code">dense</code> 
+                            properties as values. <code class="inline-code">row</code> instructs the browser to add the new content to a new row, <code class="inline-code">column</code> to a new 
+                            column, and <code class="inline-code">dense</code> instructs the browser to fill any empty space that was there in the grid earlier if the added content is of small size.
+                        </li>
+                    </ul>
+
+                    <h4>Grid-Auto-Rows / Grid-Auto-Columns</h4>
+
+                    <ul>
+                        <li>
+                            <code class="inline-code">grid-auto-rows</code> specifies the width of new rows that were added implicitly. By default,
+                            new rows are added automatically when the <code class="inline-code">grid-auto-rows</code> / <code class="inline-code">grid-auto-columns</code>
+                            even when the <code class="inline-code">grid-auto-flow</code> hasn't been set.
+                        </li>
+
+                        <li>To add the new content into columns, one has to explicitly specify by using <code class="inline-code">grid-auto-flow: column;</code> that the new content 
+                            will go into columns. After doing that, they can move on specifying the width of those columns by using the 
+                            <code class="inline-code">grid-auto-columns</code>. It is better to assign this the same width as the columns assigned explicitly using 
+                            <code class="inline-code">grid-template-columns</code>. 
+                        </li>
                     </ul>
                 </article>
 

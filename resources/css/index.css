@@ -43,6 +43,10 @@ to have a total of 40px of margin */
     border-radius: 6%;
 }
 
+#home li:hover {
+    background-color:gainsboro;
+}
+
 #home a {
     text-decoration: none;
 }
@@ -150,7 +154,6 @@ to have a total of 40px of margin */
 
 /* Languages */
 #languages {
-
     padding: 30px 27px;
 }
 
@@ -167,17 +170,17 @@ to have a total of 40px of margin */
 
 #language-gallery {
     display: grid;
+    padding: 30px;
     height: 600px;
     min-width: 500px;
     grid-template: repeat(3, 1fr) / repeat(3, 1fr);
     border: 1px solid red;
     gap: 20px 30px;
-    padding: 30px;
+    justify-content: space-evenly;
 }
 
 
 .language {
     border: 1px solid blue;
-    max-width: 300px;
     /* margin: 20px; */
 }
