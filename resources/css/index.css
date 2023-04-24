@@ -89,17 +89,17 @@ to have a total of 40px of margin */
 
 
 #welcome h1 {
-    /* border: 1px dotted blue; */
-    background-color: darkslategray;
+    /* border: 1px dotted blue;*/
+    background-color: darkslategray; 
     color: white;
     display: flex;
     height: 86%;
     font-size: 200px;
     font-family: 'Roboto Slab';
-    font-weight: 400;
+    font-weight: 500;
     justify-content: center;
     align-items: center;
-    padding: 0 0;
+    line-height: 1;
 }
 
 #welcome h3 {
