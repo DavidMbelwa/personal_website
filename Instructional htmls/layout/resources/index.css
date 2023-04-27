@@ -10,63 +10,81 @@
 /* Header */
 
 .top-nav {
-    display: flex;
+    display: block;
+    /*border: 1px solid black;*/
     height: 70px;
-    background-color:aquamarine;
-    justify-content: flex-end;
-    align-items: center;
+    background-color: aqua;
+    /*align-items: center;*/
+    font-family: 'Roboto Slab';
+    font-size: 16px;
+    font-weight: 400;
+    padding: 10px;
+    /*margin-top: 20px;*/
+    margin: 0 23px;
 }
-
-/*
-.top-nav div {
-    display: inline-flex;
-}
-*/
 
 
 #home-button {
-    position: relative;
-    right: 25%;
-    list-style-type: none;
-    list-style-position: inside;
-    display: inline;
-    width: 100px;
-    color: white;
-    background-color: black;
-}
-
-
-#internal-pages {
-    position: relative;
-    /*left: 50%;*/
-
-}
-
-#internal-pages li {
-    display: inline;
-    width: 150px;
+    display: inline-block;
+    /*border: 1px solid black;*/
+    width: fit-content;
     padding: 10px;
 }
 
+#home-button li {
+    /*border: 1px solid black;*/
+    list-style-type: none;
+    padding: 5px 7px; 
+    border-radius: 6%;
+}
 
+#home-button li:hover {
+    background-color:gainsboro;
+}
+
+#home-button a {
+    text-decoration: none;
+}
+
+#internal-pages {
+    display: block;
+    position: relative;
+    float: right;
+    width: fit-content;
+    /* background-color: white; */
+    padding: 10px;
+}
+
+#internal-pages li {
+    display: inline-block;
+    padding: 5px 7px;
+    border-radius: 6%;
+    margin-left: 5px;
+}
+
+#internal-pages li:hover {
+    background-color:gainsboro;
+}
+
+#internal-pages a {
+    color: black;
+}
 
 /* body */
+main {
+    /* padding: 0 45px; */
+    background-color: bisque;
+}
 
 .main-header {
-    display: flex;
-    justify-content: flex-start;
-}
-
-
-.main-header article {
     display: block;
+    justify-content: flex-start;
+    font-family: 'Roboto Slab';
+    font-size: 28px;
+    font-weight: 200;
+    background-color: aquamarine;
+    padding: 0 22px;
+    margin: 0 23px;
 }
 
-
-.main-header h2 {
-    border-style: none;
-    font-family: Roboto, sans-serif;
-    font-size: 42;
-    color:black;
-}
 
