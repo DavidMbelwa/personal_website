@@ -7,30 +7,38 @@
 }
 
 
+/* Mobile Design */
+
 /* Page Layout */
 
 
-/* Top Nav: This class and elements inside it were styled
+
+/* Big Screens' design*/
+
+
+@media only screen and (min-width: 768px) {
+
+    /* Top Nav: This class and elements inside it were styled
 to have a total of 40px of margin */ 
 
-.top_nav {
-    display: block;
-    /*border: 1px solid black;*/
-    height: 70px;
-    background-color: white;
-    /*align-items: center;*/
-    font-family: 'Roboto Slab';
-    font-size: 16px;
-    font-weight: 400;
-    padding: 10px;
-    /*margin-top: 20px;*/
-    margin: 0 23px;
-}
+    .top_nav {
+        display: block;
+        /*border: 1px solid black;*/
+        height: 70px;
+        background-color: white;
+        /*align-items: center;*/
+        font-family: 'Roboto Slab';
+        font-size: 16px;
+        font-weight: 400;
+        padding: 10px;
+        /*margin-top: 20px;*/
+        margin: 0 23px;
+    }
 
 
-#home {
-    display: inline-block;
-    list-style-type: none;
+    #home {
+        display: inline-block;
+        list-style-type: none;
     /*border: 1px solid black;*/
     width: fit-content;
     padding: 10px;
@@ -183,4 +191,6 @@ to have a total of 40px of margin */
 .language {
     border: 1px solid blue;
     /* margin: 20px; */
+}
+
 }

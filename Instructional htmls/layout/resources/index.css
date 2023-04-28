@@ -70,9 +70,11 @@
     color: black;
 }
 
-/* body */
+/* main columns */
 main {
     /* padding: 0 45px; */
+    /* display: grid;*/
+    grid-template-areas: "main-header main-header";
     background-color: bisque;
 }
 
