@@ -139,31 +139,28 @@
 
     .top_nav {
         display: block;
-        /*border: 1px solid black;*/
-        height: 70px;
+        height: 500px;
         background-color: white;
-        /*align-items: center;*/
         font-family: 'Roboto Slab';
         font-size: 16px;
         font-weight: 400;
         padding: 10px;
-        /*margin-top: 20px;*/
         margin: 0 23px;
     }
 
 
     #home {
+        /* background-color: aqua; */
         display: inline-block;
-        list-style-type: none;
-        /*border: 1px solid black;*/
         width: fit-content;
         padding: 10px;
     }
 
-
+    
     #home li {
-        /*border: 1px solid black;*/
-        padding: 5px 7px; 
+        /* border: 1px solid black; */
+        padding: 5px 7px;
+        list-style-type: none;
         border-radius: 6%;
     }
 
@@ -175,9 +172,17 @@
         text-decoration: none;
     }
 
+    #links
+    {
+        border: 2px solid red;
+        width: fit-content;
+        display: inline-block;
+    }
+    
+    /*
     #links {
-        display: block;
         position: relative;
+        display: block;
         border: 1px solid black;
         width: fit-content;
         height: fit-content;
@@ -186,9 +191,10 @@
         padding: 10px;
     }
 
+    
     #links li{
         display: inline-block;
-        /* border: 1px solid black;*/
+        border: 1px solid black;
         padding: 5px 7px;
         border-radius: 6%;
         margin-left: 5px;
@@ -201,7 +207,7 @@
     #links a {
         color: black;
     }
-
+    */
 
     /* The Welcome Section */
     #welcome {
