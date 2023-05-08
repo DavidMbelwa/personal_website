@@ -6,9 +6,33 @@
     box-sizing: border-box;
 }
 
+[class*="col-"] {
+    float: left;
+    padding: 15px;
+    border: 1px solid red;
+}
+  
+.col-1 {width: 8.33%;}
+.col-2 {width: 16.66%;}
+.col-3 {width: 25%;}
+.col-4 {width: 33.33%;}
+.col-5 {width: 41.66%;}
+.col-6 {width: 50%;}
+.col-7 {width: 58.33%;}
+.col-8 {width: 66.66%;}
+.col-9 {width: 75%;}
+.col-10 {width: 83.33%;}
+.col-11 {width: 91.66%;}
+.col-12 {width: 100%;}  
+
 
 /* Mobile Design */
 @media only screen and (max-width: 600px){
+
+    /* Column width */
+    [class*="col-"]{
+        width: 100%;
+    }
     
     /* Top Nav : The Home Button */
     .top_nav {
@@ -17,7 +41,7 @@
         background-color: darkslategray;
         font-family: 'Roboto Slab';
         font-size: 16px;
-        padding: 5px;
+        padding: 20px 0;
     }
 
     #home 
@@ -51,7 +75,6 @@
         float: right;
         margin-right: 30px;
         cursor: pointer;
-        clear: both;
         overflow: hidden;
     }
 
@@ -133,11 +156,8 @@
 
 
 @media only screen and (min-width: 768px) {
-
-    /* Top Nav: This class and elements inside it were styled
-    to have a total of 40px of margin */ 
-
-    .top_nav {
+    
+    /* .top_nav {
         display: block;
         height: 500px;
         background-color: white;
@@ -146,175 +166,25 @@
         font-weight: 400;
         padding: 10px;
         margin: 0 23px;
+    } */
+
+
+    .top_nav
+    {
+        border: 1px solid red;
     }
-
-
+    
     #home {
-        /* background-color: aqua; */
         display: inline-block;
+        background-color: aqua;
         width: fit-content;
         padding: 10px;
-    }
-
-    
-    #home li {
-        /* border: 1px solid black; */
-        padding: 5px 7px;
-        list-style-type: none;
-        border-radius: 6%;
-    }
-
-    #home li:hover {
-        background-color:gainsboro;
-    }
-
-    #home a {
-        text-decoration: none;
     }
 
     #links
     {
+        display: inline-block;
         border: 2px solid red;
         width: fit-content;
-        display: inline-block;
     }
-    
-    /*
-    #links {
-        position: relative;
-        display: block;
-        border: 1px solid black;
-        width: fit-content;
-        height: fit-content;
-        float: right;
-        clear: both;
-        padding: 10px;
-    }
-
-    
-    #links li{
-        display: inline-block;
-        border: 1px solid black;
-        padding: 5px 7px;
-        border-radius: 6%;
-        margin-left: 5px;
-    }
-
-    #links li:hover {
-        background-color:gainsboro;
-    }
-
-    #links a {
-        color: black;
-    }
-    */
-
-    /* The Welcome Section */
-    #welcome {
-        display: block;
-        /* border: 1px solid black; */
-        height: 500px;
-        /*padding-top: 30px;*/
-        /*background-color:darkslategrey;*/
-        /*margin: 20px 0;*/
-    }
-
-
-    #welcome h1 {
-        /* border: 1px dotted blue;*/
-        background-color: darkslategray; 
-        color: white;
-        display: flex;
-        height: 86%;
-        font-size: 200px;
-        font-family: 'Roboto Slab';
-        font-weight: 500;
-        justify-content: center;
-        align-items: center;
-        line-height: 1;
-    }
-
-    #welcome h3 {
-        /* border: 1px dotted red; */
-        display: flex;
-        position: relative;
-        /*bottom: 20px;*/
-        font-family: 'Roboto Slab';
-        font-weight: 300;
-        font-size: 26px;
-        justify-content: center;
-        align-items:flex-start;
-        margin-top: 45px;
-        margin-bottom: 0;
-        padding: 0 10px;
-        color: black;
-    }
-
-
-    /* Introduction */
-    #introduction {
-        /* border: 1px solid green; */
-        margin-top: 50px;
-        display: flex;
-        flex-wrap: wrap;
-        padding: 20px 27px;
-        justify-content: center;
-        align-items: center;
-    }
-
-
-    #introduction img {
-        display: inline-block;
-        border-radius: 50%;
-    }
-
-
-    #introduction p {
-        /* border: 1px solid black; */
-        padding: 20px;
-        line-height: 1.4;
-        display: inline-block;
-        width: 420px;
-        height: fit-content;
-        margin: 50px;
-        font-size: 19px;
-        font-family: 'Roboto Slab';
-        font-weight: 300;
-        text-align: center;
-    }
-
-
-    /* Languages */
-    #languages {
-        padding: 30px 27px;
-    }
-
-
-    .sec-Heading {
-        border: 1px solid purple;
-        margin-top: 10px;
-        margin-bottom: 30px;
-        font-family: 'Roboto Slab';
-        font-size: 32px;
-        font-weight: 400;
-        text-align: center;
-    }
-
-    #language-gallery {
-        display: grid;
-        padding: 30px;
-        height: 600px;
-        min-width: 500px;
-        grid-template: repeat(3, 1fr) / repeat(3, 1fr);
-        border: 1px solid red;
-        gap: 20px 30px;
-        justify-content: space-evenly;
-    }
-
-
-    .language {
-        border: 1px solid blue;
-        /* margin: 20px; */
-    }
-
 }
