@@ -35,7 +35,9 @@
     
     /* Top Nav : The Home Button */
     .top_nav {
-        display: block;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
         height: 70px;
         background-color: darkslategray;
         font-family: 'Roboto Slab';
@@ -43,36 +45,32 @@
         padding: 20px 0;
     }
 
-    #home 
+    .home i
     {
-        display: inline-block;
-    }
-
-    #home a 
-    {
-        text-decoration: none;
-    }
-
-    #home li 
-    {
-        list-style-type: none;
         color: white;
+        margin-left: 20px;
+    }
+
+    .home ul
+    {
+        display: none;
     }
 
 
     /* The Menu Button */
     .toggle
     {
-        position: relative;
         display: inline-flex;
+        position: relative;
+        /* bottom: 45px; */
         justify-content: center;
         align-items: center;
         border: 2px solid white;
         width: 40px;
         height: 40px;
-        border-radius: 10px;
-        float: right;
-        margin-right: 30px;
+        border-radius: 6px;
+        /* float: right; */
+        margin: 20px 20px;
         cursor: pointer;
         overflow: hidden;
     }
@@ -80,7 +78,7 @@
     .toggle span
     {
         position: absolute;
-        width: 22px;
+        width: 24px;
         height: 2px;
         background-color: white;
         border-radius: 4px;
@@ -90,28 +88,27 @@
     .toggle span:nth-child(1)
     {
         transform: translateY(-8px);
-        width: 14px;
-        left: 7px;
+        left: 6px;
     }
 
     .toggle.active span:nth-child(1)
     {
         transform: translateY(0px) rotate(45deg);
-        width: 22px;
+        width: 24px;
         transition-delay: 0.125s;
     }
 
     .toggle span:nth-child(2)
     {
         transform: translateY(8px);
-        width: 8px;
-        left: 7px;
+        width: 24px;
+        left: 6px;
     }
 
     .toggle.active span:nth-child(2)
     {
         transform: translateY(0px) rotate(315deg);
-        width: 22px;
+        width: 24px;
         transition-delay: 0.20s;
     }
 
@@ -125,11 +122,17 @@
         display: none;
         color: white;
         background-color: darkslategray;
-        height: 400px;
+        /* height: 400px; */
         position: relative;
-        left: 0px;
-        right: 0px;
-        top: 60px;
+        float: right;
+        clear: left;
+    }
+
+    #links li
+    {
+        color: white;
+        text-decoration: none;
+        list-style-type: none;
     }
 
     .toggle.active
