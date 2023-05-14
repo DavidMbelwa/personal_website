@@ -1,78 +1,95 @@
 <!DOCTYPE html>
 
 <html>
-    <head>
-        <title>Mohammad-David Mukajanga</title>
-        <meta name="viewport" content="width=device-width initial-scale=1.0">
-        <meta name="keywords" content="Mukajanga, David Mukajanga">
-        <link rel="preconnect" href="https://fonts.googleapis.com">
-        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-        <link href="https://fonts.googleapis.com/css2?family=Anuphan&family=Roboto+Slab:wght@200;300;400;500&family=Roboto:wght@100;300;400&display=swap" rel="stylesheet">
-        <link rel="stylesheet" type="text/css" href="resources/css/index.css">
-    </head>
+<head>
+    <title>Mohammad-David Mukajanga</title>
+    <meta name="viewport" content="width=device-width initial-scale=1.0">
+    <meta name="keywords" content="Mukajanga, David Mukajanga">
+    
+    <!-- Link to Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Anuphan&family=Roboto+Slab:wght@200;300;400;500&family=Roboto:wght@100;300;400&display=swap" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="resources/css/index.css">
+    
+    <!-- Link to Swiper's CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css" />
+</head>
 
-    <body>
+<body>
+    
+    <header class="top_nav .col-12">
+        <a href="index.html"><i class="fa-solid fa-house"></i></a>
+        
+        <a href="index.html"><h3>Home</h3></a>
+        
+        <nav id="main_nav">
+            <div class="toggle">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+            
+            <ul id="links">
+                <a href="Instructional htmls/index.html"><li>Technologies</li></a>
+                <a href="projects.html"><li>Portfolio</li></a>
+                <a href="Instructional htmls/index.html"><li>Notes</li></a>
+                <a href="about/index.html"><li>About</li></a>
+            </ul>
+        </nav>
+    </header>
+    
+    
+    <main>
+        <section class="col-12" id="welcome">
+            <div id="welcome-img">
+                <img src="imgs/Profile Picture.jpg" width="400px" height="400px" alt="David's Picture">
+            </div>
+            
+            <div class="text-boxes">
+                <p id="head">Hey!</p>
+                
+                <p>Welcome To My Page</p>
+            </div>
+        </section>
+        
+        
+        <section class="col-12" id="intro">
+            <div>
+                <p>My name is Mohammad David Mukajanga, also known as David Mukajanga. I'm a teacher, a student, and a 
+                    software engineer in my free time. I've a degree in Agricultural Economics, and my journey into computer programming
+                    started from there. I now use computer programming for research and data science, and I'm conversant with both front-end 
+                    and back-end technologies such as JavaScript, Python, and SQL. Read down below to see some of my projects.
+                </p>
+            </div>
+        </section>
+        
+        <section class="col-12" id="daily-life">
+            <article id="day-job">
+                <h2 class="sec-Heading">Daily Life</h2>
+                
+                <p>I'm an English Teacher at Isabet Private Schools in Adana, Türkiye. That is my full time job. My job entails recieving small young people
+                    with cute faces and innocent minds, and give them back at the end of the school year with a little bit better English
+                    and a better understanding of the world.
+                </p>
+                
+                <a href="daily_activities/index.html"><button class="gallery-activator">View Gallery</button></a>
+            </article>
+        </section>
 
-        <header class="top_nav .col-12">
-            <a href="index.html"><i class="fa-solid fa-house"></i></a>
+        <section class="col-12" id="coding">
+            <h2>Coding</h2>
 
-            <a href="index.html"><h3>Home</h3></a>
+            <p>I program in my free time. It is an activity that brings me the youthful joy. I can do front-end work (design websites), as well as
+                the back-end (data science, machine learning etc). I enjoy the work, I hope you see the value in the projects below.
+            </p>
 
-            <nav id="main_nav">
-                <div class="toggle">
-                    <span></span>
-                    <span></span>
-                    <span></span>
-                </div>
-
-                <ul id="links">
-                    <a href="Instructional htmls/index.html"><li>Technologies</li></a>
-                    <a href="projects.html"><li>Portfolio</li></a>
-                    <a href="Instructional htmls/index.html"><li>Notes</li></a>
-                    <a href="about/index.html"><li>About</li></a>
-                </ul>
-            </nav>
-        </header>
-
-
-        <main>
-            <section class="col-12" id="welcome">
-                <div id="welcome-img">
-                    <img src="imgs/Profile Picture.jpg" width="400px" height="400px" alt="David's Picture">
-                </div>
-
-                <div class="text-boxes">
-                    <p id="head">Hey!</p>
-
-                    <p>Welcome To My Page</p>
-                </div>
-            </section>
-
-
-            <section class="col-12" id="intro">
-                <div>
-                    <p>My name is David Mukajanga, also known as Mohammad-David Mukajanga. I'm a teacher, a student, and a 
-                        software engineer in my free time. I've a degree in Agricultural Economics, and my journey into computer programming
-                        started from there. I now use computer programming for research and data science, and I'm conversant with both front-end 
-                        and back-end technologies such as JavaScript, Python, and SQL. Read down below to see some of my projects.
-                    </p>
-                </div>
-            </section>
-
-            <section id="languages">
-                <h2 class="sec-Heading">Technologies</h2>
-                <div id="language-gallery">
-                    <img src="" alt="" class="language"/>
-                    <img src="" alt="" class="language"/>
-                    <img src="" alt="" class="language">
-                    <img src="" alt="" class="language">
-                    <img src="" alt="" class="language">
-                    <img src="" alt="" class="language">
-                </div>
-            </section>
-        </main>
-
-        <script src="resources/index.js/index.js"></script>
-        <script src="https://kit.fontawesome.com/acb08643cd.js" crossorigin="anonymous"></script>
-    </body>
+            <button>View Projects</button>
+        </section>
+        
+    </main>
+    
+    <script src="resources/index.js/index.js"></script>
+    <script src="https://kit.fontawesome.com/acb08643cd.js" crossorigin="anonymous"></script>
+</body>
 </html>
