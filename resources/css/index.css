@@ -176,8 +176,49 @@
     }
 
 
-    /* The Welcome */
+    /* Standardizing Sections */
 
+    section
+    {
+        margin-top: 30px;
+        margin-bottom: 30px;
+        font-family: 'Roboto Slab';
+        font-weight: 300;
+        font-size: 17px;
+        text-align: center;
+    }
+
+    section h2
+    {
+        font-weight: 300;
+        color: darkslategray;
+    }
+
+    section p
+    {
+        padding: 30px 40px;
+    }
+
+    section button
+    {
+        border: 1px solid darkslategray;
+        color: black;
+        font-family: 'Roboto Slab';
+        font-size: 15px;
+        padding: 10px 23px;
+        font-weight: 300;
+        background-color: white;
+        margin-top: 30px;
+    }
+
+    section button:active
+    {
+        color: white;
+        background-color: darkslategray;
+    }
+
+
+    /* The Welcome Section */
     #welcome
     {
         display: flex;
@@ -185,6 +226,7 @@
         justify-content: center;
         align-items: center;
         height: 100%;
+        margin-top: 20px;
         position: relative;
         /* border: 1px solid red; */
         padding: 20px 0;
@@ -214,37 +256,56 @@
         font-family: 'Roboto Slab';
         font-weight: 400;
         font-size: 18px;
-        margin: 10px 0;
+        margin: 30px 0 0 0;
     }
 
     #welcome #head
     {
+        margin: 0;
         font-size: 20px;
-        font-weight: 400;
+        font-weight: 300;
         color: darkslategray;
     }
 
     #welcome p
     {
         font-weight: 300;
+        color: darkslategray;
+        /* border: 1px solid green; */
+        padding: 0;
+        margin-top: 0;
     }
 
 
     /* Intro Section */
-
     #intro
     {
         display: flex;
-        background-color: hsl(0, 0, 66);
+        background-color: hsl(0, 0%, 95%);
         width: 100%;
         font-family: 'Roboto Slab';
         font-weight: 350;
-        font-size: 16px;
+        font-size: 17px;
         text-align: center;
-        padding: 20px;
-        margin-top: 20px;
-        margin-bottom: 20px;
+        padding: 30px 40px;
+        margin-top: 0;
+        margin-bottom: 0;
         /* border: 1px solid red; */
+    }
+
+
+    /* Daily Life */
+
+    #daily-life
+    {
+        /* border: 1px solid blue; */
+    }
+
+    #coding
+    {
+        margin-top: 0;
+        /* border: 1px solid gray; */
+        background-color: hsl(0, 0%, 95%);
     }
 
 
