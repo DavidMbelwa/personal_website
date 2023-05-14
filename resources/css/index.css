@@ -29,9 +29,11 @@
 @media only screen and (max-width: 600px){
 
     /* Column width */
+
     [class*="col-"]{
         width: 100%;
     }
+    
     
     /* Top Nav : The Home Button */
     .top_nav {
@@ -40,7 +42,6 @@
         justify-content: space-between;
         width: 100%;
         height: 70px;
-        background-color: darkslategray;
         font-family: 'Roboto Slab';
         font-size: 16px;
         padding: 20px 0;
@@ -48,7 +49,7 @@
 
     .top_nav i
     {
-        color: white;
+        color: darkslategray;
         margin-left: 20px;
         cursor: pointer;
     }
@@ -75,7 +76,7 @@
         height: 40px;
         border-radius: 6px;
         /* float: right; */
-        margin: 20px 20px;
+        margin: 20px 10px;
         cursor: pointer;
         overflow: hidden;
     }
@@ -85,7 +86,7 @@
         position: absolute;
         width: 24px;
         height: 2px;
-        background-color: white;
+        background-color: darkslategray;
         border-radius: 4px;
         transition: 0.5s;
     }
@@ -100,6 +101,7 @@
     {
         transform: translateY(0px) rotate(45deg);
         width: 24px;
+        background-color: white;
         transition-delay: 0.125s;
     }
 
@@ -114,6 +116,7 @@
     {
         transform: translateY(0px) rotate(315deg);
         width: 24px;
+        background-color: white;
         transition-delay: 0.07s;
     }
 
@@ -125,6 +128,7 @@
     .toggle.active span:nth-child(3)
     {
         transform: translateX(40px);
+        background-color: white;
     }
 
     #links
@@ -182,12 +186,14 @@
         align-items: center;
         height: 100%;
         position: relative;
-        border: 1px solid red;
+        /* border: 1px solid red; */
+        padding: 20px 0;
     }
 
     #welcome-img
     {
-        border: 1px solid black;
+        /* border: 1px solid black; */
+        margin: 10px 0;
     }
 
     #welcome img
@@ -204,14 +210,41 @@
         flex-direction: column;
         align-items: center;
         height: 30%;
-        border: 1px solid purple;
+        /* border: 1px solid purple; */
         font-family: 'Roboto Slab';
         font-weight: 400;
+        font-size: 18px;
+        margin: 10px 0;
     }
 
     #welcome #head
     {
-        font-size: 28px;
+        font-size: 20px;
+        font-weight: 400;
+        color: darkslategray;
+    }
+
+    #welcome p
+    {
+        font-weight: 300;
+    }
+
+
+    /* Intro Section */
+
+    #intro
+    {
+        display: flex;
+        background-color: hsl(0, 0, 66);
+        width: 100%;
+        font-family: 'Roboto Slab';
+        font-weight: 350;
+        font-size: 16px;
+        text-align: center;
+        padding: 20px;
+        margin-top: 20px;
+        margin-bottom: 20px;
+        /* border: 1px solid red; */
     }
 
 
@@ -241,18 +274,12 @@
     } */
 
 
-    .top_nav
+    header
     {
+        display: block;
         border: 1px solid red;
     }
     
-    #home {
-        display: inline-block;
-        background-color: aqua;
-        width: fit-content;
-        padding: 10px;
-    }
-
     #links
     {
         display: inline-block;
