@@ -46,7 +46,6 @@
     .top_nav {
         display: flex;
         position: sticky;
-        /* top: 70px; */
         align-items: center;
         justify-content: space-between;
         width: 100%;
@@ -54,7 +53,6 @@
         font-family: 'Roboto Slab';
         font-size: 16px;
         padding: 20px 0;
-        /* border: 1px solid blue; */
     }
 
     .top_nav i
@@ -111,7 +109,6 @@
     {
         transform: translateY(0px) rotate(45deg);
         width: 24px;
-        background-color: white;
         transition-delay: 0.125s;
     }
 
@@ -126,7 +123,6 @@
     {
         transform: translateY(0px) rotate(315deg);
         width: 24px;
-        background-color: white;
         transition-delay: 0.07s;
     }
 
@@ -138,13 +134,12 @@
     .toggle.active span:nth-child(3)
     {
         transform: translateX(40px);
-        background-color: white;
     }
 
     #links
     {
         display: none;
-        color: white;
+        color: black;
         background-color: darkslategray;
         /* height: 400px; */
         position: relative;
@@ -162,6 +157,12 @@
     #links a
     {
         text-decoration: none;
+    }
+
+
+    .toggle.active span
+    {
+        background-color: white;
     }
 
     .toggle.active
@@ -224,6 +225,7 @@
         font-weight: 300;
         background-color: white;
         margin-top: 30px;
+        cursor: pointer;
     }
 
     section button:active

@@ -3,1472 +3,1511 @@
 <html>
     <head>
         <title>CSS</title>
+        <meta name="viewport" content="width=device-width initial-scale=1.0">
+        <meta name="keywords" content="Mukajanga, David Mukajanga">
+        
+        <!-- Link to Fonts -->
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Anuphan&family=Roboto+Slab:wght@200;300;400;500&family=Roboto:wght@100;300;400&display=swap" rel="stylesheet">
+        <link rel="stylesheet" type="text/css" href="resources/index.css">
+        
+        <!-- Font Awesome Icons (CDNJS) -->
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+        
+        <!-- Link to Swiper's CSS -->
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css" />
     </head>
 
     <body>
-        <section id="introduction">
-            <h1 class="secHeading">Introduction</h1>
+        <header class="top_nav .col-12">
+            <a href="index.html"><i class="fa-solid fa-house"></i></a>
+            
+            <a href="index.html"><h3>Home</h3></a>
+            
+            <nav id="main_nav">
+                <div class="toggle">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
+                
+                <ul id="links">
+                    <a href=""><li>Technologies</li></a>
+                    <a href="../../../technologies/index.html"><li>Portfolio</li></a>
+                    <a href="Instructional htmls/index.html"><li>Notes</li></a>
+                    <a href="about/index.html"><li>About</li></a>
+                </ul>
+            </nav>
+        </header>
 
-            <h2>Before You Start:</h2>
 
-            <ul>
-                <li>Always design for mobile first.</li>
-                <li>In the same spirit, set your columns first (their width) and then specify how many columns 
-                    each element will span in the HTML. Do this for every major section of your document. If you've
-                    set the width of columns, but has forgotten to assing a major section a number of columns it will span,
-                    that section will start at the top, acting as an inline, and in some cases engulf other elements inside it.
-                    You don't want that.
-                </li>
-            </ul>
+        <main>
+            <section class="col-12" id="header">
+                <h2 id="main-heading"></h2>
+            </section>
 
-            <article class="sectionArticle">
+            <section class="col-3" id="table-of-content"></section>
 
-                <h2>What is CSS?</h2>
+            <section class="col-9" id="body">
+                <h1 class="secHeading">Introduction</h1>
+
+                <h2>Before You Start:</h2>
+
                 <ul>
-                    <li>You use CSS to format your web page. This ranges from things like setting color and font-families to 
-                        to your elements to things like setting the width, size, and position of elements in your document.
+                    <li>Always design for mobile first.</li>
+                    <li>In the same spirit, set your columns first (their width) and then specify how many columns 
+                        each element will span in the HTML. Do this for every major section of your document. If you've
+                        set the width of columns, but has forgotten to assing a major section a number of columns it will span,
+                        that section will start at the top, acting as an inline, and in some cases engulf other elements inside it.
+                        You don't want that.
                     </li>
-                    <li>For a full documentation, check the <a href="https://developer.mozilla.org/en-US/docs/Web/CSS" target="_blank">following</a> page.</li>
-                </ul>
-                
-                <h2 class="secSubHeading">Types of CSS Styling</h2>
-
-                <ul>
-                    <li>There are three ways you can style an HTML using CSS:, by using <em><strong>in-line</strong></em>
-                    <em><strong><code>style</code></strong></em> tag, or by linking an external CSS style sheet to your
-                    HTML</li>
-
-                
                 </ul>
 
-                <h3>In-line</h3>
-                <ul>
-                    <li></li>
-                </ul>
+                <article class="sectionArticle">
 
-                <h2 class="secSubHeading">Element Selectors</h2>
-                
-                <ul>
-                    <li>These are symbols or words you use to select an HTML element.</li>
-                    <li>To select all elements, you use the asterisk (<code>*</code>)</li>
-                    <li>To select a particular type of element, let's say paragraphs, you use the tag name
-                        (<code>p</code>).
-                    </li>
-
-                    <figure>
-                        <code>
-                            p {
-                                font-family: cursive;
-                            }
-                        </code>
-                    </figure>
+                    <h2>What is CSS?</h2>
+                    <ul>
+                        <li>You use CSS to format your web page. This ranges from things like setting color and font-families to 
+                            to your elements to things like setting the width, size, and position of elements in your document.
+                        </li>
+                        <li>For a full documentation, check the <a href="https://developer.mozilla.org/en-US/docs/Web/CSS" target="_blank">following</a> page.</li>
+                    </ul>
                     
-                    <p>In the code above, all paragraph element will be styled by a cursive
-                        family of font.
-                    </p>
+                    <h2 class="secSubHeading">Types of CSS Styling</h2>
 
-                    <li>You can also target specific elements by using the <code>class</code> attribute
-                        in the HTML tag you want to target. Take a following example:  
-                    </li>
+                    <ul>
+                        <li>There are three ways you can style an HTML using CSS:, by using <em><strong>in-line</strong></em>
+                        <em><strong><code>style</code></strong></em> tag, or by linking an external CSS style sheet to your
+                        HTML</li>
 
-                    <figure class="code-fig">
-                        <code>
-                            <h1 class="main">This is a Main Header</h1>
-                        </code>
-                    </figure>
-
-                    <p>To target this, we write our CSS ruleset like so..</p>
                     
-                    <figure class="code-fig">
-                        <code>
-                            .main {
-                                font-size: 200px;
-                            }
-                        </code>
-                    </figure>
-
-                    <li>You can also target elements by using the <strong><em>id selector</em></strong> (<code>#</code>).</li>
-                    <li>This is especially useful for sections, since the <code>id</code> attribute is usually used
-                    to provide internal linkages to the page</li>
-
-                    <p>Eg:</p>
-
-                    <figure class="code-fig">
-                        <code>
-                            <section id="Educational-History"></section>
-                        </code>
-                    </figure>
-
-                    <figure class="code-fig">
-                        <code>
-                            #Educational-History {
-                                background-color: white;
-                            }
-                        </code>
-                    </figure>
-
-                    <li>You can also target an element by using other attributes, such as the <code>href=""</code> and <code>src</code>
-                    attributes. Check the code below</li>
-
-                    <figure class="code-fig">
-                        <code>
-                            <img src="/some_place/somewhere.jpeg" />
-
-                            <a href="/another_place/somewhere_else.jpeg">Learn More</a>
-
-                        </code>
-                    </figure>
-
-                    <figure class="code-fig">
-                        <code>
-                            img[src*= 'somewhere'] {
-                                background-color: some_color;
-                            }
-
-                            a[src*= 'somewhere_else'] {
-                                font-color: blue;
-                            }
-                        </code>
-                    </figure>
-
-                    <li>As you can observe above, the format of detecting a variable like This
-                        is:  </li>
-
-                        <figure class="code-fig">
-                            <code>
-                                elementType[the_attribute*='a_word_to_look_for_from_the_given_attribute']
-                            </code>
-                        </figure>
-
-
-                </ul>
-
-                <h2 class="secSubHeading">Order of Execution</h2>
-
-                <ul>
-                    <li>CSS prioritize ID's over class or element type styling.</li>
-
-                    <li>That is to say, if you had styled your paragraph in a section of HTML to be red, 
-                        and then styled font color of the section to be black by using a section ID, your paragraph
-                        will be black.
-                    </li>
-
-                    <li>So when styling, start by targeting the element type first. This will apply the styling to 
-                        all similar elements of course, but you can go after the ones you specifically want by assigning
-                        classes to them or assigning ID's
-                    </li>
-                </ul>
-
-
-                <h2 class="secSubHeading">Chaining Selectors</h2>
-
-                <ul>
-                    <li>Assume you have different elements with a same class, you can target
-                        which element you would like to style using chaining. Consider the example below</li>
-
-                    <figure class="code-fig">
-                        <code>
-                            h1.important {
-                                font-color: blue;
-                            }
-                        </code>
-                    </figure>
-
-                    <li>In the code above, you've headings and paragraphs that you have assigned a class "important" to 
-                        them. If you want to style the headings only, you would do as it was done above. This is possible
-                        with only element-type selectors and class selectors since the ID is always a single element whose styling doesn't
-                        care about anything else.
-                    </li>
-
-                    <li>You can also style two or more different elements with same styling by separating their tag
-                        names with commas. Eg:  
-                    </li>
-
-                    <figure class="code-fig">
-                        <code>
-                            h2, h3, p {
-                                font-family: monospace;
-                            }
-                        </code>
-                    </figure>
-
-                    <p>In the code above, both h2, h3, and paragraphs have been given the monospace font-family.</p>
-                </ul>
-
-
-                <h3 class="low-titles">Descendants</h3>
-
-                <ul>
-                    <li>You can also style children of an element by selecting the class of that element, and
-                        then write the tag type/name after that before the ruleset. Eg.  
-                    </li>
-
-                    <figure class="code-fig">
-                        <code>
-                            ul.main li {
-                                font-size: 14px;
-                            }
-                        </code>
-                    </figure>
-                </ul>
-            </article>
-        </section>
-
-
-        <section id="intermediate">
-            <h1 class="secHeading">Intermediate CSS</h1>
-
-            <article>
-
-                <h3 class="secSubHeading">Properties</h3>
-
-                <ul>
-                    <li>These are properties of the HTML that you'll be styling (font-families, font-size, font-color, etc)</li>
                     </ul>
 
-                <h4 class="low-titles">Color</h4>
-
-                <ul>
-                    <li>In CSS, you can use either the <a href="https://developer.mozilla.org/en-US/docs/Web/CSS/named-color" target="_blank">named</a> 
-                        colors, the hexadecimal colors and rgb colors to create a color out of a 
-                        mixture of red, blue and green, or use the HSL colors to create colors by controlling their hue, saturation and lightness.</li>
-
-                    <li>All colors among named colors have their respective hexadecimal and rgb values, but since the hexadecimal
-                        and rgb values are hard to remember, people who started this business earlier than you decided that it is wise
-                        to name a certain set of commonly used colors in order to avoid the hustle of trying to record each number or 
-                        letter that is in the hexadecimal or RGB values.
-                    </li>
-
-                    <li>Hecadecimal and RGB on the other hand, allow you to explore a wide range of colors, simply by changing the respective
-                        values of red, green, and blue. So these two options are greater for exploration.
-                    </li>
-
-                    <li>HSL is among the best. With it, you not only control how green, blue, or red a color is, but also how saturated (rich or pale), and 
-                        how light a color is.
-                    </li>
-
-                    <li></li>
-                </ul>
-
-                
-                <h5>Hexadecimal Colors</h5>
-
-                <ul>
-                    <li>These are numerical and lettered representations of the red , blue, and green combination.</li>
-
-                    <li>They operate in the hexadecimal space, which has 16 decimal points (different from the 10, 0-9, mathematical ones); 
-                        so the letters are used to represent the remaining 10-15 decimal points that can't be represented by numbers.
-                    </li>
-
-                </ul>
-
-
-                <h5>RGB Colors</h5>
-
-                <ul>
-                    <li>These are like hexadecimals, except you choose the value of each of the three colors from a range of 0 to 255</li>
-                </ul>
-
-                <h5>HSL</h5>
-
-                <ul>
-                    <li>As mentioned before, HSL controls the amount of hue (the color itself), saturation (strong or pale), and lightness (brightness).</li>
-
-                    <li>With it, you can play around with a particular color and see how many shades of it you can create by just adjusting its levels 
-                        of saturation and lightness. You can then copy the hexadecimal value of this color and use it somewhere else if you wish.
-                    </li>
-
-                    <li>The code is as follows: </li>
-
-                    <figure class="code-fig">
-                        <code class="css">
-                            h1 {
-                                color: hsl(240, 50%, 20%)
-                            }
-                        </code>
-                    </figure>
-
-                    <li>In the code above, the hue value is represented as a value in degrees btn 0 to 360, representing the circle of colors
-                        in the color wheel. Red is at 0 degrees, green at 120, and blue at 240. In between you'll find purple, yellow, and others.
-                    </li>
-
-                    <li>The <code>50%</code> represents the value of saturation in decimal. Just play around with this to see what you come end-up 
-                        with. 
-                    </li>
-
-                    <li>The <code>20%</code> represents the value of lightness in percentage. The normal brightness of any color starts at 50%, so any
-                        value below or above that represents a lighter or dimmer version of the color. Play with this also to see what you can end-up
-                        with. 
-                    </li>
-                </ul>
-
-                <h5>Opacity</h5>
-
-                <ul>
-                    <li>Control the level of opacity in your colors by adding an "a" to the rgb() or hsl() declaration:</li>
-
-                    <figure class="code-fig">
-                        <code class="css">
-                            .container {
-                                background-color: hsla(240, 50%, 30%, 0.3)
-                            }
-                        </code>
-                    </figure>
-
-                    <li>The background color of the container element in the code above will have an opacity level of 0.3. Going closer to 1 makes a color opaque 
-                        (less-transparent), while moving closer to 0 makes it more transparent.
-                    </li>
-                </ul>
-
-                <h4 class="low-titles">Font</h4>
-
-                <ul>
-                    <li>You can style the typeface by using the following properties:  
-                        <ul>
-                            <li><code>font-family</code>: for the type of typeface you want.</li>
-                            <li><code>font-weight</code>: for a light, regular, or bold font. Keywords are: 
-                                <code>bold</code>, <code>normal</code>, <code>lighter</code>, <code>bolder</code></li>
-                            <li><code>font-weight</code> can also use numbers to indicate the font weight desired, 1 being the lightest
-                            and 1000 the boldest. People usually use increments of 100. Look if the font you are using accepts
-                            numeric values though; Not all of them accept numerical values and not all numerical values can be 
-                            expressed to all fonts.</li>
-                            <li><code>font-size</code>: for the size. Make sure to add the "px" at the end of the font size
-                            you just entered. Eg <code>p {font-size: 18px;} </code></li>
-                            <li>With <code>font-style</code>, you can italicize an entire block of text. The default style is 
-                                <code>normal</code>. The fancier one is <code>italic</code></li>
-                            
-                            <li id="text-decoration"><code>font-decoration</code>: allows you to underline text. Check <a href="https://developer.mozilla.org/en-US/docs/Web/CSS/text-decoration">here</a>
-                            for a list of rules you can set for this property.</li>
-                            <li><code>text-transform</code> changes text to all uppercase or lowercase. Eg. <code>p { text-transform: uppercase; }</code></li>
-                            <li><code>text-align</code>: for text alignment. It accepts <em>left</em>, 
-                            <em>center</em>, <em>right</em>, and <em>justify</em> as arguments. Eg. </li>
-
-                            <figure class="code-fig">
-                                <code class="css">
-                                    p {text-align: justify;}
-                                </code>
-                            </figure>
-
-                            <li><code>letter-spacing</code> puts space between letters. The value is give in pixels. Eg: </li>
-                            
-                            <figure>
-                                <code class="css">
-                                    p {
-                                        letter-spacing: 2px;
-                                    }
-                                </code>
-                            </figure>
-
-                            <li><code>word-spacing</code> puts spacing btn words, as it says. The value is also given in pixels. Eg:</li>
-
-                            <figure class="code-fig">
-                                <code class="css">
-                                    p {
-                                        word-spacing: 5px;
-                                    }
-                                </code>
-                            </figure>
-
-                            <li><code>line-height</code> controls how tall are our lines. A line of text is comprised of 1). The font size, and 2). 
-                                the leading. <code>line-height</code> controls the height of the combination of those two, by mainly increasing the 
-                                height of the leading space. The value can either be given in unitless values, pixels, or ems, but unitless values are 
-                                preferred as they are responsive to the change in font size (changing the font-size will automally change the 
-                                line height)</li>
-
-                            <figure class="code-fig">
-                                <code class="css">
-                                    p {
-                                        line-height: 1.4;
-                                    }
-                                </code>
-                            </figure>
-
-                            <li><code>color</code>: This changes the color of the text itself. <code>background-color</code>
-                            changes the color of the text box behind the text.</li>
-
-                            <li><code>opacity</code>: This controls the opacity of the text-box. Use this if you want to create
-                            a beautiful overlay effect</li>
-
-                            <li><code>background-image</code> is able to change the background of the text-box to be a picture.</li>
-
-                            <li>The (<code>!important</code>) is used to prioritize the styling of any property it is put upon, no 
-                                matter how much specifically the element might have been modified by another selector. It is rarely
-                                used, so you should also develop a habit of avoiding it. Eg </li>
-
-                            <figure class="code-fig">
-                                <code class="css">
-                                    p {
-                                        font-family: Verdana;
-                                        color: white !important;
-                                        text-align: left;
-                                    }
-                                </code>
-                            </figure>
-                        </ul>
-                    </li>
-                </ul>
-
-                <h4>Linking Fonts From The Web</h4>
-
-                <ul>
-                    <li>There are two ways this can be done: Linking through the html document, or linking through the CSS document.</li>
-                </ul>
-
-                <h5>Linking in the index HTML</h5>
-                
-                <ul>
-                    <li><p>This can be done by using the <code>link</code> tag; you just need to place it inside the <code>head</code> tag 
-                        and then set the <code><em>href</em></code> attribute equal to the link where your fonts are</p></li>
-                    
-                    <li>There are free fonts at <a href="https://fonts.google.com/">Google Fonts</a> and <a href="https://fonts.adobe.com/fonts">
-                        Adobe Fonts</a>. Take a look.</li>
-                </ul>
-
-                <h5>Linking Through the CSS file</h5>
-
-                <ul>
-                    <li>This can be achived by using the <code>@font-face {}</code> ruleset. It takes all the 
-                        normal font formatting properties, plus the <code>src: url() format()</code> that specifies where your 
-                        font is, and which font format will be used.</li>
-                    
-                    <li>There are 4 main font formats: <em>OpenType Font (OPT)</em>, <em>TrueType Font (TTF)</em>, 
-                        <em>Web Open Font Format (WOFF)</em>, and <em>Web Open Font Format 2 (WOFF2)</em>. Check <a href="https://www.pluralsight.com/blog/creative-professional/differences-between-font-formats">this site</a>
-                        for an in-depth understanding of font formats.</li>
-
-                    <li>Since the best font format for web (because it loads faster) is WOFF2, but free font providers such as 
-                        Google Fonts and Adobe Fonts will likely give you a .ttf font format, it becomes imperative for you to 
-                        download the font families you want, generate the additional formats via a <a href="https://www.fontsquirrel.com/tools/webfont-generator">free font generator</a> 
-                        like this one, and then download the font formats file, unzip it, and save the contents in the same directory as your 
-                        web files. You can then link them to your document as follows:  
-                    </li>
-
-                    <figure class="code-fig">
-                        <code class="css">
-                            @font-face {
-                                font-family: 'Font-Name';
-                                src: url('some_font.woff2') format('woff2'),
-                                     url('some_font.another_format') format('the_other_format');
-                            }
-
-
-                            h2 {
-                                font-family: 'Font-Name', serif; 
-                            }
-                        </code>
-
-                        <figcaption>and so on..</figcaption>
-                    </figure>
-
-                    <li><p>The formats you specify in the <code>src: url('');</code> ruleset should be in the order of 
-                        preference.</p></li>
-                </ul>
-
-                <h5>Web Safe Fonts</h5>
-
-                <ul>
-                    <li>These are fonts that are likely to be available natively in any operating system, so that 
-                        your content can be visible exactly as intended in a wide range of browsers.
-                    </li>
-
-                    <li>They are good as <em>fallback fonts</em>, and you need to add them in the font-family declaration in your CSS. 
-                        Eg: </li>
-
-                    <figure class="code-fig">
-                        <code class="css">
-                            h1 {
-                                font-family: "some-fancy-font", Verdana;
-                            }
-                        </code>
-
-                        <figcaption>Verdana (a web safe font) as a fall-back font.</figcaption>
-                    </figure>
-
-                    <li>If, for whatever reason, the web safe font you used isn't available in the user's system, you can 
-                        instruct the browser to look for any of the two major typefaces available: Serif or Sans Serif. Eg:
-                    </li>
-
-                    <figure class="code-fig">
-                        <code class="css">
-                            p {
-                                font-family: Garamond, Verdana, sans-serif;
-                            }
-                        </code>
-
-                        <figcaption><em>The "sans-serif".</em></figcaption>
-                    </figure>
-                </ul>
-
-                <h3>The Box Model</h3>
-
-                <ul>
-                    <li>This is the way the elements are organized in an HTML. Each
-                    element is inside a box, and gets centered or expanded depending 
-                    on the size and configurations made of the box.
-                    </li>
-                        
-                    <figure>
-                        <img src="the_box.png" />
-                            
-                        <figcaption id="the_box">The box</figcaption>
-                    </figure>
-    
-                    <li>As you can see from the picture, padding is the spacing between the 
-                        actual content of the element and the borders of the box enclosing it.
-                    </li>
-    
-                    <li>The margin is the relationship between the box and the sides of the page.</li>
-
-                </ul>
-
-
-                <h4>The Content Properties</h4>
-
-                <ul>
-                    <li><code>width</code> and <code>height</code> modifies the size of the content within
-                    the box in pixels.</li>
-                    <li><code>padding</code> is the amount of space in pixels btn the content and the 
-                    border</li>
-                    <li><code>border</code> modifies the width of an element's box borders in pixels</li>
-                    <li><code>margin</code> sets the margin for the box, also in pixels.</li>
-                </ul>
-
-
-                <h4>Border Properties</h4>
-    
-                <ul>
-                    <li>You can modify the border by using 3 three properties: <code>width</code>, <code>style</code>
-                        and <code>color</code> like so: </li>
-    
-                    <figure class="code-fig">
-                        <code>
-                            p {
-                                border: 2px solid blue;
-                            }
-                        </code>
-                    </figure>
-    
-                    <li>In the code above, you'll have a border that's 2px wide, with a solid line visible to the
-                        reader, and that has a blue color.
-                    </li>
-    
-                    <li>Border style refers to whether the border-line will show or not, and if it shows, whether it is
-                        a solid line, a dotted one, etc. See all the styles 
-                        <a href="https://developer.mozilla.org/en-US/docs/Web/CSS/border-style#values" target="_blank">here.</a>
-                    </li>
-    
-                    <li>To create a circular border, create a border with the same width and height and then set the following 
-                        property: <code>border-radius: </code> into 50%. Eg: 
-                    </li>
-    
-                    <figure class="code-fig">
-                        <code>
-                            .pop_quote {
-                                width: 60px;
-                                height: 60px;
-                                border-radius: 50%;
-                            }
-                        </code>
-                    </figure>
-    
-                    <li>For curved edges, just set <code>border-radius</code> to some pixels</li>
-    
-                    <figure class="code-fig">
-                        <code>
-                            .pop_quote {
-                                width: 60px;
-                                height: 60px;
-                                border-radius: 15px;
-                            }
-                        </code>
-                    </figure>
-    
-                    <li>Play around with this <code>border-radius</code> pixel thing to get used to it.</li>
-                </ul>
-
-    
-                <h4>Properties of Padding</h4>
-    
-                <ul>
-                    <li><code>padding: somepixels;</code> will set equal space btw the content and the border 
-                    in all four sides.</li>
-                    <li>To be more specific, you can use <code>padding-top</code>, <code>padding-bottom</code>, 
-                    <code>padding-left</code>, or <code>padding-right</code>. Eg</li>
-    
-                    <figure class="code-fig">
-                        <code>
-                            .some_class {
-                                padding: 15px;
-                            }
-                        </code>
-                    </figure>
-    
-                    <li>You can also put multiple properties in the <code>padding: </code> ruleset. Refer to the
-                    code below: </li>
-
-                    <figure class="code-fig">
-                        <code>
-                            .some_class { padding: 10px 15px 20px 13px;}
-                        </code>
-                    </figure>
-    
-                    <li>In the code above, the browser will give 10px of padding to the top, 15px to the right, 20 to 
-                        the bottom and 13px to the left.
-                    </li>
-
-                    <li>You can also shorthand it even more. If, for example, the right and left sides have equal padding,
-                        you can write your code like this:  
-                    </li>
-    
-                    <figure class="code-fig">
-                        <code>
-                            h1.some_class {
-                                padding: 10px 15px 20px;
-                            }
-                        </code>
-                    </figure>
-    
-                    <p>In the code above, the 10px is for the top, 15px for right and left, and 20px for the bottom.</p>
-    
-                    <li>You can shorthand it even more. If the top and bottom have different padding from left and right but 
-                    each (vertical & horizontal sides) have identical units, you can write your code like so:  
-                    </li>
-    
-                    <figure class="code-fig">
-                        <code>
-                            .some_class {
-                                padding: 10px 15px;
-                            }
-                        </code>
-                    </figure>
-    
-                    <p>That'll basically put 10px of padding vertically and 15px horizontally.</p>
-    
-                </ul>
-
-    
-                <h4>Properties of Margin</h4>
-    
-                <ul>
-                    <li>Margin has the same properties as padding. Even the short-handing is also the same.</li>
-    
-                    <li>One of the things to keep in mind is that, when you have two elements on top of each other, for example, 
-                        and one of them has a margin of 20px while the other 30px, the browser will use the bigger margin to 
-                        separate the two elements. This is known as margin collapse. It doesn't happen if you set equal margins
-                    to the two elements though. In such a case, the margin will be the total of the two margins of the elements.</li>
-    
-                    <li>There is also an issue of centering. If you set your margin ruleset like this:  </li>
-    
-                    <figure class="code-fig">
-                        <code>
-                            .a_class {
-                                width: somepixels;
-                                    margin: somepixels auto;
-                            }
-                        </code>
-                    </figure>
-
-                    <li>In the code above, the element will be centered relative to the width set of that element.</li>
-
-                    <li>The <code>auto</code> argument there does that. The width must be set, otherwise the element will be 
-                    centered relative to the element that hosts it.</li>
-                </ul>
-
-    
-                <h4>General Box Rules</h4>
-    
-                <ul>    
-                    <li>You can set the <code>min-height</code>, <code>min-width</code> rulesets to control how narrow or wide
-                    an element's box can be stretched or compressed. The height and width will include the margins of an element.</li>
-    
-                    <li>Setting it this way helps regulate how much a content will be stretched or compressed under different screen
-                    sizes and still be legible. When it gets too compressed, it usually "<em>spills</em>" out of its box, necessiating
-                    the "<code>overflow</code>" property. This works to signal to the browser about what should be done
-                    to the content that overflowed from its box. It takes "<code>hidden</code>", "<code>scroll</code>", or 
-                    "<code>visible</code>" as its values. Eg.  
-                    </li>
-    
-                    <figure class="code-fig">
-                        <code>
-                            .some_class its_descendant {
-                                overflow: scroll;
-                            }
-                        </code>
-                    </figure>
-
-                    <li>In the code above, the overflowed content can be scrolled through while not scrolling the whole page.</li>
-                    
-                    <li>Web browsers also tend to set their own rules for margins and the like, in absence of a CSS style sheet.</li>
-
-                    <li>This makes it difficult for a web designer to style his/her HTML document, as the output might be different from 
-                    what one envisioned. To solve this problem: select all elements by using the universal selector 
-                    "<code>*</code>", then set "0" for padding and margins..
-                    </li>
-    
-                    <figure class="code-fig">
-                        <code>
-                            * { padding: 0; margin: 0;}
-                        </code>
-                    </figure>
-    
-                    <li>There, all elements will start with 0 padding and margin. The zero doesn't need the "px"</li>
-
-                    <li>The "<code>visibility</code>" property hides or displays an element on the page.</li>
-                </ul>
-    
-                <h4>A Better Box</h4>
-
-                <ul>
-                    <li>The box outlined above suffers from the fact that any setting on padding, margin, and border, affects
-                    the overall width and height of the box. This makes it difficult to accurately program the size of the
-                    elements in your page.
-                    </li>
-    
-                    <li>To solve this problem, use the <code>box-sizing</code> property with the universal (<code>*</code>) 
-                    selector at the beginning of your CSS and set it to (<code>border-box</code>)</li>
-
-                    <figure class="code-fig">
-                        <code>
-                            * {
-                                box-sizing: border-box;
-                            }
-                        </code>
-                    </figure>
-
-                    <li>The reason the default box doesn't do what "<em>border-box</em>" does is because the default
-                        CSS value of all elements is "<code>content-box</code>". So, when the boxes are in content-box mode,
-                        the values of height and width you specify are applied to the contents of the box, not the box itself.</li>
-                </ul>
-
-                <h4>Box Positioning</h4>
-                
-                <ul>
-                    <li>Sometimes you don't want the item you just made in the HTML to appear on the default position it does on the page.
-                        You can use the <code class="inline-code">position</code> property to deal with this.
-                    </li>
-                    <li>The property takes: <code class="inline-code">static</code>, <code class="inline-code">relative</code>, 
-                        <code class="inline-code">absolute</code>, and <code class="inline-code">fixed</code> as arguments and then uses 
-                        sub-properties such as <code class="inline-code">top: ;</code>, <code class="inline-code">bottom: ;</code>, 
-                        <code class="inline-code">left: ;</code>, and <code class="inline-code">right: ;</code> to determine how much and from 
-                        which side the element will be offsetted.</li>
-                    <li><code class="inline-code">position: static;</code> is the default position of an element in HTML. This is usually the 
-                        upper-most left.
-                    </li>
-                    <li><code class="inline-code">position: relative;</code> is used if we want to offset an element from its default position.
-                        Use that and then follow-up with the <code class="inline-code">top: ;</code>, <code class="inline-code">right: ;</code>, 
-                        <code class="inline-code">left: ;</code>, and <code class="inline-code">right: ;</code> to set which direction and by how 
-                        much an element should be offset.
-                    </li>
-                    <li><code class="inline-code">position: absolute;</code> will pluck an element out the normal flow of a document and allow you 
-                        to offset it even above other elements. This is usually not possible under default settings of a document due to a layout character 
-                        we'll see in a shortwhile. After you've done this, you can then follow-up with the sub-properties of direction and determine how much
-                        and where you want to offset your element to.
-                    </li>
-                    <li><code class="inline-code">position: fixed;</code> allows you to stick an element on the page even if the user scrolls. This is usually 
-                        used on the top navigation bar of some webpages, and I'm sure you've seen it already.</li>
-                    <li><code class="inline-code">z-index: ;</code> is a property that allows you to set priority on what element will be shown first in the event
-                        that one element is on top of another.</li>
-                    <li>It takes integer values, with an element with a higher integer being displayed top most.</li>
-
-                    <figure>
-                        <code class="css block-code">
-                            #background-box {
-                                position: relative;
-                                color: blue;
-                                z-index: 1;
-                            }
-
-                            #foreground-box {
-                                position: absolute;
-                                color: red;
-                                z-index: 2;
-                            }
-                        </code>
-                    </figure>
-
-                    <li>In the code above, the foreground box will appear first and on-top of the blue background box.</li>
-
-                    <li><code class="inline-code">0</code> is the default value for <code class="inline-code">z-index: ;</code>, and this particular property has to 
-                        be set when the <code class="inline-code">position: ;</code> is any value except its default value of 
-                        <code class="inline-code">static</code>
-                    </li>
-                </ul>
-
-                <h4>Box Layout</h4>
-
-                <ul>
-                    <li>
-                        Any HTML element is either a <strong><em>block</em></strong> or an <strong><em>inline</em></strong> element.
-                    </li>
-
-                    <li>
-                        Block elements are the ones that takes the whole width of the screen i.e., they span the whole horizontal space 
-                        of the part of the page they are located at. Inline elements share the horizontal space with other elements in the 
-                        HTML.
-                    </li>
-
-                    <li>
-                        Elements such as headings, tables, and paragraphs, are by default block elements, while elements such as 
-                        <code class="inline-code">strong</code>, <code class="inline-code">em</code> and the like are by default inline
-                        elements.
-                    </li>
-
-                    <li>
-                        The <code class="inline-code">display</code> property can be used to make a block element an inline one and vice versa.
-                    </li>
-
-                    <figure class="code-fig">
-                        <code class="css block-code">
-                            .description p {
-                                display: inline;
-                                padding: 2px;
-                            }
-
-                            .description img {
-                                width: 500px;
-                                position: relative;
-                                left: 20px;
-                            }
-                        </code>
-                    </figure>
-
-                    <li>
-                        In the code above, the <code class="inline-code">p</code> element will share the horizontal space with the 
-                        <code class="inline-code">img</code> element, displaying them side by side in the browser.
-                    </li>
-
-                    <li><code class="inline-code">display: inline;</code> however, doesn't allow you to modify the width and height of the 
-                        element. To achieve that, you use <code class="inline-code">display: inline-block;</code>
-                    </li>
-
-                    <li>
-                        <code class="inline-code">inline-block</code> allows you to make a block element an inline, but formats the element 
-                        such that it can be modified as if it is a block element.
-                    </li>
-
-                    <li>You can then modify the height and width, not only padding, margin, and border as it is for an <em>inline</em> ruleset.</li>
-                </ul>
-
-                <h5>Box Float</h5>
-
-                <ul>
-                    <li>This is a layout property used to push an HTML element's box as far left or right as possible.</li>
-                    <li>It takes only two arguments: <code class="inline-code">left</code> and <code class="inline-code">right</code>. </li>
-                    <li>The width of the element must be specified however. If it hasn't, the floated element will assume the whole 
-                        width of its containing element.
-                    </li>
-                </ul>
-
-                <h5><em><strong>"Clear"</strong></em></h5>
-
-                <ul>
-                    <li>This is used to control the behaviour of floated elements (most of the time) by specify how an element should
-                        behave in a situation where it is going to bump into another element horizontally.
-                    </li>
-
-                    <li>Bumping can easly happen with the <code class="inline-code">float</code> property, but if you add the 
-                        <code class="inline-code">clear</code> property to any of the floated element and set it to either <code class="inline-code">left</code>, 
-                        or <code class="inline-code">right</code>, or <code class="inline-code">both</code>, that element won't touch any other element it finds to its left, right 
-                        or both sides.
-                    </li>
-                </ul>
-            </article>
-
-
-
-            <h2 class="main-headers">Advanced</h2>
-
-            <article>
-                <h2 class="main-sub-headers">Pseudo-classes</h2>
-
-                <ul>
-                    <li>These are words attached to a selector that modifies the selector only under certain conditions. 
-                        They include: 
-
-                        <ul>
-                            <li><code>:hover</code> : Lays out the modifications to a selector when a mouse is hovered upon it.</li>
-                            <li><code>:link</code> : Controls how visited links will look like.</li>
-                            <li><code>:active</code> : controls how an element behaves when it is clicked.</li>
-                        </ul>
-                    </li>
-
-                    <li>For a list of all pseudo-classes, visit <a href="https://developer.mozilla.org/en-US/docs/Web/CSS/Pseudo-classes">here</a></li>
-                </ul>
-            </article>
-
-            <article>
-                <h2 class="main-sub-headers">Skeumorphic Styling</h2>
-            </article>
-
-            <article>
-
-                <h2 class="main-sub-headers">Layout</h2>
-
-
-                <article id="breadcrumb_nav">
-                    <h3>Breadcrumb Navigation</h3>
-                </article>
-
-                <article id="rows_columns">
-                    <h3>Rows, Columns, and Gutters</h3>
-                </article>
-
-
-                <article id="the_flexbox">
-                    <h3>The Flex Box</h3>
-      
+                    <h3>In-line</h3>
                     <ul>
-                        <li>It is a styling system that makes it possible for HTML to resize based on the
-                        size of the screen.
+                        <li></li>
+                    </ul>
+
+                    <h2 class="secSubHeading">Element Selectors</h2>
+                    
+                    <ul>
+                        <li>These are symbols or words you use to select an HTML element.</li>
+                        <li>To select all elements, you use the asterisk (<code>*</code>)</li>
+                        <li>To select a particular type of element, let's say paragraphs, you use the tag name
+                            (<code>p</code>).
                         </li>
-      
-                        <li>It is set by setting the <code>display</code> property of an element to either
-                        "<em>flex</em>" or "<em>inline-flex</em>". This will make the element a 
-                        <strong>flex container</strong></li>
-      
-                        <li>The flex container has properties that enable items within it to resize and 
-                          re-position themselves based on how stretched the box is.
-                        </li>
-      
-                        <li><code>display: flex;</code> will make the container a block element while the
-                        <code>display: inline-flex;</code> will make it an inline-block.</li>
-      
-                        <li>Once that is done; you can go inside and start commanding how the elements within the container
-                        should behave. The first property is <code>justify-content</code>.
-                        </li>
-      
-                        <figure class="code-fig">
+
+                        <figure>
                             <code>
-                                #_some_container {
-                                    display: flex;
-                                    justify-content: center;
+                                p {
+                                    font-family: cursive;
                                 }
                             </code>
                         </figure>
-                    </ul>
-
-                    <h4>Properties of Flex Containers</h4>
-
-                    <h5>Justify-content</h5>
-
-                    <ul>
-                        <li>It is a property that is declared on the container in order to align the items within the container horizontally. 
-                            It can take any of the following values: 
-                            <ul>
-                                <li><code>flex-start</code>: Which will align everything in the flex container to the left.</li>
-                                <li><code>flex-end</code>: Which will align all items in the flex container to the right.</li>
-                                <li><code>center</code>: As is self-explanatory, will center the content of a flex container</li>
-                                <li><code>space-around</code>: This will put equal space on the sides (left-right) of each element, with
-                                regard to margins also.</li>
-                                <li><code>space-between</code>: This will put equal space between items themselves, but no space at the 
-                                right side of the left-most item and the left-side of the right-most item (the last item)</li>
-                            </ul>
-                        </li>
-      
-                        <li>With <code>justify-content</code>, you're basically instructing the browser to stuck together the items within 
-                            the flex container in an inline fashion in the event the screen is squeezed in. Read further down to learn how 
-                            you can stretch the items vertically or horizontally.</li>                       
-                    </ul>
-
-
-                    <h5>"align-items"</h5>
-
-                    <ul>
-                        <li><code>align-items</code>: is another property applied to the container, and it aligns the items vertically and takes 
-                            the following rulesets: 
-      
-                            <ul>
-                                <li><code>flex-start</code>: which aligns the items on the top of the container.</li>
-                                <li><code>flex-end</code>: which aligns the items on the bottom.</li>
-                                <li><code>center</code>: centers, as it says.</li>
-                                <li><code>baseline</code>: which aligns the bottoms of each element</li>
-                                <li><code>stretch</code>: which stretches the items the whole height of the container (will not go
-                                    beyond the <code>max-height</code> instructions though.).</li>
-                            </ul>
-                        </li>
-
-                    </ul>
-                    
-                    <h5>"flex-wrap"</h5>
-
-                    <ul>
-                        <li>Another property of containers, this one instructs the item that doesn't fit into the current
-                            container size to move down a line, still inside the container.
-                        </li>
-
-                        <li>It is declared as follows:  
-                            <figure>
-                                <code>
-
-                                    <!-- The HTML-->
-                                    <div class="container">
-                                        <div class="items">
-                                            <img src="" >
-                                            <p>Item 1</p>
-                                        </div>
-
-                                        <div class="items">
-                                            <img src="">
-                                            <p>Item 2</p>
-                                        </div>
-                                    </div>
-
-
-                                    /* The CSS */
-
-                                    .container {
-                                        display: flex;
-                                        width: 200px;
-                                        flex-wrap: wrap;
-                                    }
-
-                                    .items {
-                                        width: 150px;
-                                    }
-                                </code>
-                            </figure>
-                        </li>
-
-                        <p>From the code above, the second item won't fit in the container. The result is it being
-                            put in a new line, under the first item.
+                        
+                        <p>In the code above, all paragraph element will be styled by a cursive
+                            family of font.
                         </p>
 
-                        <li><code>flex-wrap</code> takes in: <code>wrap</code>, <code>wrap-reverse</code>, and <code>nowrap</code> 
-                        as rules.</li>
-
-                        <li><code>wrap-reverse</code> does exactly what <code>wrap</code> does, it just puts the overflowing item on top 
-                        instead of the bottom. <code>nowrap</code> specifies that no wrapping should be done on the element.</li>
-                    </ul>
-
-                    <h5>"align-content"</h5>
-
-                    <ul>
-                        <li>This is used to position the rows of flex-items within the flex-container.</li>
-
-                        <li>The rows are usually the result of <code>flex-wrap</code>. </li>
-
-                        <li><code>align-content: flex-start;</code>: Positions all rows of elements in the flex container at the top of
-                            the flex container with no extra space between them.</li>
-
-                        <li><code>flex-end</code>: Does the opposite.</li>
-
-                        <li><code>align-content: center;</code>: Puts the rows at the center of the flex-container, with no extra space between them.</li>
-
-                        <li><code>align-content: space-between;</code> Spaces the rows evenly across the parent element without any space above the first 
-                            row or below the last one.</li>
-
-                        <li><code>align-content: space-around;</code>: Spaces the rows evenly within the parent container, with equal spaces even above the first row 
-                             and below the last one.</li>
-                    </ul>
-      
-                    <h5>"flex-direction"</h5>
-
-                    <ul>
-                        <li>The <code>flex</code>  property operates in two major axes: The horizontal and The vertical</li>
-
-                        <li>The horizontal axis: <code>flex-direction: row; </code> is a default value of the <code>flex</code> property.</li>
-                        
-                        <li><code>flex-direction: row;</code> Tells the browser to put the items inside the flex-container into a horizontal axis
-                            i.e. the row, and then accepts modifications such as <code>justify-content</code> and others we saw above, as well as the 
-                            ones applicable to the flex-items (<a href="#for_flex_items">Read below</a>)
-
-                        <li>In <code>flex-direction: column;</code>, you basically instruct the browser to put the items of a flex container 
-                        into a vertical alignment i.e. a column, instead of a row. From there on, you can use the same rulesets you use on 
-                        <code>flex-direction: row;</code>, just that everything will behave as if you rotated your screen 90 degrees.</li>
-
-                        <li>Values accepted for <code>flex-direction</code> are:  
-                            <ul>
-                                <li><code>row</code>: Which will just put the elements in the container is a single row, from left to right, starting
-                                from the top-left.</li>
-                                <li><code>row-reverse</code>: Where the items will be positioned from right to left, from the top-right corner.</li>
-
-                                <li><code>column</code>: Which will behave exactly like <code>row</code>, but put the items in a vertical column. Even
-                                the positioning starts from the top-left corner of the parent element.</li>
-
-                                <li><code>column-reverse</code>: Which will do what <code>row-reverse</code> does, just with the item vertically oriented.</li>
-                            </ul> 
+                        <li>You can also target specific elements by using the <code>class</code> attribute
+                            in the HTML tag you want to target. Take a following example:  
                         </li>
-                    </ul>
-
-                    <h5>"flex-flow"</h5>
-
-                    <ul>
-                        <li>This is the short-hand for <code>flex-wrap</code> and <flex>flex-direction</flex> that enables you to 
-                        declare the two values in a single ruleset. It is like so..</li>
 
                         <figure class="code-fig">
                             <code>
-                                .some_div {
-                                    display: flex;
-                                    flex-flow: column wrap;
+                                <h1 class="main">This is a Main Header</h1>
+                            </code>
+                        </figure>
+
+                        <p>To target this, we write our CSS ruleset like so..</p>
+                        
+                        <figure class="code-fig">
+                            <code>
+                                .main {
+                                    font-size: 200px;
                                 }
                             </code>
                         </figure>
 
-                        <li>As visible above, start with the <code>flow-direction</code> and then <code>flow-wrap</code>. All values of 
-                        the two are accepted.</li>
+                        <li>You can also target elements by using the <strong><em>id selector</em></strong> (<code>#</code>).</li>
+                        <li>This is especially useful for sections, since the <code>id</code> attribute is usually used
+                        to provide internal linkages to the page</li>
+
+                        <p>Eg:</p>
+
+                        <figure class="code-fig">
+                            <code>
+                                <section id="Educational-History"></section>
+                            </code>
+                        </figure>
+
+                        <figure class="code-fig">
+                            <code>
+                                #Educational-History {
+                                    background-color: white;
+                                }
+                            </code>
+                        </figure>
+
+                        <li>You can also target an element by using other attributes, such as the <code>href=""</code> and <code>src</code>
+                        attributes. Check the code below</li>
+
+                        <figure class="code-fig">
+                            <code>
+                                <img src="/some_place/somewhere.jpeg" />
+
+                                <a href="/another_place/somewhere_else.jpeg">Learn More</a>
+
+                            </code>
+                        </figure>
+
+                        <figure class="code-fig">
+                            <code>
+                                img[src*= 'somewhere'] {
+                                    background-color: some_color;
+                                }
+
+                                a[src*= 'somewhere_else'] {
+                                    font-color: blue;
+                                }
+                            </code>
+                        </figure>
+
+                        <li>As you can observe above, the format of detecting a variable like This
+                            is:  </li>
+
+                            <figure class="code-fig">
+                                <code>
+                                    elementType[the_attribute*='a_word_to_look_for_from_the_given_attribute']
+                                </code>
+                            </figure>
+
+
                     </ul>
 
-                    <article id="for_flex_items">
-                        <h4>Properties For Flex Items.</h4>
+                    <h2 class="secSubHeading">Order of Execution</h2>
 
-                        <h5>"flex-grow"</h5>
+                    <ul>
+                        <li>CSS prioritize ID's over class or element type styling.</li>
 
-                        <ul>
-                            <li>The <code>flex-grow</code> property controls how fast each flex-item to expands (only horizontally) to fill the 
-                                unused space in the container, once the container is stretched beyond its specified width.
-                            </li>
+                        <li>That is to say, if you had styled your paragraph in a section of HTML to be red, 
+                            and then styled font color of the section to be black by using a section ID, your paragraph
+                            will be black.
+                        </li>
 
-                            <li>The item won't grow vertically, unless you specify the flex-direction of the container to be <code>column</code>. This is because
-                                the container itself only stretches horizontally, unless instructed otherwise.</li>
-                            
-                            <li><code>flex-grow</code> is set in numbers, and when you set <code>display: flex;</code> it is automatically
-                            set to <code>0</code>.</li>
-                
-                            <li>If, for example the container had 2 items, and one was assigned the value of 1 and the other 2, the second will expand twice
-                            as much as the first one. And not to forget, <code>flex-grow</code> is set on a flex item, not container.
-                            </li>
-      
-                            <figure class="code-fig">
-
-                                <code class="html">
-                                    <!-- HTML -->
-                                    <div id="img_container">
-                                        <div class="side_element">
-                                            <img src="some_link" />
-                                        </div>
-      
-                                        <div id="center_element">
-                                            <img src="some_link" />
-                                        </div>
-      
-                                        <div class="side_element">
-                                            <img src="some_link" />
-                                        </div>
-                                    </div>
-                                </code>
-      
-                                <code>
-                                    /* CSS */
-                                    #img_container {
-                                        width: 300px;
-                                        height: 50px;
-                                        display: flex;
-                                        justify-content: center;
-                                    }
-      
-                                    .side_element {
-                                        flex-grow: 1;
-                                    }
-      
-                                    #center_element {
-                                        flex-grow: 2;
-                                    }
-                                </code>
-
-                            </figure>
-      
-                            <p>In the code above, the center element will expand to take twice the empty space that each
-                                of the side elements will take.
-                            </p>
-                    
-                        </ul>
-
-                    
-
-                        <h5>"flex-shrink"</h5>
-
-                        <ul>
-                            <li><code>flex-shrink: </code> is exactly like <code>flex-grow</code> but in the opposite way. It is 
-                                used to control how fast a flex item shrinks when the screen is being squeezed.</li>
-                        </ul>
+                        <li>So when styling, start by targeting the element type first. This will apply the styling to 
+                            all similar elements of course, but you can go after the ones you specifically want by assigning
+                            classes to them or assigning ID's
+                        </li>
+                    </ul>
 
 
-                        <h5>"flex-basis"</h5>
+                    <h2 class="secSubHeading">Chaining Selectors</h2>
 
-                        <ul>
-                            <li><code>flex-basis</code> sets the base width of a flex-item before growing or shrinking. It takes a number
-                                in pixels. Forexample.
-                            </li>
+                    <ul>
+                        <li>Assume you have different elements with a same class, you can target
+                            which element you would like to style using chaining. Consider the example below</li>
 
-                            <figure class="code-fig">
-                                <code>
-                                    .some_item {
-                                        flex-basis: 300px;
-                                        flex-grow: 1;
-                                        flex-shrink: 2;
-                                    }
-                                </code>
-                            </figure>
+                        <figure class="code-fig">
+                            <code>
+                                h1.important {
+                                    font-color: blue;
+                                }
+                            </code>
+                        </figure>
 
-                            <li>In the code above, the item will start with a base width of 300px</li>
+                        <li>In the code above, you've headings and paragraphs that you have assigned a class "important" to 
+                            them. If you want to style the headings only, you would do as it was done above. This is possible
+                            with only element-type selectors and class selectors since the ID is always a single element whose styling doesn't
+                            care about anything else.
+                        </li>
 
-                        </ul>
+                        <li>You can also style two or more different elements with same styling by separating their tag
+                            names with commas. Eg:  
+                        </li>
 
-                        <h5>"flex"</h5>
+                        <figure class="code-fig">
+                            <code>
+                                h2, h3, p {
+                                    font-family: monospace;
+                                }
+                            </code>
+                        </figure>
 
-                        <ul>
-                            
-                            <li><code>flex</code> is a shorthand for <code>flex-grow</code>, <code>flex-shrink</code>, and 
-                                <code>flex-basis</code>.</li>
+                        <p>In the code above, both h2, h3, and paragraphs have been given the monospace font-family.</p>
+                    </ul>
 
-                            <li>It accepts the values in the above order. Take a look at the following example: </li>
 
-                            <figure class="code-fig">
-                                <code class="css">
-                                    .flex_item {
-                                        flex: 2 1 300px;
-                                    }
-                                </code>
-                            </figure>
+                    <h3 class="low-titles">Descendants</h3>
 
-                            <li>In the code above, the item will grow twice as fast, shrink at a normal speed, and start with the
-                                base width of 300px</li>
+                    <ul>
+                        <li>You can also style children of an element by selecting the class of that element, and
+                            then write the tag type/name after that before the ruleset. Eg.  
+                        </li>
 
-                        </ul>
-
-                    </article>
-
+                        <figure class="code-fig">
+                            <code>
+                                ul.main li {
+                                    font-size: 14px;
+                                }
+                            </code>
+                        </figure>
+                    </ul>
                 </article>
 
-                <article class="css-grid">
-                    <h2 class="main-sub-headers">CSS Grid</h2>
+                <article>
+                    <h1 class="secHeading">Intermediate CSS</h1>
 
-                    <article>
-                        <ul>
-                            <li>It is a styling property that enables you to create a container element with two dimensions: Rows and Columns.</li>
+                    <h3 class="secSubHeading">Properties</h3>
 
-                            <li>
-                                The difference between this and the flex box is that the flex box is a one-dimensional element which can have 
-                                either a row or a column. CSS Grid allows you to have both.
-                            </li>
-                            <li>
-                                The grid is defined by setting the <code class="inline-code">display</code> property to 
-                                <code class="inline-code">grid</code>. By default, it will start with one column and several rows depending on the 
-                                number of items in the container. 
-                            </li>
-                            <li>
-                                To set the number of columns you want; use the <code class="inline-code">grid-template-columns: ;</code> property of 
-                                CSS Grid. It takes any number of arguments as the size of each column.
-                            </li>
-
-                            <p>For Example</p>
-
-                            <figure class="code-fig">
-                                <code class="block-code">
-                                    .some-class {
-                                        display: grid;
-                                        grid-template-columns: 100px 20% 30%;
-                                    }
-                                </code>
-                            </figure>
-
-                            <li>
-                                In the code above, 3 columns will be made; the first one with a width of 100px, a second with a width that is 20%
-                                of the total width of the grid, and the third which is 30%.
-                            </li>
-
-                            <li>To create new empty rows; use the <code class="inline-code">grid-template-rows</code></li>
-
-                            <li>There's a shorthand for these two commands: the <code class="inline-code">grid-template</code> property.</li>
-
-                            <li><code class="inline-code">grid-template</code> takes first the values that represent rows, the there is a forward slash after 
-                                that, and then values representing columns. Check the code below:</li>
-
-                            <figure class="code-fig css">
-                                <code class="css block-code">
-                                    .a-random-grid {
-                                        display: grid;
-                                        width: some-pixls;
-                                        height: some-pixls;
-                                        grid-template: 10% 20% 10% 60% / 20% 30% 20% 20% 10%;
-                                    }
-                                </code>
-                            </figure>
-
-                            <li>As usual, the percentage on the row side represent the percentage of the grid's height, while on the column side 
-                                the percentage of the grid's width.
-                            </li>
-
-                            <li>
-                                It is possible for one to set the height or width of rows / columns such that they are more than the height / width of the grid container.
-                                When that happens, there's a way to control the overflow that we'll learn in a bit.
-                            </li>
-
-                            <li>There's also another way to short-hand the <code class="inline-code">grid-template-columns</code> and 
-                                the <code class="inline-code">grid-template-rows</code> properties by using the <code class="inline-code">repeat()</code> 
-                                function that takes two arguments: the number of rows / columns and their size. In the code below: </li>
-
-                            <figure class="code-fig">
-                                <code class="css block-code">
-                                    .grid {
-                                        display: grid;
-                                        grid-template-columns: repeat(2, 100px);
-                                    }
-                                </code>
-                            </figure>
-
-                            <p>Two columns with the width of 100px each will be created.</p>
-
-                            <li>There's also a way to use the <code class="inline-code">repeat()</code> function for 
-                                rows and columns with different sizes. Refer the code below:
-                            </li>
-
-                            <figure class="code-fig">
-                                <code class="css block-code">
-
-                                    .grid {
-                                        display: grid;
-                                        grid-template-columns: repeat(2, 20px 50px);
-                                    }
-                                </code>
-                            </figure>
-
-                            <li>The code above will create four columns, with the first and third having 20px while the second and fourth 
-                                50.
-                            </li>
-
-                            <li><code class="inline-code">repeat()</code> is especially useful to use with the <code class="inline-code">fr</code> 
-                                scaling. The <code class="inline-code">fr</code> gives size to columns or rows by dividing the available space in the 
-                                grid into fractions (depending on how many columns or rows and how many fractions specified) and then giving the specified 
-                                row / column the specified number of fractions. For example: 
-                            </li>
-
-                            <figure class="code-fig">
-                                <code class="css block-code">
-                                    .a-grid {
-                                        display: grid;
-                                        width: 1000px;
-                                        height: 800px;
-                                        grid-template-rows: repeat(5, 1fr);
-                                        grid-template-columns: repeat(1, 2fr 3fr 2fr); 
-                                    }
-                                </code>
-                            </figure>
-
-                            <li>In the code above, the width of the grid will be divided into 7 fractions, of which 2 will be taken by 
-                                the first, 3 the second, and the remaining 2 the third column.
-                            </li>
+                    <ul>
+                        <li>These are properties of the HTML that you'll be styling (font-families, font-size, font-color, etc)</li>
                         </ul>
 
-                        <h3>Making the Grid Responsive</h3>
-
-                        <ul>
-                            <li>You can do this by setting the <code class="inline-code">minmax()</code> function on one or multiple columns of your choice.</li>
-
-                            <li><code class="inline-code">minmax()</code> function takes values of the minimum width a column can reach, and also the maximum, 
-                                allowing the column to stretch according to the size of the browser within those limits.
-                            </li>
-
-                            <li>The <code class="inline-code">minmax()</code> function doesn't work when the <code class="inline-code">width</code> ruleset is set though, 
-                                so remove that ruleset if you're going to go forward with the <code class="inline-code">minmax()</code> function.</li>
-                        </ul>
-                    </article>
-
-                    <h3>Beautifying The Grid A Little Bit</h3>
-
-                    <h4>Adding gaps between Items.</h4>
+                    <h4 class="low-titles">Color</h4>
 
                     <ul>
-                        <li>This is achieved by using the <code class="inline-code">gap: ;</code> ruleset on the grid container.</li>
+                        <li>In CSS, you can use either the <a href="https://developer.mozilla.org/en-US/docs/Web/CSS/named-color" target="_blank">named</a> 
+                            colors, the hexadecimal colors and rgb colors to create a color out of a 
+                            mixture of red, blue and green, or use the HSL colors to create colors by controlling their hue, saturation and lightness.</li>
 
-                        <li>You can set gaps for rows specifically (using <code class="inline-code">row-gap: ;</code> ruleset); for 
-                            columns (using the <code class="inline-code">column-gap: ;</code> ruleset); or both by using the 
-                            <code class="inline-code">gap: row-gap-width-goes-here column-gap-width-goes-here;</code>
-                        </li>
-                    </ul>
-
-                    <h4>Centering The Content within the Grid</h4>
-
-                    <h5>On the horizontal Axis</h5>
-
-                    <ul>
-                        <li>Done with the combination of <code class="inline-code">justify-content: ;</code> and <code class="inline-code">justify-items: ;</code> rulesets</li>
-                        <li><code class="inline-code">justify-items</code> align items within the columns, that is, whether the item is on the left of the column, right,
-                            centered etc. It takes values of <code class="inline-code">start</code> for a left alignment, <code class="inline-code">end</code> for a right alignment, 
-                            <code class="inline-code">center</code> for a centered alignment, and <code class="inline-code">stretch</code> for the item to stretch the whole width of the 
-                            column.
+                        <li>All colors among named colors have their respective hexadecimal and rgb values, but since the hexadecimal
+                            and rgb values are hard to remember, people who started this business earlier than you decided that it is wise
+                            to name a certain set of commonly used colors in order to avoid the hustle of trying to record each number or 
+                            letter that is in the hexadecimal or RGB values.
                         </li>
 
-                        <li><code class="inline-code">justify-content</code> aligns the whole of the grid horizontally within the grid container itself.</li>
-
-                        <li>Assume a grid container had the width of 1300px and 2 columns, each one 500px. The <code class="inline-code">justify-content: ;</code> ruleset will instruct
-                            the browser to either align to the left, right or center, the 2 columns of the grid, such that the remaining 300px are used as the designer intended.</li>
-
-                        <li><code class="inline-code">justify-content: ;</code> accepts <code class="inline-code">start</code>, <code class="inline-code">end</code>, 
-                            <code class="inline-code">center</code>, <code class="inline-code">stretch</code>, <code class="inline-code">space-around</code>, <code class="inline-code">space-between</code>, and
-                            <code class="inline-code">space-evenly</code> as arguments.</li>
-                    </ul>
-
-                    <h5>On the vertical axis</h5>
-
-                    <ul>
-                        <li>A combination of <code class="inline-code">align-items</code> and <code class="inline-code">align-content</code> is used.</li>
-
-                        <li>The usage is the same as <code class="inline-code">justify-items</code> / <code class="inline-code">justify-content</code>, and even the arguments are 
-                            the same. So use them as you would use those, except everything is done row-wise rather than column wise.</li>
-                    </ul>
-
-                    <h5>Justify-self / align-self</h5>
-
-                    <ul>
-                        <li>These are values declared on grid items, rather than the container, to instruct a particular item to deviate away from the styling declared on the container 
-                            using <code class="inline-code">justify-items</code> / <code class="inline-code">align-items</code>
+                        <li>Hecadecimal and RGB on the other hand, allow you to explore a wide range of colors, simply by changing the respective
+                            values of red, green, and blue. So these two options are greater for exploration.
                         </li>
 
-                        <li>They accept the same values as <code class="inline-code">justify-items</code>  and <code class="inline-code">align-items</code>, just that their customization 
-                            applies to just one grid item on which they're declared.</li>
+                        <li>HSL is among the best. With it, you not only control how green, blue, or red a color is, but also how saturated (rich or pale), and 
+                            how light a color is.
+                        </li>
+
+                        <li></li>
+                    </ul>
+
+                    
+                    <h5>Hexadecimal Colors</h5>
+
+                    <ul>
+                        <li>These are numerical and lettered representations of the red , blue, and green combination.</li>
+
+                        <li>They operate in the hexadecimal space, which has 16 decimal points (different from the 10, 0-9, mathematical ones); 
+                            so the letters are used to represent the remaining 10-15 decimal points that can't be represented by numbers.
+                        </li>
+
                     </ul>
 
 
-                    <h4>Grid-auto-flow</h4>
+                    <h5>RGB Colors</h5>
 
                     <ul>
-                        <li>This is a property set on a grid container when the developer doesn't know exactly how many rows / columns the grid will 
-                            have.
+                        <li>These are like hexadecimals, except you choose the value of each of the three colors from a range of 0 to 255</li>
+                    </ul>
+
+                    <h5>HSL</h5>
+
+                    <ul>
+                        <li>As mentioned before, HSL controls the amount of hue (the color itself), saturation (strong or pale), and lightness (brightness).</li>
+
+                        <li>With it, you can play around with a particular color and see how many shades of it you can create by just adjusting its levels 
+                            of saturation and lightness. You can then copy the hexadecimal value of this color and use it somewhere else if you wish.
                         </li>
 
-                        <li>Take an example of a grid that comes as a result of a search inquiry on a site. Sometimes, these grids have an option of how 
-                            many search results one wants displayed at a time, making it impossible for the developer to guess how many items will be in that 
-                            grid in a particular point in time. To deal with this, the <code class="inline-code">grid-auto-flow</code> ruleset is used to specify 
-                            whether the additional content that is more that what is specified in the original grid is placed on new columns or rows automatically.
+                        <li>The code is as follows: </li>
+
+                        <figure class="code-fig">
+                            <code class="css">
+                                h1 {
+                                    color: hsl(240, 50%, 20%)
+                                }
+                            </code>
+                        </figure>
+
+                        <li>In the code above, the hue value is represented as a value in degrees btn 0 to 360, representing the circle of colors
+                            in the color wheel. Red is at 0 degrees, green at 120, and blue at 240. In between you'll find purple, yellow, and others.
                         </li>
 
-                        <li>By the way, the grid we have seen so far is called the <em><strong>explicit grid</strong></em>, because it has been explicity designed and structured 
-                            in terms of the number of rows / columns and their sizes.
+                        <li>The <code>50%</code> represents the value of saturation in decimal. Just play around with this to see what you come end-up 
+                            with. 
                         </li>
 
-                        <li>The additional rows / columns that are added by <code class="inline-code">grid-auto-flow</code> are known as the 
-                            <em><strong>implicit grid</strong></em>. The width and height of the columns and rows of these grids fit the width / height of the content by default, but 
-                            can be specified by using the <code class="inline-code">grid-auto-rows</code> / <code class="inline-code">grid-auto-columns</code> rulesets. More on them 
-                            in a bit.
-                        </li>
-
-                        <li><code class="inline-code">grid-auto-flow</code> accepts <code class="inline-code">row</code>, <code class="inline-code">column</code>, <code class="inline-code">dense</code> 
-                            properties as values. <code class="inline-code">row</code> instructs the browser to add the new content to a new row, <code class="inline-code">column</code> to a new 
-                            column, and <code class="inline-code">dense</code> instructs the browser to fill any empty space that was there in the grid earlier if the added content is of small size.
+                        <li>The <code>20%</code> represents the value of lightness in percentage. The normal brightness of any color starts at 50%, so any
+                            value below or above that represents a lighter or dimmer version of the color. Play with this also to see what you can end-up
+                            with. 
                         </li>
                     </ul>
 
-                    <h4>Grid-Auto-Rows / Grid-Auto-Columns</h4>
+                    <h5>Opacity</h5>
+
+                    <ul>
+                        <li>Control the level of opacity in your colors by adding an "a" to the rgb() or hsl() declaration:</li>
+
+                        <figure class="code-fig">
+                            <code class="css">
+                                .container {
+                                    background-color: hsla(240, 50%, 30%, 0.3)
+                                }
+                            </code>
+                        </figure>
+
+                        <li>The background color of the container element in the code above will have an opacity level of 0.3. Going closer to 1 makes a color opaque 
+                            (less-transparent), while moving closer to 0 makes it more transparent.
+                        </li>
+                    </ul>
+
+                    <h4 class="low-titles">Font</h4>
+
+                    <ul>
+                        <li>You can style the typeface by using the following properties:  
+                            <ul>
+                                <li><code>font-family</code>: for the type of typeface you want.</li>
+                                <li><code>font-weight</code>: for a light, regular, or bold font. Keywords are: 
+                                    <code>bold</code>, <code>normal</code>, <code>lighter</code>, <code>bolder</code></li>
+                                <li><code>font-weight</code> can also use numbers to indicate the font weight desired, 1 being the lightest
+                                and 1000 the boldest. People usually use increments of 100. Look if the font you are using accepts
+                                numeric values though; Not all of them accept numerical values and not all numerical values can be 
+                                expressed to all fonts.</li>
+                                <li><code>font-size</code>: for the size. Make sure to add the "px" at the end of the font size
+                                you just entered. Eg <code>p {font-size: 18px;} </code></li>
+                                <li>With <code>font-style</code>, you can italicize an entire block of text. The default style is 
+                                    <code>normal</code>. The fancier one is <code>italic</code></li>
+                                
+                                <li id="text-decoration"><code>font-decoration</code>: allows you to underline text. Check <a href="https://developer.mozilla.org/en-US/docs/Web/CSS/text-decoration">here</a>
+                                for a list of rules you can set for this property.</li>
+                                <li><code>text-transform</code> changes text to all uppercase or lowercase. Eg. <code>p { text-transform: uppercase; }</code></li>
+                                <li><code>text-align</code>: for text alignment. It accepts <em>left</em>, 
+                                <em>center</em>, <em>right</em>, and <em>justify</em> as arguments. Eg. </li>
+
+                                <figure class="code-fig">
+                                    <code class="css">
+                                        p {text-align: justify;}
+                                    </code>
+                                </figure>
+
+                                <li><code>letter-spacing</code> puts space between letters. The value is give in pixels. Eg: </li>
+                                
+                                <figure>
+                                    <code class="css">
+                                        p {
+                                            letter-spacing: 2px;
+                                        }
+                                    </code>
+                                </figure>
+
+                                <li><code>word-spacing</code> puts spacing btn words, as it says. The value is also given in pixels. Eg:</li>
+
+                                <figure class="code-fig">
+                                    <code class="css">
+                                        p {
+                                            word-spacing: 5px;
+                                        }
+                                    </code>
+                                </figure>
+
+                                <li><code>line-height</code> controls how tall are our lines. A line of text is comprised of 1). The font size, and 2). 
+                                    the leading. <code>line-height</code> controls the height of the combination of those two, by mainly increasing the 
+                                    height of the leading space. The value can either be given in unitless values, pixels, or ems, but unitless values are 
+                                    preferred as they are responsive to the change in font size (changing the font-size will automally change the 
+                                    line height)</li>
+
+                                <figure class="code-fig">
+                                    <code class="css">
+                                        p {
+                                            line-height: 1.4;
+                                        }
+                                    </code>
+                                </figure>
+
+                                <li><code>color</code>: This changes the color of the text itself. <code>background-color</code>
+                                changes the color of the text box behind the text.</li>
+
+                                <li><code>opacity</code>: This controls the opacity of the text-box. Use this if you want to create
+                                a beautiful overlay effect</li>
+
+                                <li><code>background-image</code> is able to change the background of the text-box to be a picture.</li>
+
+                                <li>The (<code>!important</code>) is used to prioritize the styling of any property it is put upon, no 
+                                    matter how much specifically the element might have been modified by another selector. It is rarely
+                                    used, so you should also develop a habit of avoiding it. Eg </li>
+
+                                <figure class="code-fig">
+                                    <code class="css">
+                                        p {
+                                            font-family: Verdana;
+                                            color: white !important;
+                                            text-align: left;
+                                        }
+                                    </code>
+                                </figure>
+                            </ul>
+                        </li>
+                    </ul>
+
+                    <h4>Linking Fonts From The Web</h4>
+
+                    <ul>
+                        <li>There are two ways this can be done: Linking through the html document, or linking through the CSS document.</li>
+                    </ul>
+
+                    <h5>Linking in the index HTML</h5>
+                    
+                    <ul>
+                        <li><p>This can be done by using the <code>link</code> tag; you just need to place it inside the <code>head</code> tag 
+                            and then set the <code><em>href</em></code> attribute equal to the link where your fonts are</p></li>
+                        
+                        <li>There are free fonts at <a href="https://fonts.google.com/">Google Fonts</a> and <a href="https://fonts.adobe.com/fonts">
+                            Adobe Fonts</a>. Take a look.</li>
+                    </ul>
+
+                    <h5>Linking Through the CSS file</h5>
+
+                    <ul>
+                        <li>This can be achived by using the <code>@font-face {}</code> ruleset. It takes all the 
+                            normal font formatting properties, plus the <code>src: url() format()</code> that specifies where your 
+                            font is, and which font format will be used.</li>
+                        
+                        <li>There are 4 main font formats: <em>OpenType Font (OPT)</em>, <em>TrueType Font (TTF)</em>, 
+                            <em>Web Open Font Format (WOFF)</em>, and <em>Web Open Font Format 2 (WOFF2)</em>. Check <a href="https://www.pluralsight.com/blog/creative-professional/differences-between-font-formats">this site</a>
+                            for an in-depth understanding of font formats.</li>
+
+                        <li>Since the best font format for web (because it loads faster) is WOFF2, but free font providers such as 
+                            Google Fonts and Adobe Fonts will likely give you a .ttf font format, it becomes imperative for you to 
+                            download the font families you want, generate the additional formats via a <a href="https://www.fontsquirrel.com/tools/webfont-generator">free font generator</a> 
+                            like this one, and then download the font formats file, unzip it, and save the contents in the same directory as your 
+                            web files. You can then link them to your document as follows:  
+                        </li>
+
+                        <figure class="code-fig">
+                            <code class="css">
+                                @font-face {
+                                    font-family: 'Font-Name';
+                                    src: url('some_font.woff2') format('woff2'),
+                                        url('some_font.another_format') format('the_other_format');
+                                }
+
+
+                                h2 {
+                                    font-family: 'Font-Name', serif; 
+                                }
+                            </code>
+
+                            <figcaption>and so on..</figcaption>
+                        </figure>
+
+                        <li><p>The formats you specify in the <code>src: url('');</code> ruleset should be in the order of 
+                            preference.</p></li>
+                    </ul>
+
+                    <h5>Web Safe Fonts</h5>
+
+                    <ul>
+                        <li>These are fonts that are likely to be available natively in any operating system, so that 
+                            your content can be visible exactly as intended in a wide range of browsers.
+                        </li>
+
+                        <li>They are good as <em>fallback fonts</em>, and you need to add them in the font-family declaration in your CSS. 
+                            Eg: </li>
+
+                        <figure class="code-fig">
+                            <code class="css">
+                                h1 {
+                                    font-family: "some-fancy-font", Verdana;
+                                }
+                            </code>
+
+                            <figcaption>Verdana (a web safe font) as a fall-back font.</figcaption>
+                        </figure>
+
+                        <li>If, for whatever reason, the web safe font you used isn't available in the user's system, you can 
+                            instruct the browser to look for any of the two major typefaces available: Serif or Sans Serif. Eg:
+                        </li>
+
+                        <figure class="code-fig">
+                            <code class="css">
+                                p {
+                                    font-family: Garamond, Verdana, sans-serif;
+                                }
+                            </code>
+
+                            <figcaption><em>The "sans-serif".</em></figcaption>
+                        </figure>
+                    </ul>
+
+                    <h3>The Box Model</h3>
+
+                    <ul>
+                        <li>This is the way the elements are organized in an HTML. Each
+                        element is inside a box, and gets centered or expanded depending 
+                        on the size and configurations made of the box.
+                        </li>
+                            
+                        <figure>
+                            <img src="the_box.png" />
+                                
+                            <figcaption id="the_box">The box</figcaption>
+                        </figure>
+        
+                        <li>As you can see from the picture, padding is the spacing between the 
+                            actual content of the element and the borders of the box enclosing it.
+                        </li>
+        
+                        <li>The margin is the relationship between the box and the sides of the page.</li>
+
+                    </ul>
+
+
+                    <h4>The Content Properties</h4>
+
+                    <ul>
+                        <li><code>width</code> and <code>height</code> modifies the size of the content within
+                        the box in pixels.</li>
+                        <li><code>padding</code> is the amount of space in pixels btn the content and the 
+                        border</li>
+                        <li><code>border</code> modifies the width of an element's box borders in pixels</li>
+                        <li><code>margin</code> sets the margin for the box, also in pixels.</li>
+                    </ul>
+
+
+                    <h4>Border Properties</h4>
+        
+                    <ul>
+                        <li>You can modify the border by using 3 three properties: <code>width</code>, <code>style</code>
+                            and <code>color</code> like so: </li>
+        
+                        <figure class="code-fig">
+                            <code>
+                                p {
+                                    border: 2px solid blue;
+                                }
+                            </code>
+                        </figure>
+        
+                        <li>In the code above, you'll have a border that's 2px wide, with a solid line visible to the
+                            reader, and that has a blue color.
+                        </li>
+        
+                        <li>Border style refers to whether the border-line will show or not, and if it shows, whether it is
+                            a solid line, a dotted one, etc. See all the styles 
+                            <a href="https://developer.mozilla.org/en-US/docs/Web/CSS/border-style#values" target="_blank">here.</a>
+                        </li>
+        
+                        <li>To create a circular border, create a border with the same width and height and then set the following 
+                            property: <code>border-radius: </code> into 50%. Eg: 
+                        </li>
+        
+                        <figure class="code-fig">
+                            <code>
+                                .pop_quote {
+                                    width: 60px;
+                                    height: 60px;
+                                    border-radius: 50%;
+                                }
+                            </code>
+                        </figure>
+        
+                        <li>For curved edges, just set <code>border-radius</code> to some pixels</li>
+        
+                        <figure class="code-fig">
+                            <code>
+                                .pop_quote {
+                                    width: 60px;
+                                    height: 60px;
+                                    border-radius: 15px;
+                                }
+                            </code>
+                        </figure>
+        
+                        <li>Play around with this <code>border-radius</code> pixel thing to get used to it.</li>
+                    </ul>
+
+        
+                    <h4>Properties of Padding</h4>
+        
+                    <ul>
+                        <li><code>padding: somepixels;</code> will set equal space btw the content and the border 
+                        in all four sides.</li>
+                        <li>To be more specific, you can use <code>padding-top</code>, <code>padding-bottom</code>, 
+                        <code>padding-left</code>, or <code>padding-right</code>. Eg</li>
+        
+                        <figure class="code-fig">
+                            <code>
+                                .some_class {
+                                    padding: 15px;
+                                }
+                            </code>
+                        </figure>
+        
+                        <li>You can also put multiple properties in the <code>padding: </code> ruleset. Refer to the
+                        code below: </li>
+
+                        <figure class="code-fig">
+                            <code>
+                                .some_class { padding: 10px 15px 20px 13px;}
+                            </code>
+                        </figure>
+        
+                        <li>In the code above, the browser will give 10px of padding to the top, 15px to the right, 20 to 
+                            the bottom and 13px to the left.
+                        </li>
+
+                        <li>You can also shorthand it even more. If, for example, the right and left sides have equal padding,
+                            you can write your code like this:  
+                        </li>
+        
+                        <figure class="code-fig">
+                            <code>
+                                h1.some_class {
+                                    padding: 10px 15px 20px;
+                                }
+                            </code>
+                        </figure>
+        
+                        <p>In the code above, the 10px is for the top, 15px for right and left, and 20px for the bottom.</p>
+        
+                        <li>You can shorthand it even more. If the top and bottom have different padding from left and right but 
+                        each (vertical & horizontal sides) have identical units, you can write your code like so:  
+                        </li>
+        
+                        <figure class="code-fig">
+                            <code>
+                                .some_class {
+                                    padding: 10px 15px;
+                                }
+                            </code>
+                        </figure>
+        
+                        <p>That'll basically put 10px of padding vertically and 15px horizontally.</p>
+        
+                    </ul>
+
+        
+                    <h4>Properties of Margin</h4>
+        
+                    <ul>
+                        <li>Margin has the same properties as padding. Even the short-handing is also the same.</li>
+        
+                        <li>One of the things to keep in mind is that, when you have two elements on top of each other, for example, 
+                            and one of them has a margin of 20px while the other 30px, the browser will use the bigger margin to 
+                            separate the two elements. This is known as margin collapse. It doesn't happen if you set equal margins
+                        to the two elements though. In such a case, the margin will be the total of the two margins of the elements.</li>
+        
+                        <li>There is also an issue of centering. If you set your margin ruleset like this:  </li>
+        
+                        <figure class="code-fig">
+                            <code>
+                                .a_class {
+                                    width: somepixels;
+                                        margin: somepixels auto;
+                                }
+                            </code>
+                        </figure>
+
+                        <li>In the code above, the element will be centered relative to the width set of that element.</li>
+
+                        <li>The <code>auto</code> argument there does that. The width must be set, otherwise the element will be 
+                        centered relative to the element that hosts it.</li>
+                    </ul>
+
+        
+                    <h4>General Box Rules</h4>
+        
+                    <ul>    
+                        <li>You can set the <code>min-height</code>, <code>min-width</code> rulesets to control how narrow or wide
+                        an element's box can be stretched or compressed. The height and width will include the margins of an element.</li>
+        
+                        <li>Setting it this way helps regulate how much a content will be stretched or compressed under different screen
+                        sizes and still be legible. When it gets too compressed, it usually "<em>spills</em>" out of its box, necessiating
+                        the "<code>overflow</code>" property. This works to signal to the browser about what should be done
+                        to the content that overflowed from its box. It takes "<code>hidden</code>", "<code>scroll</code>", or 
+                        "<code>visible</code>" as its values. Eg.  
+                        </li>
+        
+                        <figure class="code-fig">
+                            <code>
+                                .some_class its_descendant {
+                                    overflow: scroll;
+                                }
+                            </code>
+                        </figure>
+
+                        <li>In the code above, the overflowed content can be scrolled through while not scrolling the whole page.</li>
+                        
+                        <li>Web browsers also tend to set their own rules for margins and the like, in absence of a CSS style sheet.</li>
+
+                        <li>This makes it difficult for a web designer to style his/her HTML document, as the output might be different from 
+                        what one envisioned. To solve this problem: select all elements by using the universal selector 
+                        "<code>*</code>", then set "0" for padding and margins..
+                        </li>
+        
+                        <figure class="code-fig">
+                            <code>
+                                * { padding: 0; margin: 0;}
+                            </code>
+                        </figure>
+        
+                        <li>There, all elements will start with 0 padding and margin. The zero doesn't need the "px"</li>
+
+                        <li>The "<code>visibility</code>" property hides or displays an element on the page.</li>
+                    </ul>
+        
+                    <h4>A Better Box</h4>
+
+                    <ul>
+                        <li>The box outlined above suffers from the fact that any setting on padding, margin, and border, affects
+                        the overall width and height of the box. This makes it difficult to accurately program the size of the
+                        elements in your page.
+                        </li>
+        
+                        <li>To solve this problem, use the <code>box-sizing</code> property with the universal (<code>*</code>) 
+                        selector at the beginning of your CSS and set it to (<code>border-box</code>)</li>
+
+                        <figure class="code-fig">
+                            <code>
+                                * {
+                                    box-sizing: border-box;
+                                }
+                            </code>
+                        </figure>
+
+                        <li>The reason the default box doesn't do what "<em>border-box</em>" does is because the default
+                            CSS value of all elements is "<code>content-box</code>". So, when the boxes are in content-box mode,
+                            the values of height and width you specify are applied to the contents of the box, not the box itself.</li>
+                    </ul>
+
+                    <h4>Box Positioning</h4>
+                    
+                    <ul>
+                        <li>Sometimes you don't want the item you just made in the HTML to appear on the default position it does on the page.
+                            You can use the <code class="inline-code">position</code> property to deal with this.
+                        </li>
+                        <li>The property takes: <code class="inline-code">static</code>, <code class="inline-code">relative</code>, 
+                            <code class="inline-code">absolute</code>, and <code class="inline-code">fixed</code> as arguments and then uses 
+                            sub-properties such as <code class="inline-code">top: ;</code>, <code class="inline-code">bottom: ;</code>, 
+                            <code class="inline-code">left: ;</code>, and <code class="inline-code">right: ;</code> to determine how much and from 
+                            which side the element will be offsetted.</li>
+                        <li><code class="inline-code">position: static;</code> is the default position of an element in HTML. This is usually the 
+                            upper-most left.
+                        </li>
+                        <li><code class="inline-code">position: relative;</code> is used if we want to offset an element from its default position.
+                            Use that and then follow-up with the <code class="inline-code">top: ;</code>, <code class="inline-code">right: ;</code>, 
+                            <code class="inline-code">left: ;</code>, and <code class="inline-code">right: ;</code> to set which direction and by how 
+                            much an element should be offset.
+                        </li>
+                        <li><code class="inline-code">position: absolute;</code> will pluck an element out the normal flow of a document and allow you 
+                            to offset it even above other elements. This is usually not possible under default settings of a document due to a layout character 
+                            we'll see in a shortwhile. After you've done this, you can then follow-up with the sub-properties of direction and determine how much
+                            and where you want to offset your element to.
+                        </li>
+                        <li><code class="inline-code">position: fixed;</code> allows you to stick an element on the page even if the user scrolls. This is usually 
+                            used on the top navigation bar of some webpages, and I'm sure you've seen it already.</li>
+                        <li><code class="inline-code">z-index: ;</code> is a property that allows you to set priority on what element will be shown first in the event
+                            that one element is on top of another.</li>
+                        <li>It takes integer values, with an element with a higher integer being displayed top most.</li>
+
+                        <figure>
+                            <code class="css block-code">
+                                #background-box {
+                                    position: relative;
+                                    color: blue;
+                                    z-index: 1;
+                                }
+
+                                #foreground-box {
+                                    position: absolute;
+                                    color: red;
+                                    z-index: 2;
+                                }
+                            </code>
+                        </figure>
+
+                        <li>In the code above, the foreground box will appear first and on-top of the blue background box.</li>
+
+                        <li><code class="inline-code">0</code> is the default value for <code class="inline-code">z-index: ;</code>, and this particular property has to 
+                            be set when the <code class="inline-code">position: ;</code> is any value except its default value of 
+                            <code class="inline-code">static</code>
+                        </li>
+                    </ul>
+
+                    <h4>Box Layout</h4>
 
                     <ul>
                         <li>
-                            <code class="inline-code">grid-auto-rows</code> specifies the width of new rows that were added implicitly. By default,
-                            new rows are added automatically when the <code class="inline-code">grid-auto-rows</code> / <code class="inline-code">grid-auto-columns</code>
-                            even when the <code class="inline-code">grid-auto-flow</code> hasn't been set.
+                            Any HTML element is either a <strong><em>block</em></strong> or an <strong><em>inline</em></strong> element.
                         </li>
 
-                        <li>To add the new content into columns, one has to explicitly specify by using <code class="inline-code">grid-auto-flow: column;</code> that the new content 
-                            will go into columns. After doing that, they can move on specifying the width of those columns by using the 
-                            <code class="inline-code">grid-auto-columns</code>. It is better to assign this the same width as the columns assigned explicitly using 
-                            <code class="inline-code">grid-template-columns</code>. 
+                        <li>
+                            Block elements are the ones that takes the whole width of the screen i.e., they span the whole horizontal space 
+                            of the part of the page they are located at. Inline elements share the horizontal space with other elements in the 
+                            HTML.
+                        </li>
+
+                        <li>
+                            Elements such as headings, tables, and paragraphs, are by default block elements, while elements such as 
+                            <code class="inline-code">strong</code>, <code class="inline-code">em</code> and the like are by default inline
+                            elements.
+                        </li>
+
+                        <li>
+                            The <code class="inline-code">display</code> property can be used to make a block element an inline one and vice versa.
+                        </li>
+
+                        <figure class="code-fig">
+                            <code class="css block-code">
+                                .description p {
+                                    display: inline;
+                                    padding: 2px;
+                                }
+
+                                .description img {
+                                    width: 500px;
+                                    position: relative;
+                                    left: 20px;
+                                }
+                            </code>
+                        </figure>
+
+                        <li>
+                            In the code above, the <code class="inline-code">p</code> element will share the horizontal space with the 
+                            <code class="inline-code">img</code> element, displaying them side by side in the browser.
+                        </li>
+
+                        <li><code class="inline-code">display: inline;</code> however, doesn't allow you to modify the width and height of the 
+                            element. To achieve that, you use <code class="inline-code">display: inline-block;</code>
+                        </li>
+
+                        <li>
+                            <code class="inline-code">inline-block</code> allows you to make a block element an inline, but formats the element 
+                            such that it can be modified as if it is a block element.
+                        </li>
+
+                        <li>You can then modify the height and width, not only padding, margin, and border as it is for an <em>inline</em> ruleset.</li>
+                    </ul>
+
+                    <h5>Box Float</h5>
+
+                    <ul>
+                        <li>This is a layout property used to push an HTML element's box as far left or right as possible.</li>
+                        <li>It takes only two arguments: <code class="inline-code">left</code> and <code class="inline-code">right</code>. </li>
+                        <li>The width of the element must be specified however. If it hasn't, the floated element will assume the whole 
+                            width of its containing element.
+                        </li>
+                    </ul>
+
+                    <h5><em><strong>"Clear"</strong></em></h5>
+
+                    <ul>
+                        <li>This is used to control the behaviour of floated elements (most of the time) by specify how an element should
+                            behave in a situation where it is going to bump into another element horizontally.
+                        </li>
+
+                        <li>Bumping can easly happen with the <code class="inline-code">float</code> property, but if you add the 
+                            <code class="inline-code">clear</code> property to any of the floated element and set it to either <code class="inline-code">left</code>, 
+                            or <code class="inline-code">right</code>, or <code class="inline-code">both</code>, that element won't touch any other element it finds to its left, right 
+                            or both sides.
                         </li>
                     </ul>
                 </article>
 
-            </article>
-            
-        </section>
+                <article id="advanced">
+                    <h1 class="main-headers">Advanced</h1>
 
+                    <h2 class="main-sub-headers">Pseudo-classes</h2>
+
+                    <ul>
+                        <li>These are words attached to a selector that modifies the selector only under certain conditions. 
+                            They include: 
+
+                            <ul>
+                                <li><code>:hover</code> : Lays out the modifications to a selector when a mouse is hovered upon it.</li>
+                                <li><code>:link</code> : Controls how visited links will look like.</li>
+                                <li><code>:active</code> : controls how an element behaves when it is clicked.</li>
+                            </ul>
+                        </li>
+
+                        <li>For a list of all pseudo-classes, visit <a href="https://developer.mozilla.org/en-US/docs/Web/CSS/Pseudo-classes">here</a></li>
+                    </ul>
+                </article>
+
+                <article>
+                    <h2 class="main-sub-headers">Skeumorphic Styling</h2>
+                </article>
+
+                <article>
+
+                    <h2 class="main-sub-headers">Layout</h2>
+
+
+                    <article id="breadcrumb_nav">
+                        <h3>Breadcrumb Navigation</h3>
+                    </article>
+
+                    <article id="rows_columns">
+                        <h3>Rows, Columns, and Gutters</h3>
+                    </article>
+
+
+                    <article id="the_flexbox">
+                        <h3>The Flex Box</h3>
+        
+                        <ul>
+                            <li>It is a styling system that makes it possible for HTML to resize based on the
+                            size of the screen.
+                            </li>
+        
+                            <li>It is set by setting the <code>display</code> property of an element to either
+                            "<em>flex</em>" or "<em>inline-flex</em>". This will make the element a 
+                            <strong>flex container</strong></li>
+        
+                            <li>The flex container has properties that enable items within it to resize and 
+                            re-position themselves based on how stretched the box is.
+                            </li>
+        
+                            <li><code>display: flex;</code> will make the container a block element while the
+                            <code>display: inline-flex;</code> will make it an inline-block.</li>
+        
+                            <li>Once that is done; you can go inside and start commanding how the elements within the container
+                            should behave. The first property is <code>justify-content</code>.
+                            </li>
+        
+                            <figure class="code-fig">
+                                <code>
+                                    #_some_container {
+                                        display: flex;
+                                        justify-content: center;
+                                    }
+                                </code>
+                            </figure>
+                        </ul>
+
+                        <h4>Properties of Flex Containers</h4>
+
+                        <h5>Justify-content</h5>
+
+                        <ul>
+                            <li>It is a property that is declared on the container in order to align the items within the container horizontally. 
+                                It can take any of the following values: 
+                                <ul>
+                                    <li><code>flex-start</code>: Which will align everything in the flex container to the left.</li>
+                                    <li><code>flex-end</code>: Which will align all items in the flex container to the right.</li>
+                                    <li><code>center</code>: As is self-explanatory, will center the content of a flex container</li>
+                                    <li><code>space-around</code>: This will put equal space on the sides (left-right) of each element, with
+                                    regard to margins also.</li>
+                                    <li><code>space-between</code>: This will put equal space between items themselves, but no space at the 
+                                    right side of the left-most item and the left-side of the right-most item (the last item)</li>
+                                </ul>
+                            </li>
+        
+                            <li>With <code>justify-content</code>, you're basically instructing the browser to stuck together the items within 
+                                the flex container in an inline fashion in the event the screen is squeezed in. Read further down to learn how 
+                                you can stretch the items vertically or horizontally.</li>                       
+                        </ul>
+
+
+                        <h5>"align-items"</h5>
+
+                        <ul>
+                            <li><code>align-items</code>: is another property applied to the container, and it aligns the items vertically and takes 
+                                the following rulesets: 
+        
+                                <ul>
+                                    <li><code>flex-start</code>: which aligns the items on the top of the container.</li>
+                                    <li><code>flex-end</code>: which aligns the items on the bottom.</li>
+                                    <li><code>center</code>: centers, as it says.</li>
+                                    <li><code>baseline</code>: which aligns the bottoms of each element</li>
+                                    <li><code>stretch</code>: which stretches the items the whole height of the container (will not go
+                                        beyond the <code>max-height</code> instructions though.).</li>
+                                </ul>
+                            </li>
+
+                        </ul>
+                        
+                        <h5>"flex-wrap"</h5>
+
+                        <ul>
+                            <li>Another property of containers, this one instructs the item that doesn't fit into the current
+                                container size to move down a line, still inside the container.
+                            </li>
+
+                            <li>It is declared as follows:  
+                                <figure>
+                                    <code>
+
+                                        <!-- The HTML-->
+                                        <div class="container">
+                                            <div class="items">
+                                                <img src="" >
+                                                <p>Item 1</p>
+                                            </div>
+
+                                            <div class="items">
+                                                <img src="">
+                                                <p>Item 2</p>
+                                            </div>
+                                        </div>
+
+
+                                        /* The CSS */
+
+                                        .container {
+                                            display: flex;
+                                            width: 200px;
+                                            flex-wrap: wrap;
+                                        }
+
+                                        .items {
+                                            width: 150px;
+                                        }
+                                    </code>
+                                </figure>
+                            </li>
+
+                            <p>From the code above, the second item won't fit in the container. The result is it being
+                                put in a new line, under the first item.
+                            </p>
+
+                            <li><code>flex-wrap</code> takes in: <code>wrap</code>, <code>wrap-reverse</code>, and <code>nowrap</code> 
+                            as rules.</li>
+
+                            <li><code>wrap-reverse</code> does exactly what <code>wrap</code> does, it just puts the overflowing item on top 
+                            instead of the bottom. <code>nowrap</code> specifies that no wrapping should be done on the element.</li>
+                        </ul>
+
+                        <h5>"align-content"</h5>
+
+                        <ul>
+                            <li>This is used to position the rows of flex-items within the flex-container.</li>
+
+                            <li>The rows are usually the result of <code>flex-wrap</code>. </li>
+
+                            <li><code>align-content: flex-start;</code>: Positions all rows of elements in the flex container at the top of
+                                the flex container with no extra space between them.</li>
+
+                            <li><code>flex-end</code>: Does the opposite.</li>
+
+                            <li><code>align-content: center;</code>: Puts the rows at the center of the flex-container, with no extra space between them.</li>
+
+                            <li><code>align-content: space-between;</code> Spaces the rows evenly across the parent element without any space above the first 
+                                row or below the last one.</li>
+
+                            <li><code>align-content: space-around;</code>: Spaces the rows evenly within the parent container, with equal spaces even above the first row 
+                                and below the last one.</li>
+                        </ul>
+        
+                        <h5>"flex-direction"</h5>
+
+                        <ul>
+                            <li>The <code>flex</code>  property operates in two major axes: The horizontal and The vertical</li>
+
+                            <li>The horizontal axis: <code>flex-direction: row; </code> is a default value of the <code>flex</code> property.</li>
+                            
+                            <li><code>flex-direction: row;</code> Tells the browser to put the items inside the flex-container into a horizontal axis
+                                i.e. the row, and then accepts modifications such as <code>justify-content</code> and others we saw above, as well as the 
+                                ones applicable to the flex-items (<a href="#for_flex_items">Read below</a>)
+
+                            <li>In <code>flex-direction: column;</code>, you basically instruct the browser to put the items of a flex container 
+                            into a vertical alignment i.e. a column, instead of a row. From there on, you can use the same rulesets you use on 
+                            <code>flex-direction: row;</code>, just that everything will behave as if you rotated your screen 90 degrees.</li>
+
+                            <li>Values accepted for <code>flex-direction</code> are:  
+                                <ul>
+                                    <li><code>row</code>: Which will just put the elements in the container is a single row, from left to right, starting
+                                    from the top-left.</li>
+                                    <li><code>row-reverse</code>: Where the items will be positioned from right to left, from the top-right corner.</li>
+
+                                    <li><code>column</code>: Which will behave exactly like <code>row</code>, but put the items in a vertical column. Even
+                                    the positioning starts from the top-left corner of the parent element.</li>
+
+                                    <li><code>column-reverse</code>: Which will do what <code>row-reverse</code> does, just with the item vertically oriented.</li>
+                                </ul> 
+                            </li>
+                        </ul>
+
+                        <h5>"flex-flow"</h5>
+
+                        <ul>
+                            <li>This is the short-hand for <code>flex-wrap</code> and <flex>flex-direction</flex> that enables you to 
+                            declare the two values in a single ruleset. It is like so..</li>
+
+                            <figure class="code-fig">
+                                <code>
+                                    .some_div {
+                                        display: flex;
+                                        flex-flow: column wrap;
+                                    }
+                                </code>
+                            </figure>
+
+                            <li>As visible above, start with the <code>flow-direction</code> and then <code>flow-wrap</code>. All values of 
+                            the two are accepted.</li>
+                        </ul>
+
+                        <article id="for_flex_items">
+                            <h4>Properties For Flex Items.</h4>
+
+                            <h5>"flex-grow"</h5>
+
+                            <ul>
+                                <li>The <code>flex-grow</code> property controls how fast each flex-item to expands (only horizontally) to fill the 
+                                    unused space in the container, once the container is stretched beyond its specified width.
+                                </li>
+
+                                <li>The item won't grow vertically, unless you specify the flex-direction of the container to be <code>column</code>. This is because
+                                    the container itself only stretches horizontally, unless instructed otherwise.</li>
+                                
+                                <li><code>flex-grow</code> is set in numbers, and when you set <code>display: flex;</code> it is automatically
+                                set to <code>0</code>.</li>
+                    
+                                <li>If, for example the container had 2 items, and one was assigned the value of 1 and the other 2, the second will expand twice
+                                as much as the first one. And not to forget, <code>flex-grow</code> is set on a flex item, not container.
+                                </li>
+        
+                                <figure class="code-fig">
+
+                                    <code class="html">
+                                        <!-- HTML -->
+                                        <div id="img_container">
+                                            <div class="side_element">
+                                                <img src="some_link" />
+                                            </div>
+        
+                                            <div id="center_element">
+                                                <img src="some_link" />
+                                            </div>
+        
+                                            <div class="side_element">
+                                                <img src="some_link" />
+                                            </div>
+                                        </div>
+                                    </code>
+        
+                                    <code>
+                                        /* CSS */
+                                        #img_container {
+                                            width: 300px;
+                                            height: 50px;
+                                            display: flex;
+                                            justify-content: center;
+                                        }
+        
+                                        .side_element {
+                                            flex-grow: 1;
+                                        }
+        
+                                        #center_element {
+                                            flex-grow: 2;
+                                        }
+                                    </code>
+
+                                </figure>
+        
+                                <p>In the code above, the center element will expand to take twice the empty space that each
+                                    of the side elements will take.
+                                </p>
+                        
+                            </ul>
+
+                        
+
+                            <h5>"flex-shrink"</h5>
+
+                            <ul>
+                                <li><code>flex-shrink: </code> is exactly like <code>flex-grow</code> but in the opposite way. It is 
+                                    used to control how fast a flex item shrinks when the screen is being squeezed.</li>
+                            </ul>
+
+
+                            <h5>"flex-basis"</h5>
+
+                            <ul>
+                                <li><code>flex-basis</code> sets the base width of a flex-item before growing or shrinking. It takes a number
+                                    in pixels. Forexample.
+                                </li>
+
+                                <figure class="code-fig">
+                                    <code>
+                                        .some_item {
+                                            flex-basis: 300px;
+                                            flex-grow: 1;
+                                            flex-shrink: 2;
+                                        }
+                                    </code>
+                                </figure>
+
+                                <li>In the code above, the item will start with a base width of 300px</li>
+
+                            </ul>
+
+                            <h5>"flex"</h5>
+
+                            <ul>
+                                
+                                <li><code>flex</code> is a shorthand for <code>flex-grow</code>, <code>flex-shrink</code>, and 
+                                    <code>flex-basis</code>.</li>
+
+                                <li>It accepts the values in the above order. Take a look at the following example: </li>
+
+                                <figure class="code-fig">
+                                    <code class="css">
+                                        .flex_item {
+                                            flex: 2 1 300px;
+                                        }
+                                    </code>
+                                </figure>
+
+                                <li>In the code above, the item will grow twice as fast, shrink at a normal speed, and start with the
+                                    base width of 300px</li>
+
+                            </ul>
+
+                        </article>
+
+                    </article>
+
+                    <article class="css-grid">
+                        <h2 class="main-sub-headers">CSS Grid</h2>
+
+                        <article>
+                            <ul>
+                                <li>It is a styling property that enables you to create a container element with two dimensions: Rows and Columns.</li>
+
+                                <li>
+                                    The difference between this and the flex box is that the flex box is a one-dimensional element which can have 
+                                    either a row or a column. CSS Grid allows you to have both.
+                                </li>
+                                <li>
+                                    The grid is defined by setting the <code class="inline-code">display</code> property to 
+                                    <code class="inline-code">grid</code>. By default, it will start with one column and several rows depending on the 
+                                    number of items in the container. 
+                                </li>
+                                <li>
+                                    To set the number of columns you want; use the <code class="inline-code">grid-template-columns: ;</code> property of 
+                                    CSS Grid. It takes any number of arguments as the size of each column.
+                                </li>
+
+                                <p>For Example</p>
+
+                                <figure class="code-fig">
+                                    <code class="block-code">
+                                        .some-class {
+                                            display: grid;
+                                            grid-template-columns: 100px 20% 30%;
+                                        }
+                                    </code>
+                                </figure>
+
+                                <li>
+                                    In the code above, 3 columns will be made; the first one with a width of 100px, a second with a width that is 20%
+                                    of the total width of the grid, and the third which is 30%.
+                                </li>
+
+                                <li>To create new empty rows; use the <code class="inline-code">grid-template-rows</code></li>
+
+                                <li>There's a shorthand for these two commands: the <code class="inline-code">grid-template</code> property.</li>
+
+                                <li><code class="inline-code">grid-template</code> takes first the values that represent rows, the there is a forward slash after 
+                                    that, and then values representing columns. Check the code below:</li>
+
+                                <figure class="code-fig css">
+                                    <code class="css block-code">
+                                        .a-random-grid {
+                                            display: grid;
+                                            width: some-pixls;
+                                            height: some-pixls;
+                                            grid-template: 10% 20% 10% 60% / 20% 30% 20% 20% 10%;
+                                        }
+                                    </code>
+                                </figure>
+
+                                <li>As usual, the percentage on the row side represent the percentage of the grid's height, while on the column side 
+                                    the percentage of the grid's width.
+                                </li>
+
+                                <li>
+                                    It is possible for one to set the height or width of rows / columns such that they are more than the height / width of the grid container.
+                                    When that happens, there's a way to control the overflow that we'll learn in a bit.
+                                </li>
+
+                                <li>There's also another way to short-hand the <code class="inline-code">grid-template-columns</code> and 
+                                    the <code class="inline-code">grid-template-rows</code> properties by using the <code class="inline-code">repeat()</code> 
+                                    function that takes two arguments: the number of rows / columns and their size. In the code below: </li>
+
+                                <figure class="code-fig">
+                                    <code class="css block-code">
+                                        .grid {
+                                            display: grid;
+                                            grid-template-columns: repeat(2, 100px);
+                                        }
+                                    </code>
+                                </figure>
+
+                                <p>Two columns with the width of 100px each will be created.</p>
+
+                                <li>There's also a way to use the <code class="inline-code">repeat()</code> function for 
+                                    rows and columns with different sizes. Refer the code below:
+                                </li>
+
+                                <figure class="code-fig">
+                                    <code class="css block-code">
+
+                                        .grid {
+                                            display: grid;
+                                            grid-template-columns: repeat(2, 20px 50px);
+                                        }
+                                    </code>
+                                </figure>
+
+                                <li>The code above will create four columns, with the first and third having 20px while the second and fourth 
+                                    50.
+                                </li>
+
+                                <li><code class="inline-code">repeat()</code> is especially useful to use with the <code class="inline-code">fr</code> 
+                                    scaling. The <code class="inline-code">fr</code> gives size to columns or rows by dividing the available space in the 
+                                    grid into fractions (depending on how many columns or rows and how many fractions specified) and then giving the specified 
+                                    row / column the specified number of fractions. For example: 
+                                </li>
+
+                                <figure class="code-fig">
+                                    <code class="css block-code">
+                                        .a-grid {
+                                            display: grid;
+                                            width: 1000px;
+                                            height: 800px;
+                                            grid-template-rows: repeat(5, 1fr);
+                                            grid-template-columns: repeat(1, 2fr 3fr 2fr); 
+                                        }
+                                    </code>
+                                </figure>
+
+                                <li>In the code above, the width of the grid will be divided into 7 fractions, of which 2 will be taken by 
+                                    the first, 3 the second, and the remaining 2 the third column.
+                                </li>
+                            </ul>
+
+                            <h3>Making the Grid Responsive</h3>
+
+                            <ul>
+                                <li>You can do this by setting the <code class="inline-code">minmax()</code> function on one or multiple columns of your choice.</li>
+
+                                <li><code class="inline-code">minmax()</code> function takes values of the minimum width a column can reach, and also the maximum, 
+                                    allowing the column to stretch according to the size of the browser within those limits.
+                                </li>
+
+                                <li>The <code class="inline-code">minmax()</code> function doesn't work when the <code class="inline-code">width</code> ruleset is set though, 
+                                    so remove that ruleset if you're going to go forward with the <code class="inline-code">minmax()</code> function.</li>
+                            </ul>
+                        </article>
+
+                        <h3>Beautifying The Grid A Little Bit</h3>
+
+                        <h4>Adding gaps between Items.</h4>
+
+                        <ul>
+                            <li>This is achieved by using the <code class="inline-code">gap: ;</code> ruleset on the grid container.</li>
+
+                            <li>You can set gaps for rows specifically (using <code class="inline-code">row-gap: ;</code> ruleset); for 
+                                columns (using the <code class="inline-code">column-gap: ;</code> ruleset); or both by using the 
+                                <code class="inline-code">gap: row-gap-width-goes-here column-gap-width-goes-here;</code>
+                            </li>
+                        </ul>
+
+                        <h4>Centering The Content within the Grid</h4>
+
+                        <h5>On the horizontal Axis</h5>
+
+                        <ul>
+                            <li>Done with the combination of <code class="inline-code">justify-content: ;</code> and <code class="inline-code">justify-items: ;</code> rulesets</li>
+                            <li><code class="inline-code">justify-items</code> align items within the columns, that is, whether the item is on the left of the column, right,
+                                centered etc. It takes values of <code class="inline-code">start</code> for a left alignment, <code class="inline-code">end</code> for a right alignment, 
+                                <code class="inline-code">center</code> for a centered alignment, and <code class="inline-code">stretch</code> for the item to stretch the whole width of the 
+                                column.
+                            </li>
+
+                            <li><code class="inline-code">justify-content</code> aligns the whole of the grid horizontally within the grid container itself.</li>
+
+                            <li>Assume a grid container had the width of 1300px and 2 columns, each one 500px. The <code class="inline-code">justify-content: ;</code> ruleset will instruct
+                                the browser to either align to the left, right or center, the 2 columns of the grid, such that the remaining 300px are used as the designer intended.</li>
+
+                            <li><code class="inline-code">justify-content: ;</code> accepts <code class="inline-code">start</code>, <code class="inline-code">end</code>, 
+                                <code class="inline-code">center</code>, <code class="inline-code">stretch</code>, <code class="inline-code">space-around</code>, <code class="inline-code">space-between</code>, and
+                                <code class="inline-code">space-evenly</code> as arguments.</li>
+                        </ul>
+
+                        <h5>On the vertical axis</h5>
+
+                        <ul>
+                            <li>A combination of <code class="inline-code">align-items</code> and <code class="inline-code">align-content</code> is used.</li>
+
+                            <li>The usage is the same as <code class="inline-code">justify-items</code> / <code class="inline-code">justify-content</code>, and even the arguments are 
+                                the same. So use them as you would use those, except everything is done row-wise rather than column wise.</li>
+                        </ul>
+
+                        <h5>Justify-self / align-self</h5>
+
+                        <ul>
+                            <li>These are values declared on grid items, rather than the container, to instruct a particular item to deviate away from the styling declared on the container 
+                                using <code class="inline-code">justify-items</code> / <code class="inline-code">align-items</code>
+                            </li>
+
+                            <li>They accept the same values as <code class="inline-code">justify-items</code>  and <code class="inline-code">align-items</code>, just that their customization 
+                                applies to just one grid item on which they're declared.</li>
+                        </ul>
+
+
+                        <h4>Grid-auto-flow</h4>
+
+                        <ul>
+                            <li>This is a property set on a grid container when the developer doesn't know exactly how many rows / columns the grid will 
+                                have.
+                            </li>
+
+                            <li>Take an example of a grid that comes as a result of a search inquiry on a site. Sometimes, these grids have an option of how 
+                                many search results one wants displayed at a time, making it impossible for the developer to guess how many items will be in that 
+                                grid in a particular point in time. To deal with this, the <code class="inline-code">grid-auto-flow</code> ruleset is used to specify 
+                                whether the additional content that is more that what is specified in the original grid is placed on new columns or rows automatically.
+                            </li>
+
+                            <li>By the way, the grid we have seen so far is called the <em><strong>explicit grid</strong></em>, because it has been explicity designed and structured 
+                                in terms of the number of rows / columns and their sizes.
+                            </li>
+
+                            <li>The additional rows / columns that are added by <code class="inline-code">grid-auto-flow</code> are known as the 
+                                <em><strong>implicit grid</strong></em>. The width and height of the columns and rows of these grids fit the width / height of the content by default, but 
+                                can be specified by using the <code class="inline-code">grid-auto-rows</code> / <code class="inline-code">grid-auto-columns</code> rulesets. More on them 
+                                in a bit.
+                            </li>
+
+                            <li><code class="inline-code">grid-auto-flow</code> accepts <code class="inline-code">row</code>, <code class="inline-code">column</code>, <code class="inline-code">dense</code> 
+                                properties as values. <code class="inline-code">row</code> instructs the browser to add the new content to a new row, <code class="inline-code">column</code> to a new 
+                                column, and <code class="inline-code">dense</code> instructs the browser to fill any empty space that was there in the grid earlier if the added content is of small size.
+                            </li>
+                        </ul>
+
+                        <h4>Grid-Auto-Rows / Grid-Auto-Columns</h4>
+
+                        <ul>
+                            <li>
+                                <code class="inline-code">grid-auto-rows</code> specifies the width of new rows that were added implicitly. By default,
+                                new rows are added automatically when the <code class="inline-code">grid-auto-rows</code> / <code class="inline-code">grid-auto-columns</code>
+                                even when the <code class="inline-code">grid-auto-flow</code> hasn't been set.
+                            </li>
+
+                            <li>To add the new content into columns, one has to explicitly specify by using <code class="inline-code">grid-auto-flow: column;</code> that the new content 
+                                will go into columns. After doing that, they can move on specifying the width of those columns by using the 
+                                <code class="inline-code">grid-auto-columns</code>. It is better to assign this the same width as the columns assigned explicitly using 
+                                <code class="inline-code">grid-template-columns</code>. 
+                            </li>
+                        </ul>
+                    </article>
+
+                </article>
+                
+            </section>
+        </main>
+
+        <style src="resources/js/index.js"></style>
     </body>
 </html>
