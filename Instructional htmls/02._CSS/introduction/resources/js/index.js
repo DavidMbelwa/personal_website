@@ -5,7 +5,7 @@ menuToggle.onclick = function() {
 };
 
 
-// var body = document.getElementsByTagName("body");
+// var body = document.body;
 
 // var mainHeading = document.getElementById("main-heading");
 
