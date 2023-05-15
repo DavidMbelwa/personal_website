@@ -45,6 +45,8 @@
 
     .top_nav {
         display: flex;
+        position: sticky;
+        /* top: 70px; */
         align-items: center;
         justify-content: space-between;
         width: 100%;
@@ -233,15 +235,6 @@
 
     /* The Welcome Section */
 
-    /* #welcome */
-    /* {
-        height: 100%;
-        margin-top: 20px;
-        position: relative;
-        border: 1px solid red;
-        padding: 20px 0;
-    } */
-
     #welcome-img
     {
         /* border: 1px solid black; */
@@ -297,7 +290,6 @@
         font-weight: 350;
         font-size: 17px;
         text-align: center;
-        padding: 30px 40px;
         margin-top: 0;
         margin-bottom: 0;
         /* border: 1px solid red; */
@@ -306,11 +298,6 @@
 
     /* Daily Life */
 
-    #daily-life
-    {
-        /* border: 1px solid blue; */
-    }
-
     #coding
     {
         margin-top: 0;
@@ -318,11 +305,33 @@
         background-color: hsl(0, 0%, 95%);
     }
 
-    #coding h2
+    #coding button
     {
         margin-top: 50px;
     }
 
+
+    footer section
+    {
+        background-color: hsl(0, 0%, 95%);
+        align-items: center;
+    }
+
+    footer .contacts
+    {
+        margin-top: 30px;
+    }
+
+    .contacts p
+    {
+        padding: 10px 0;
+    }
+
+    .ending
+    {
+        margin-top: 120px;
+        font-style: italic;
+    }
 
 }
 
