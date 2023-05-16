@@ -5,12 +5,12 @@ menuToggle.onclick = function() {
 };
 
 
-// var body = document.body;
+var body = document.body;
 
-// var mainHeading = document.getElementById("main-heading");
+var mainHeading = document.getElementById("main-heading");
 
-// var secHeading = document.querySelector(".secHeading");
+var secHeading = document.querySelector(".secHeading");
 
-// body.onload = function() {
-//     mainHeading.innerHTML = secHeading
-// };
+body.onload = function() {
+    mainHeading.innerHTML = secHeading.innerHTML;
+};
