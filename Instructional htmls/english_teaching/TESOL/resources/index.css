@@ -44,6 +44,17 @@
     }
 }
 
+
+/* Tablets */
+@media only screen and (max-width: 720px)
+{
+    body
+    {
+        height: 100vh;
+        background-color: hsl(180, 67%, 99%);
+    }
+}
+
 @media only screen and (min-width: 720px)
 {
     body
@@ -132,22 +143,39 @@
     article h2, article h3
     {
         font-family: "Source Sans 3";
-        margin-top: 20px;
+        margin-top: 30px;
     }
 
     article ul, article p
     {
         font-family: "Source Sans 3";
         font-size: 300;
+        /* line-height: 2em; */
     }
 
     article li
     {
         margin-left: 20px;
+        padding: 10px 0;
+
     }
 
     article p
     {
         margin: 15px 0;
+    }
+
+    /* article div
+    {
+        background-color: blue;
+        padding-left: 10px;
+    } */
+
+    article blockquote
+    {
+        margin-left: 20px;
+        background-color: hsl(180, 8%, 90%);
+        padding: 20px;
+        font-style: italic;
     }
 }
