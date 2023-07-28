@@ -1,0 +1,1 @@
+head = getElementById("main-Head")
