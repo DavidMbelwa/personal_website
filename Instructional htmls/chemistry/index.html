@@ -2,7 +2,7 @@
 
 <html>
 <head>
-    <title>Chem</title>
+    <title>Biochem</title>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width initial-scale=1.0">
     <link rel="stylesheet" type="text/css" href="resources/index.css" />
@@ -43,262 +43,38 @@
     </nav>
     
     <header class="col-12">
-        <h1 id="main-Head">The Foundation of Life: The Cell</h1>
+        <h1 id="main-Head">Introduction to Biochem</h1>
     </header>
 
     <nav class="side-nav col-3">
         <ul>
-            <li class="units"></li>
-            <li class="terms"></li>
+            <a href="presequites.html"><li>Presequites</li></a>
+            <a href="the_atom.html"><li>Intro to the Atom</li></a>
             <li></li>
             <li></li>
             <li></li>
         </ul>
     </nav>
     
-    <section class="main-Body col-9">
-        <article id="units">
-            <h2>Units of Measurements</h2>
+    <main>
+        <section class="main-Body col-9">
+            <article id="intro">
+                <h2>Introduction</h2>
 
-            <p>Chem is a science based on measurements. Because of that, below are core measurements you should know:</p>
-            <table>
-                <tr>
-                    <th>Type of Measurement</th>
-                    <th>Base Unit</th>
-                    <th></th>
-                </tr>
+                <p>I'm preparing these notes as a personal interest on molecular biology continues to develop since few days 
+                    ago (approximately 24th of July, 2023) when I first decided to look up what are functional proteins. Since then
+                    I've developed interest relating to this field and this interest up to now (29<sup>th</sup> July, 2023) has led me 
+                    to revisit introduction to Biology and Chemistry. <br><br>
 
-                <tr>
-                    <td>Length</td>
-                    <td>Meter</td>
-                    <td>m</td>
-                </tr>
-                <tr>
-                    <td>Mass</td>
-                    <td>Kilogram</td>
-                    <td>kg</td>
-                </tr>
-                <tr>
-                    <td>Time</td>
-                    <td>Second</td>
-                    <td>s</td>
-                </tr>
-                <tr>
-                    <td>Temperature</td>
-                    <td>Kelvin</td>
-                    <td>k</td>
-                </tr>
-                <tr>
-                    <td>Amount of Substance</td>
-                    <td>Mole</td>
-                    <td>mol</td>
-                </tr>
-                <tr>
-                    <td>Electric Current</td>
-                    <td>Amphere</td>
-                    <td>A</td>
-                </tr>
-                <tr>
-                    <td>Luminous Intensity</td>
-                    <td>Candela</td>
-                    <td>cd</td>
-                </tr>
-            </table>
+                    These notes are an attempt to organize my understanding of these topics, and build a stable foundation on them. When I
+                    started this journey of exploration, I kept bumping into concepts that I didn't understand, and this has compelled me to 
+                    start from the beginning. The arrangement is from General Chemistry to Organic Chemistry and then to molecular biology.
+                    <br><br>
 
-            <ul>
-                <li>In Chemistry, or the other natural sciences, these measurements are usually scaled positively 
-                    or negatively to describe the micro and the macro world.
-                </li>
-
-                <li>To explain something as thin as a strand of hair for example, lenght / width has to be measured at 1 millionths of a meter,
-                    causing this measurement to be named a macrometer for example, a different name from the base name. Below are some of the suffixes used 
-                    to indicate scale in measurement:
-                </li>
-            </ul>
-
-            <table>
-                <thead>
-                    <tr>
-                        <th colspan="3">Prefixes for Larger Units</th>
-                    </tr>
-
-                    <tr>
-                        <th>Prefix</th>
-                        <th>Abbrv</th>
-                        <th>Definition</th>
-                    </tr>
-                </thead>
-
-                <tbody>
-                    <tr>
-                        <td>giga</td>
-                        <td>G</td>
-                        <td>1,000,000,000 (or 10<sup>9</sup>)</td>
-                    </tr>
-
-                    <tr>
-                        <td>mega</td>
-                        <td>M</td>
-                        <td>1,000,000 (or 10<sup>6</sup></td>
-                    </tr>
-
-                    <tr>
-                        <td>kilo</td>
-                        <td>k</td>
-                        <td>1000 or 10<sup>3</sup></td>
-                    </tr>
-                </tbody>
-            </table>
-
-            <table>
-                <thead>
-                    <tr>
-                        <th colspan="3">Prefixes for Units Smaller than the Base Unit</th>
-                    </tr>
-                    <tr>
-                        <th>Prefix</th>
-                        <th>Abbrev</th>
-                        <th>Definition</th>
-                    </tr>
-                </thead>
-
-                <tbody>
-                    <tr>
-                        <td>centi</td>
-                        <td>c</td>
-                        <td>0.01 or 10<sup>-2</sup></td>
-                    </tr>
-                    <tr>
-                        <td>milli</td>
-                        <td>m</td>
-                        <td>0.001 or 10<sup>-3</sup></td>
-                    </tr>
-                    <tr>
-                        <td>micro</td>
-                        <td>&#181</td>
-                        <td>0.000001 or 10<sup>-6</sup></td>
-                    </tr>
-                    <tr>
-                        <td>nano</td>
-                        <td>n</td>
-                        <td>0.000000001 or 10<sup>-9</sup></td>
-                    </tr>
-                    <tr>
-                        <td>pico</td>
-                        <td>p</td>
-                        <td>0.000000000001 or 10<sup>-12</sup></td>
-                    </tr>
-                </tbody>
-            </table>
-
-            <ul>
-                <li>You'll perhaps need to know the equivalents of these measurements as they are used by English speakers.</li>
-
-                <li>A teaspoon, for example, is equal to approximately 5 mililiters (4.93 cm<sup>3</sup>). There are 
-                    almost 6 teaspoons in an ounce (29.57 mililiters(cm<sup>3</sup>)). A galon is 3.785 liters (4 quarts: 1 liter is 
-                    a little bit more than a quart (1qt = 0.9464L)) and so on.</li>
-
-                <li>Similarly for lengths; 1 mile = 1.6km, a millimeter the width of a paper clip's wire, etc.</li>
-            </ul>
-        </article>
-
-        <article class="the_followings col-12" id="terms">
-            <h2>Important Terms</h2>
-
-            <h3>Matter</h3>
-
-            <p>Matter is everything that has mass and occupies space.</p>
-            
-
-            <h3>Mass</h3>
-
-            <ul>
-                <li>Refers to the quantity of matter in an object. It is measured by gram as the base unit.</li>
-
-                <li>Although people use weight to refer to mass, and even use mass's unit of measurement, weight is not mass. 
-                    Weight is rather the force that results when mass reacts to the gravitational force. Weight is measured by
-                    units of Newton.
-                </li>
-
-                <li>Going further from the earth, for example, reduces the weight of an object, 
-                    but its mass stays the same.
-                </li>
-            </ul>
-
-
-            <h3>Temperature</h3>
-            <ul>
-                <li>Refers to how fast particles in an object can move.</li>
-
-                <li>Absolute temperature is measured by <i>Kelvin</i>.</li>
-
-                <li>Celcius (<sup>o</sup>C) and Fahrenheit (<sup>o</sup>F) can do the job, but their scales are not absolute, meaning 
-                    at 0 celcius or fahrenheit, particles inside an object can still move while at 0 kelvin they cant. That way Kelvin wins. 
-                </li>
-
-                <li>So, 1 kelvin = 273.15 + <sup>o</sup>C, or ((<sup>o</sup>F - 32) / .8) + 273</li>
-            </ul>
-
-            
-            <h3>Precision vs Accuracy</h3>
-
-            <ul>
-                <li>Precision refers to how close two measurements are to each other, while accuracy refers to
-                    how close a measurement is to the true value of the measured object's measurement.
-                </li>
-
-                <li>Take an example of a 1.3 meter table for example. If you gave two different students a measuring tape and they measured 
-                    it as 1m and 1.5m respectively, precision is the &#177 5 difference between the measurements, while the inaccuracy is &#177 0.2.
-                    between their measurements and the true value of the table.
-                </li>
-
-                <li>There is a trick that scientists use to convey the degree of accuracy in their measurements, and that is by using the last digit
-                    as the margin of error by 1 degree.
-                </li>
-
-                <li>For example, if a chemist reports a volume of water to be 8.74 mililiters from a certain test tube, they mean that the volume is anywhere
-                    between 8.73 or 8.75 (8.74 &#177 1).
-                </li>
-
-                <li>Similarly for base ten measurements, a 2.84 x 10<sup>4</sup> measurement for example, means (2.84 &#177 1) x 10<sup>4</sup></li>
-
-                <li>Consider another example: You have five students who have measured a certain bench, and their measurements came down to 61.94cm, 62.01cm
-                    , 62.12cm, 61.98cm, and 62.10cm. The average of these measurements is 62.03cm, but under close inspection, the imprecision btn them is on both
-                    the first and last decimal digit. How will you report the average value? By making the first decimal place that is unprecise the degree of error; 
-                    that is, your measurement will be <b>62.0</b>cm. This way, anybody can vary the decimal point and arrive somewhere near where the orignial measurements
-                    fell.
-                </li>
-
-                <li>Now a pop quiz: You've four people who have been tasked with the task of measuring the mass of a dime. The values they reported are: 
-                    2.302 g, 2.294 g, 2.312 g, and 2.296g. The average of these values is 2.301 g. How will you report the average?
-                </li>
-            </ul>
-
-            <h3>Miniscus</h3>
-
-            <ul>
-                <li>This refers to the inside curved surface of water in a test tube.</li>
-
-                <li>Water tends to climb  up the sides of glass a bit, causing the length of its volume at the sides and the middle 
-                    to be a little bit different. Chemists use the volume of the water at the middle rather than at the sides, for accuracy purposes,
-                    and this middle ground has been named miniscus. You'll need to remember this.
-                </li>
-            </ul>
-
-
-            <h3>The Scientific Process</h3>
-
-            <ol>
-                <li>Starts with an observation that leads to a scientific question.</li>
-                <li>Then initial collection of data on the observed phenomenon takes place (SOMETIMES SKIPPED).</li>
-                <li>Then hypothesis formulation proceeds.</li>
-                <li>Then a more systematic experimentation and collection of data commences.</li>
-                <li>Then results are obtained and published so that other scientists can replicate the process and see if they arrive at the same results.</li>
-                <li>If indeed they do, the hypothesis is accepted by the scientific community and used as a basis for the following scientific applications.</li>
-            </ol>
-
-            <p>You might need to know these.</p>
-        </article>     
-    </section>
+                    Enjoy!
+                </p>
+            </article>     
+        </section>
+    </main>
 </body>
 </html>
