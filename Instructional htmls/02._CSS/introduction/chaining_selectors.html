@@ -2,7 +2,7 @@
 
 <html>
     <head>
-        <title>CSS</title>
+        <title>Chaining Selectors</title>
         <meta name="viewport" content="width=device-width initial-scale=1.0">
         <meta name="keywords" content="Mukajanga, David Mukajanga">
 
@@ -20,7 +20,7 @@
 
     <body>
         <header class="top_nav col-12">
-            <a href="../../../index.html"><i class="fa-solid fa-house"></i></a>
+            <a href="index.html"><i class="fa-solid fa-house"></i></a>
             
             <a href="index.html"><h3>Home</h3></a>
             
@@ -41,14 +41,15 @@
         </header>
 
         <section class="main-header col-12">
-            <h1>CSS</h1>
+            <h1>Chaining Selectors</h1>
         </section>
 
         <nav class="breadcrumb col-12">
             <ul>
                 <a href="../../../index.html"><li>Home</li></a>
                 <a href="../../index.html"><li>Notes</li></a>
-                <a href="#"><li>CSS</li></a>
+                <a href="index.html"><li>CSS</li></a>
+                <a href="#"><li>Chaining Selectors</li></a>
             </ul>
         </nav>
 
@@ -96,22 +97,61 @@
             </nav>
         </nav>
 
-
         <main class="main col-9">
-            <h2>Welcome.</h2>
+            <article>
+                <h2 class="secSubHeading">Chaining Selectors</h2>
 
-            <p>These are the notes I took when I was learning CSS at Codecademy. The notes are comprehensive and the arrangement
-                is good for learning, but you can suppliment it with the <i>Learn CSS</i> section at 
-                <a href="https://www.w3schools.com/css/default.asp">w3schools.com</a>. There, you can find some deeper things than
-                what I've put here. <br><br>
+                <ul>
+                    <li>Assume you have different elements with a same class, you can target
+                        which element you would like to style using chaining. Consider the example below</li>
 
-                If you're a total beginner, start with these, and if you don't understand a topic, head out to w3schools and search for the
-                particular topic.<br><br>
+                    <figure class="code-fig">
+                        <code>
+                            h1.important {
+                                font-color: blue;
+                            }
+                        </code>
+                    </figure>
 
-                Goodluck.
-            </p>
+                    <li>In the code above, you've headings and paragraphs that you have assigned a class "important" to 
+                        them. If you want to style the headings only, you would do as it was done above. This is possible
+                        with only element-type selectors and class selectors since the ID is always a single element whose styling doesn't
+                        care about anything else.
+                    </li>
+
+                    <li>You can also style two or more different elements with same styling by separating their tag
+                        names with commas. Eg:  
+                    </li>
+
+                    <figure class="code-fig">
+                        <code>
+                            h2, h3, p {
+                                font-family: monospace;
+                            }
+                        </code>
+                    </figure>
+
+                    <p>In the code above, both h2, h3, and paragraphs have been given the monospace font-family.</p>
+                </ul>
+
+                <h3 class="low-titles">Descendants</h3>
+
+                <ul>
+                    <li>You can also style children of an element by selecting the class of that element, and
+                        then write the tag type/name after that before the ruleset. Eg.  
+                    </li>
+
+                    <figure class="code-fig">
+                        <code>
+                            ul.main li {
+                                font-size: 14px;
+                            }
+                        </code>
+                    </figure>
+                </ul>
+            </article>
         </main>
-    </body>
 
-    <script src="../../english_teaching/TESOL/resources/index.js"></script>
+        <script src="../../english_teaching/TESOL/resources/index.js"></script>
+    </body>
 </html>

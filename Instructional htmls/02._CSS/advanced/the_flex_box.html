@@ -1,0 +1,321 @@
+<!DOCTYPE html>
+
+<html>
+    <article id="the_flexbox">
+        <h3>The Flex Box</h3>
+
+        <ul>
+            <li>It is a styling system that makes it possible for HTML to resize based on the
+            size of the screen.
+            </li>
+
+            <li>It is set by setting the <code>display</code> property of an element to either
+            "<em>flex</em>" or "<em>inline-flex</em>". This will make the element a 
+            <strong>flex container</strong></li>
+
+            <li>The flex container has properties that enable items within it to resize and 
+            re-position themselves based on how stretched the box is.
+            </li>
+
+            <li><code>display: flex;</code> will make the container a block element while the
+            <code>display: inline-flex;</code> will make it an inline-block.</li>
+
+            <li>Once that is done; you can go inside and start commanding how the elements within the container
+            should behave. The first property is <code>justify-content</code>.
+            </li>
+
+            <figure class="code-fig">
+                <code>
+                    #_some_container {
+                        display: flex;
+                        justify-content: center;
+                    }
+                </code>
+            </figure>
+        </ul>
+
+        <h4>Properties of Flex Containers</h4>
+
+        <h5>Justify-content</h5>
+
+        <ul>
+            <li>It is a property that is declared on the container in order to align the items within the container horizontally. 
+                It can take any of the following values: 
+                <ul>
+                    <li><code>flex-start</code>: Which will align everything in the flex container to the left.</li>
+                    <li><code>flex-end</code>: Which will align all items in the flex container to the right.</li>
+                    <li><code>center</code>: As is self-explanatory, will center the content of a flex container</li>
+                    <li><code>space-around</code>: This will put equal space on the sides (left-right) of each element, with
+                    regard to margins also.</li>
+                    <li><code>space-between</code>: This will put equal space between items themselves, but no space at the 
+                    right side of the left-most item and the left-side of the right-most item (the last item)</li>
+                </ul>
+            </li>
+
+            <li>With <code>justify-content</code>, you're basically instructing the browser to stuck together the items within 
+                the flex container in an inline fashion in the event the screen is squeezed in. Read further down to learn how 
+                you can stretch the items vertically or horizontally.</li>                       
+        </ul>
+
+
+        <h5>"align-items"</h5>
+
+        <ul>
+            <li><code>align-items</code>: is another property applied to the container, and it aligns the items vertically and takes 
+                the following rulesets: 
+
+                <ul>
+                    <li><code>flex-start</code>: which aligns the items on the top of the container.</li>
+                    <li><code>flex-end</code>: which aligns the items on the bottom.</li>
+                    <li><code>center</code>: centers, as it says.</li>
+                    <li><code>baseline</code>: which aligns the bottoms of each element</li>
+                    <li><code>stretch</code>: which stretches the items the whole height of the container (will not go
+                        beyond the <code>max-height</code> instructions though.).</li>
+                </ul>
+            </li>
+
+        </ul>
+        
+        <h5>"flex-wrap"</h5>
+
+        <ul>
+            <li>Another property of containers, this one instructs the item that doesn't fit into the current
+                container size to move down a line, still inside the container.
+            </li>
+
+            <li>It is declared as follows:  
+                <figure>
+                    <code>
+
+                        <!-- The HTML-->
+                        <div class="container">
+                            <div class="items">
+                                <img src="" >
+                                <p>Item 1</p>
+                            </div>
+
+                            <div class="items">
+                                <img src="">
+                                <p>Item 2</p>
+                            </div>
+                        </div>
+
+
+                        /* The CSS */
+
+                        .container {
+                            display: flex;
+                            width: 200px;
+                            flex-wrap: wrap;
+                        }
+
+                        .items {
+                            width: 150px;
+                        }
+                    </code>
+                </figure>
+            </li>
+
+            <p>From the code above, the second item won't fit in the container. The result is it being
+                put in a new line, under the first item.
+            </p>
+
+            <li><code>flex-wrap</code> takes in: <code>wrap</code>, <code>wrap-reverse</code>, and <code>nowrap</code> 
+            as rules.</li>
+
+            <li><code>wrap-reverse</code> does exactly what <code>wrap</code> does, it just puts the overflowing item on top 
+            instead of the bottom. <code>nowrap</code> specifies that no wrapping should be done on the element.</li>
+        </ul>
+
+        <h5>"align-content"</h5>
+
+        <ul>
+            <li>This is used to position the rows of flex-items within the flex-container.</li>
+
+            <li>The rows are usually the result of <code>flex-wrap</code>. </li>
+
+            <li><code>align-content: flex-start;</code>: Positions all rows of elements in the flex container at the top of
+                the flex container with no extra space between them.</li>
+
+            <li><code>flex-end</code>: Does the opposite.</li>
+
+            <li><code>align-content: center;</code>: Puts the rows at the center of the flex-container, with no extra space between them.</li>
+
+            <li><code>align-content: space-between;</code> Spaces the rows evenly across the parent element without any space above the first 
+                row or below the last one.</li>
+
+            <li><code>align-content: space-around;</code>: Spaces the rows evenly within the parent container, with equal spaces even above the first row 
+                and below the last one.</li>
+        </ul>
+
+        <h5>"flex-direction"</h5>
+
+        <ul>
+            <li>The <code>flex</code>  property operates in two major axes: The horizontal and The vertical</li>
+
+            <li>The horizontal axis: <code>flex-direction: row; </code> is a default value of the <code>flex</code> property.</li>
+            
+            <li><code>flex-direction: row;</code> Tells the browser to put the items inside the flex-container into a horizontal axis
+                i.e. the row, and then accepts modifications such as <code>justify-content</code> and others we saw above, as well as the 
+                ones applicable to the flex-items (<a href="#for_flex_items">Read below</a>)
+
+            <li>In <code>flex-direction: column;</code>, you basically instruct the browser to put the items of a flex container 
+            into a vertical alignment i.e. a column, instead of a row. From there on, you can use the same rulesets you use on 
+            <code>flex-direction: row;</code>, just that everything will behave as if you rotated your screen 90 degrees.</li>
+
+            <li>Values accepted for <code>flex-direction</code> are:  
+                <ul>
+                    <li><code>row</code>: Which will just put the elements in the container is a single row, from left to right, starting
+                    from the top-left.</li>
+                    <li><code>row-reverse</code>: Where the items will be positioned from right to left, from the top-right corner.</li>
+
+                    <li><code>column</code>: Which will behave exactly like <code>row</code>, but put the items in a vertical column. Even
+                    the positioning starts from the top-left corner of the parent element.</li>
+
+                    <li><code>column-reverse</code>: Which will do what <code>row-reverse</code> does, just with the item vertically oriented.</li>
+                </ul> 
+            </li>
+        </ul>
+
+        <h5>"flex-flow"</h5>
+
+        <ul>
+            <li>This is the short-hand for <code>flex-wrap</code> and <flex>flex-direction</flex> that enables you to 
+            declare the two values in a single ruleset. It is like so..</li>
+
+            <figure class="code-fig">
+                <code>
+                    .some_div {
+                        display: flex;
+                        flex-flow: column wrap;
+                    }
+                </code>
+            </figure>
+
+            <li>As visible above, start with the <code>flow-direction</code> and then <code>flow-wrap</code>. All values of 
+            the two are accepted.</li>
+        </ul>
+
+        <article id="for_flex_items">
+            <h4>Properties For Flex Items.</h4>
+
+            <h5>"flex-grow"</h5>
+
+            <ul>
+                <li>The <code>flex-grow</code> property controls how fast each flex-item to expands (only horizontally) to fill the 
+                    unused space in the container, once the container is stretched beyond its specified width.
+                </li>
+
+                <li>The item won't grow vertically, unless you specify the flex-direction of the container to be <code>column</code>. This is because
+                    the container itself only stretches horizontally, unless instructed otherwise.</li>
+                
+                <li><code>flex-grow</code> is set in numbers, and when you set <code>display: flex;</code> it is automatically
+                set to <code>0</code>.</li>
+    
+                <li>If, for example the container had 2 items, and one was assigned the value of 1 and the other 2, the second will expand twice
+                as much as the first one. And not to forget, <code>flex-grow</code> is set on a flex item, not container.
+                </li>
+
+                <figure class="code-fig">
+
+                    <code class="html">
+                        <!-- HTML -->
+                        <div id="img_container">
+                            <div class="side_element">
+                                <img src="some_link" />
+                            </div>
+
+                            <div id="center_element">
+                                <img src="some_link" />
+                            </div>
+
+                            <div class="side_element">
+                                <img src="some_link" />
+                            </div>
+                        </div>
+                    </code>
+
+                    <code>
+                        /* CSS */
+                        #img_container {
+                            width: 300px;
+                            height: 50px;
+                            display: flex;
+                            justify-content: center;
+                        }
+
+                        .side_element {
+                            flex-grow: 1;
+                        }
+
+                        #center_element {
+                            flex-grow: 2;
+                        }
+                    </code>
+
+                </figure>
+
+                <p>In the code above, the center element will expand to take twice the empty space that each
+                    of the side elements will take.
+                </p>
+        
+            </ul>
+
+        
+
+            <h5>"flex-shrink"</h5>
+
+            <ul>
+                <li><code>flex-shrink: </code> is exactly like <code>flex-grow</code> but in the opposite way. It is 
+                    used to control how fast a flex item shrinks when the screen is being squeezed.</li>
+            </ul>
+
+
+            <h5>"flex-basis"</h5>
+
+            <ul>
+                <li><code>flex-basis</code> sets the base width of a flex-item before growing or shrinking. It takes a number
+                    in pixels. Forexample.
+                </li>
+
+                <figure class="code-fig">
+                    <code>
+                        .some_item {
+                            flex-basis: 300px;
+                            flex-grow: 1;
+                            flex-shrink: 2;
+                        }
+                    </code>
+                </figure>
+
+                <li>In the code above, the item will start with a base width of 300px</li>
+
+            </ul>
+
+            <h5>"flex"</h5>
+
+            <ul>
+                
+                <li><code>flex</code> is a shorthand for <code>flex-grow</code>, <code>flex-shrink</code>, and 
+                    <code>flex-basis</code>.</li>
+
+                <li>It accepts the values in the above order. Take a look at the following example: </li>
+
+                <figure class="code-fig">
+                    <code class="css">
+                        .flex_item {
+                            flex: 2 1 300px;
+                        }
+                    </code>
+                </figure>
+
+                <li>In the code above, the item will grow twice as fast, shrink at a normal speed, and start with the
+                    base width of 300px</li>
+
+            </ul>
+
+        </article>
+
+    </article>
+
+</html>

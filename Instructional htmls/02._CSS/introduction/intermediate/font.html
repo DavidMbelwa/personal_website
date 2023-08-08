@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+
+<html>
+    <h4 class="low-titles">Font</h4>
+
+        <ul>
+            <li>You can style the typeface by using the following properties:  
+                <ul>
+                    <li><code>font-family</code>: for the type of typeface you want.</li>
+                    <li><code>font-weight</code>: for a light, regular, or bold font. Keywords are: 
+                        <code>bold</code>, <code>normal</code>, <code>lighter</code>, <code>bolder</code></li>
+                    <li><code>font-weight</code> can also use numbers to indicate the font weight desired, 1 being the lightest
+                    and 1000 the boldest. People usually use increments of 100. Look if the font you are using accepts
+                    numeric values though; Not all of them accept numerical values and not all numerical values can be 
+                    expressed to all fonts.</li>
+                    <li><code>font-size</code>: for the size. Make sure to add the "px" at the end of the font size
+                    you just entered. Eg <code>p {font-size: 18px;} </code></li>
+                    <li>With <code>font-style</code>, you can italicize an entire block of text. The default style is 
+                        <code>normal</code>. The fancier one is <code>italic</code></li>
+                    
+                    <li id="text-decoration"><code>font-decoration</code>: allows you to underline text. Check <a href="https://developer.mozilla.org/en-US/docs/Web/CSS/text-decoration">here</a>
+                    for a list of rules you can set for this property.</li>
+                    <li><code>text-transform</code> changes text to all uppercase or lowercase. Eg. <code>p { text-transform: uppercase; }</code></li>
+                    <li><code>text-align</code>: for text alignment. It accepts <em>left</em>, 
+                    <em>center</em>, <em>right</em>, and <em>justify</em> as arguments. Eg. </li>
+
+                    <figure class="code-fig">
+                        <code class="css">
+                            p {text-align: justify;}
+                        </code>
+                    </figure>
+
+                    <li><code>letter-spacing</code> puts space between letters. The value is give in pixels. Eg: </li>
+                    
+                    <figure>
+                        <code class="css">
+                            p {
+                                letter-spacing: 2px;
+                            }
+                        </code>
+                    </figure>
+
+                    <li><code>word-spacing</code> puts spacing btn words, as it says. The value is also given in pixels. Eg:</li>
+
+                    <figure class="code-fig">
+                        <code class="css">
+                            p {
+                                word-spacing: 5px;
+                            }
+                        </code>
+                    </figure>
+
+                    <li><code>line-height</code> controls how tall are our lines. A line of text is comprised of 1). The font size, and 2). 
+                        the leading. <code>line-height</code> controls the height of the combination of those two, by mainly increasing the 
+                        height of the leading space. The value can either be given in unitless values, pixels, or ems, but unitless values are 
+                        preferred as they are responsive to the change in font size (changing the font-size will automally change the 
+                        line height)</li>
+
+                    <figure class="code-fig">
+                        <code class="css">
+                            p {
+                                line-height: 1.4;
+                            }
+                        </code>
+                    </figure>
+
+                    <li><code>color</code>: This changes the color of the text itself. <code>background-color</code>
+                    changes the color of the text box behind the text.</li>
+
+                    <li><code>opacity</code>: This controls the opacity of the text-box. Use this if you want to create
+                    a beautiful overlay effect</li>
+
+                    <li><code>background-image</code> is able to change the background of the text-box to be a picture.</li>
+
+                    <li>The (<code>!important</code>) is used to prioritize the styling of any property it is put upon, no 
+                        matter how much specifically the element might have been modified by another selector. It is rarely
+                        used, so you should also develop a habit of avoiding it. Eg </li>
+
+                    <figure class="code-fig">
+                        <code class="css">
+                            p {
+                                font-family: Verdana;
+                                color: white !important;
+                                text-align: left;
+                            }
+                        </code>
+                    </figure>
+                </ul>
+            </li>
+        </ul>
+
+        <h4>Linking Fonts From The Web</h4>
+
+        <ul>
+            <li>There are two ways this can be done: Linking through the html document, or linking through the CSS document.</li>
+        </ul>
+
+        <h5>Linking in the index HTML</h5>
+        
+        <ul>
+            <li><p>This can be done by using the <code>link</code> tag; you just need to place it inside the <code>head</code> tag 
+                and then set the <code><em>href</em></code> attribute equal to the link where your fonts are</p></li>
+            
+            <li>There are free fonts at <a href="https://fonts.google.com/">Google Fonts</a> and <a href="https://fonts.adobe.com/fonts">
+                Adobe Fonts</a>. Take a look.</li>
+        </ul>
+
+        <h5>Linking Through the CSS file</h5>
+
+        <ul>
+            <li>This can be achived by using the <code>@font-face {}</code> ruleset. It takes all the 
+                normal font formatting properties, plus the <code>src: url() format()</code> that specifies where your 
+                font is, and which font format will be used.</li>
+            
+            <li>There are 4 main font formats: <em>OpenType Font (OPT)</em>, <em>TrueType Font (TTF)</em>, 
+                <em>Web Open Font Format (WOFF)</em>, and <em>Web Open Font Format 2 (WOFF2)</em>. Check <a href="https://www.pluralsight.com/blog/creative-professional/differences-between-font-formats">this site</a>
+                for an in-depth understanding of font formats.</li>
+
+            <li>Since the best font format for web (because it loads faster) is WOFF2, but free font providers such as 
+                Google Fonts and Adobe Fonts will likely give you a .ttf font format, it becomes imperative for you to 
+                download the font families you want, generate the additional formats via a <a href="https://www.fontsquirrel.com/tools/webfont-generator">free font generator</a> 
+                like this one, and then download the font formats file, unzip it, and save the contents in the same directory as your 
+                web files. You can then link them to your document as follows:  
+            </li>
+
+            <figure class="code-fig">
+                <code class="css">
+                    @font-face {
+                        font-family: 'Font-Name';
+                        src: url('some_font.woff2') format('woff2'),
+                            url('some_font.another_format') format('the_other_format');
+                    }
+
+
+                    h2 {
+                        font-family: 'Font-Name', serif; 
+                    }
+                </code>
+
+                <figcaption>and so on..</figcaption>
+            </figure>
+
+            <li><p>The formats you specify in the <code>src: url('');</code> ruleset should be in the order of 
+                preference.</p></li>
+        </ul>
+
+        <h5>Web Safe Fonts</h5>
+
+        <ul>
+            <li>These are fonts that are likely to be available natively in any operating system, so that 
+                your content can be visible exactly as intended in a wide range of browsers.
+            </li>
+
+            <li>They are good as <em>fallback fonts</em>, and you need to add them in the font-family declaration in your CSS. 
+                Eg: </li>
+
+            <figure class="code-fig">
+                <code class="css">
+                    h1 {
+                        font-family: "some-fancy-font", Verdana;
+                    }
+                </code>
+
+                <figcaption>Verdana (a web safe font) as a fall-back font.</figcaption>
+            </figure>
+
+            <li>If, for whatever reason, the web safe font you used isn't available in the user's system, you can 
+                instruct the browser to look for any of the two major typefaces available: Serif or Sans Serif. Eg:
+            </li>
+
+            <figure class="code-fig">
+                <code class="css">
+                    p {
+                        font-family: Garamond, Verdana, sans-serif;
+                    }
+                </code>
+
+                <figcaption><em>The "sans-serif".</em></figcaption>
+            </figure>
+        </ul>
+</html>

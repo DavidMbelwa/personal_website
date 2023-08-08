@@ -207,6 +207,9 @@
     }
 }
 
+
+
+/* Big Screens */
 @media only screen and (min-width: 720px)
 {
     body
@@ -339,7 +342,6 @@
     {
         /* border-top: 2px solid #00827f; */
         color: #00827f;
-        font-weight: 600;
         cursor: pointer;
     }
 
@@ -387,7 +389,8 @@
         width: 100%;
         font-family: "Source Sans 3";
         text-align: start;
-        font-size: 17px;
+        font-size: 16px;
+        font-weight: 600;
         transition: font-size 0.2s ease-in;
     }
 
@@ -429,16 +432,16 @@
     .side-nav button:hover
     {
         cursor: pointer;
-        background-color: #00827f;
-        color: white;
+        /* background-color: #00827f; */
+        color: #00827f;
     }
 
 
-    .accordion.active
+    /* .accordion.active
     {
         background-color: #00827f;
         color: white;
-    }
+    } */
 
     .dropdown-content
     {
@@ -459,12 +462,12 @@
         position: relative;
         left: 5%;
         background-color: #f9f9f9;
+        font-weight: 600;
     }
 
     .dropdown-content li:hover
     {
-        background-color: #00827f;
-        color: white;
+        color: #00827f;
     }
 
 
@@ -475,10 +478,12 @@
         cursor: default;
         color:#00827f;
     }
+
     .main p
     {
         margin: 20px 0;
     }
+    
     .the_followings
     {
         margin-top: 30px;
@@ -527,5 +532,42 @@
         background-color: hsl(180, 8%, 90%);
         padding: 20px;
         font-style: italic;
+    }
+
+
+    /* Code blocks */
+    .inline-code
+    {
+        background-color: rgb(201, 207, 207);
+        padding: 1px 5px;
+    }
+
+    figure
+    {
+        /* border: 1px solid green; */
+        padding: 5px 5px;
+        overflow: hidden;
+        background-color: rgba(0, 0, 0, 0.1);
+        /* display: flex;
+        justify-content: flex-start; */ */
+    }
+
+    pre
+    {
+        /* border: 1px solid red; */
+        display: flex;
+        align-items: center;
+        justify-content: flex-end;
+        background-color: white;
+    }
+
+    .block-code
+    {
+        /* text-align: start; */
+        position: relative;
+        right: 220px;
+        font-size: 13px;
+        line-height: 1.5em;
+        /* background-color:rgba(0, 0, 0, 0.1); */
     }
 }

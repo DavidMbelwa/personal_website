@@ -2,7 +2,7 @@
 
 <html>
     <head>
-        <title>CSS</title>
+        <title>Introduction to CSS</title>
         <meta name="viewport" content="width=device-width initial-scale=1.0">
         <meta name="keywords" content="Mukajanga, David Mukajanga">
 
@@ -20,7 +20,7 @@
 
     <body>
         <header class="top_nav col-12">
-            <a href="../../../index.html"><i class="fa-solid fa-house"></i></a>
+            <a href="index.html"><i class="fa-solid fa-house"></i></a>
             
             <a href="index.html"><h3>Home</h3></a>
             
@@ -41,14 +41,15 @@
         </header>
 
         <section class="main-header col-12">
-            <h1>CSS</h1>
+            <h1>Introduction to CSS</h1>
         </section>
 
         <nav class="breadcrumb col-12">
             <ul>
                 <a href="../../../index.html"><li>Home</li></a>
                 <a href="../../index.html"><li>Notes</li></a>
-                <a href="#"><li>CSS</li></a>
+                <a href="index.html"><li>CSS</li></a>
+                <a href="#"><li>Introduction to CSS</li></a>
             </ul>
         </nav>
 
@@ -96,22 +97,48 @@
             </nav>
         </nav>
 
-
         <main class="main col-9">
-            <h2>Welcome.</h2>
+            <article>
+                <h2>Before You Start:</h2>
 
-            <p>These are the notes I took when I was learning CSS at Codecademy. The notes are comprehensive and the arrangement
-                is good for learning, but you can suppliment it with the <i>Learn CSS</i> section at 
-                <a href="https://www.w3schools.com/css/default.asp">w3schools.com</a>. There, you can find some deeper things than
-                what I've put here. <br><br>
+                <ul>
+                    <li>Always design for mobile first.</li>
+                    <li>In the same spirit, set your columns first (their width) and then specify how many columns 
+                        each element will span in the HTML. Do this for every major section of your document. If you've
+                        set the width of columns, but has forgotten to assign a major section a number of columns it will span,
+                        that section will start at the top, acting as an inline, and in some cases engulf other elements inside it.
+                        You don't want that.
+                    </li>
+                </ul>
 
-                If you're a total beginner, start with these, and if you don't understand a topic, head out to w3schools and search for the
-                particular topic.<br><br>
+                <article class="sectionArticle">
+                    <h2>What is CSS?</h2>
+                    <ul>
+                        <li>You use CSS to format your web page. This ranges from things like setting color and font-families to 
+                            to your elements to things like setting the width, size, and position of elements in your document.
+                        </li>
+                        <li>For a full documentation, check the <a href="https://developer.mozilla.org/en-US/docs/Web/CSS" target="_blank">following</a> page.</li>
+                    </ul>
+                    
+                    <h2 class="secSubHeading">Types of CSS Styling</h2>
 
-                Goodluck.
-            </p>
+                    <ul>
+                        <li>There are three ways you can style an HTML using CSS:, by using <em><strong>in-line</strong></em>
+                        <em><strong><code>style</code></strong></em> tag, or by linking an external CSS style sheet to your
+                        HTML</li>
+
+                    
+                    </ul>
+
+                    <h3>In-line</h3>
+                    <ul>
+                        <li></li>
+                    </ul>
+
+                </article>
+            </article>
         </main>
-    </body>
 
-    <script src="../../english_teaching/TESOL/resources/index.js"></script>
+        <script src="../../english_teaching/TESOL/resources/index.js"></script>
+    </body>
 </html>

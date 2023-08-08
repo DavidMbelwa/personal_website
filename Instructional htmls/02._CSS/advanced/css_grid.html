@@ -1,0 +1,349 @@
+<!DOCTYPE html>
+
+<html>
+    <head>
+        <title>CSS Grid</title>
+        <meta name="viewport" content="width=device-width initial-scale=1.0">
+        <meta name="keywords" content="Mukajanga, David Mukajanga">
+
+        <!-- Style -->
+        <link rel="stylesheet" type="text/css" href="../../english_teaching/TESOL/resources/index.css" />
+
+        <!-- Fonts -->
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Roboto&family=Source+Sans+3:wght@200;300;400;600;700&display=swap" rel="stylesheet">
+        
+        <!-- icons -->
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    </head>
+
+    <body>
+        <header class="top_nav col-12">
+            <a href="index.html"><i class="fa-solid fa-house"></i></a>
+            
+            <a href="index.html"><h3>Home</h3></a>
+            
+            <nav id="main_nav">
+                <div class="toggle">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
+                
+                <ul id="links">
+                    <a href="Instructional htmls/index.html"><li>Technologies</li></a>
+                    <a href="projects.html"><li>Portfolio</li></a>
+                    <a href="../../index.html"><li>Notes</li></a>
+                    <a href="../../../about_page.html"><li>About</li></a>
+                </ul>
+            </nav>
+        </header>
+
+        <section class="main-header col-12">
+            <h1>CSS Grid</h1>
+        </section>
+
+        <nav class="breadcrumb col-12">
+            <ul>
+                <a href="../../../index.html"><li>Home</li></a>
+                <a href="../../index.html"><li>Notes</li></a>
+                <a href="../introduction/index.html"><li>CSS</li></a>
+                <a href=""><li>CSS Grid</li></a>
+            </ul>
+        </nav>
+
+        <nav class="side-nav col-3">
+            <a href="index.html"><button>Welcome</button></a>
+            <button class="accordion">Introduction</button>
+            <nav class="dropdown-content">
+                <ul>
+                    <a href="../introduction/what_is_css.html"><li>What is CSS</li></a>
+                    <a href="../introduction/element_selectors.html"><li>Element Selectors</li></a>
+                    <a href="../introduction/order_of_exec.html"><li>Order of Execution</li></a>
+                    <a href="../introduction/chaining_selectors.html"><li>Chaining Selectors</li></a>
+                </ul>
+            </nav>
+
+            <button class="accordion">CSS Properties</button>
+            <nav class="dropdown-content">
+                <ul>
+                    <a href="../introduction/intermediate/font.html"><li>Font</li></a>
+                    <a href="../introduction/intermediate/color.html"><li>Color</li></a>
+                    <a href="../introduction/intermediate/the_box_model.html"><li>The Box Model</li></a>
+                </ul>
+            </nav>
+
+            <button class="accordion">CSS Layout</button>
+            <nav class="dropdown-content">
+                <ul>
+                    <a href="row_columns.html"><li>Rows, Columns, and Gutters</li></a>
+                    <a href="the_flex_box.html"><li>The Flexbox</li></a>
+                    <a href="css_grid.html"><li>CSS Grid</li></a>
+                </ul>
+            </nav>
+
+            <button class="accordion">CSS Design</button>
+            <nav class="dropdown-content">
+                <ul>
+                    <a href="responsive_design.html+"><li>Responsive Design</li></a>
+                    <a href="meta.html"><li>Meta tags</li></a>
+                    <a href="breadcrumb.html"><li>Breadcrumb Navigation</li></a>
+                    <a href="accordion.html"><li>Accordion</li></a>
+                    <a href="skeumorphic_styling.html"><li>Buttons</li></a>
+                    <a href="pagination.html"><li>Pagination</li></a>
+                    <a href="other_design.html"><li>Other Design Properties</li></a>
+                </ul>
+            </nav>
+        </nav>
+
+        <main class="main col-9">
+            <article>
+                <h2 class="main-sub-headers">CSS Grid</h2>
+
+                <ul>
+                    <li>It is a styling property that enables you to create a container element with two dimensions: Rows and Columns.</li>
+
+                    <li>
+                        The difference between this and the flex box is that the flex box is a one-dimensional element which can have 
+                        either a row or a column. CSS Grid allows you to have both.
+                    </li>
+                    <li>
+                        The grid is defined by setting the <code class="inline-code">display</code> property to 
+                        <kbd class="inline-code">grid</kbd>. By default, it will start with one column and several rows depending on the 
+                        number of items in the container. 
+                    </li>
+                    <li>
+                        To set the number of columns you want; use the <code class="inline-code">grid-template-columns: ;</code> property of 
+                        CSS Grid. It takes any number of arguments as the size of each column.
+                    </li>
+
+                    <p>For Example</p>
+
+                    <figure>
+                        <pre class="code-fig">
+                            <code class="block-code">
+                                .some-class {
+                                    display: grid;
+                                    grid-template-columns: 100px 20% 30%;
+                                }
+                            </code>
+                        </pre>
+                    </figure>
+
+                    <li>
+                        In the code above, 3 columns will be made; the first one with a width of 100px, a second with a width that is 20%
+                        of the total width of the grid, and the third which is 30%.
+                    </li>
+
+                    <li>To create new empty rows; use the <code class="inline-code">grid-template-rows</code></li>
+
+                    <li>There's a shorthand for these two commands: the <code class="inline-code">grid-template</code> property.</li>
+
+                    <li><code class="inline-code">grid-template</code> takes first the values that represent rows, the there is a forward slash after 
+                        that, and then values representing columns. Check the code below:</li>
+
+                    <figure class="code-fig css">
+                        <pre>
+                            <code class="css block-code">
+                                .a-random-grid {
+                                    display: grid;
+                                    width: some-pixls;
+                                    height: some-pixls;
+                                    grid-template: 10% 20% 10% 60% / 20% 30% 20% 20% 10%;
+                                }
+                            </code>
+                        </pre>
+                    </figure>
+
+                    <li>As usual, the percentage on the row side represent the percentage of the grid's height, while on the column side 
+                        the percentage of the grid's width.
+                    </li>
+
+                    <li>
+                        It is possible for one to set the height or width of rows / columns such that they are more than the height / width of the grid container.
+                        When that happens, there's a way to control the overflow that we'll learn in a bit.
+                    </li>
+
+                    <li>There's also another way to short-hand the <code class="inline-code">grid-template-columns</code> and 
+                        the <code class="inline-code">grid-template-rows</code> properties by using the <code class="inline-code">repeat()</code> 
+                        function that takes two arguments: the number of rows / columns and their size. In the code below: </li>
+
+                    <figure class="code-fig">
+                        <pre>
+                            <code class="css block-code">
+                                .grid {
+                                    display: grid;
+                                    grid-template-columns: repeat(2, 100px);
+                                }
+                            </code>
+                        </pre>
+                    </figure>
+
+                    <p>Two columns with the width of 100px each will be created.</p>
+
+                    <li>There's also a way to use the <code class="inline-code">repeat()</code> function for 
+                        rows and columns with different sizes. Refer the code below:
+                    </li>
+
+                    <figure class="code-fig">
+                        <pre>
+                            <code class="css block-code">
+
+                                .grid {
+                                    display: grid;
+                                    grid-template-columns: repeat(2, 20px 50px);
+                                }
+                            </code>
+                        </pre>
+                    </figure>
+
+                    <li>The code above will create four columns, with the first and third having 20px while the second and fourth 
+                        50.
+                    </li>
+
+                    <li><code class="inline-code">repeat()</code> is especially useful to use with the <code class="inline-code">fr</code> 
+                        scaling. The <code class="inline-code">fr</code> gives size to columns or rows by dividing the available space in the 
+                        grid into fractions (depending on how many columns or rows and how many fractions specified) and then giving the specified 
+                        row / column the specified number of fractions. For example: 
+                    </li>
+
+                    <figure class="code-fig">
+                        <pre>
+                            <code class="css block-code">
+                                .a-grid {
+                                    display: grid;
+                                    width: 1000px;
+                                    height: 800px;
+                                    grid-template-rows: repeat(5, 1fr);
+                                    grid-template-columns: repeat(1, 2fr 3fr 2fr); 
+                                }
+                            </code>
+                        </pre>
+                    </figure>
+
+                    <li>In the code above, the width of the grid will be divided into 7 fractions, of which 2 will be taken by 
+                        the first, 3 the second, and the remaining 2 the third column.
+                    </li>
+                </ul>
+
+                <h3>Making the Grid Responsive</h3>
+
+                <ul>
+                    <li>You can do this by setting the <code class="inline-code">minmax()</code> function on one or multiple columns of your choice.</li>
+
+                    <li><code class="inline-code">minmax()</code> function takes values of the minimum width a column can reach, and also the maximum, 
+                        allowing the column to stretch according to the size of the browser within those limits.
+                    </li>
+
+                    <li>The <code class="inline-code">minmax()</code> function doesn't work when the <code class="inline-code">width</code> ruleset is set though, 
+                        so remove that ruleset if you're going to go forward with the <code class="inline-code">minmax()</code> function.</li>
+                </ul>
+
+
+                <h3>Beautifying The Grid A Little Bit</h3>
+
+                <h4>Adding gaps between Items.</h4>
+
+                <ul>
+                    <li>This is achieved by using the <code class="inline-code">gap: ;</code> ruleset on the grid container.</li>
+
+                    <li>You can set gaps for rows specifically (using <code class="inline-code">row-gap: ;</code> ruleset); for 
+                        columns (using the <code class="inline-code">column-gap: ;</code> ruleset); or both by using the 
+                        <code class="inline-code">gap: row-gap-width-goes-here column-gap-width-goes-here;</code>
+                    </li>
+                </ul>
+
+                <h4>Centering The Content within the Grid</h4>
+
+                <h5>On the horizontal Axis</h5>
+
+                <ul>
+                    <li>Done with the combination of <code class="inline-code">justify-content: ;</code> and <code class="inline-code">justify-items: ;</code> rulesets</li>
+                    <li><code class="inline-code">justify-items</code> align items within the columns, that is, whether the item is on the left of the column, right,
+                        centered etc. It takes values of <code class="inline-code">start</code> for a left alignment, <code class="inline-code">end</code> for a right alignment, 
+                        <code class="inline-code">center</code> for a centered alignment, and <code class="inline-code">stretch</code> for the item to stretch the whole width of the 
+                        column.
+                    </li>
+
+                    <li><code class="inline-code">justify-content</code> aligns the whole of the grid horizontally within the grid container itself.</li>
+
+                    <li>Assume a grid container had the width of 1300px and 2 columns, each one 500px. The <code class="inline-code">justify-content: ;</code> ruleset will instruct
+                        the browser to either align to the left, right or center, the 2 columns of the grid, such that the remaining 300px are used as the designer intended.</li>
+
+                    <li><code class="inline-code">justify-content: ;</code> accepts <code class="inline-code">start</code>, <code class="inline-code">end</code>, 
+                        <code class="inline-code">center</code>, <code class="inline-code">stretch</code>, <code class="inline-code">space-around</code>, <code class="inline-code">space-between</code>, and
+                        <code class="inline-code">space-evenly</code> as arguments.</li>
+                </ul>
+
+                <h5>On the vertical axis</h5>
+
+                <ul>
+                    <li>A combination of <code class="inline-code">align-items</code> and <code class="inline-code">align-content</code> is used.</li>
+
+                    <li>The usage is the same as <code class="inline-code">justify-items</code> / <code class="inline-code">justify-content</code>, and even the arguments are 
+                        the same. So use them as you would use those, except everything is done row-wise rather than column wise.</li>
+                </ul>
+
+                <h5>Justify-self / align-self</h5>
+
+                <ul>
+                    <li>These are values declared on grid items, rather than the container, to instruct a particular item to deviate away from the styling declared on the container 
+                        using <code class="inline-code">justify-items</code> / <code class="inline-code">align-items</code>
+                    </li>
+
+                    <li>They accept the same values as <code class="inline-code">justify-items</code>  and <code class="inline-code">align-items</code>, just that their customization 
+                        applies to just one grid item on which they're declared.</li>
+                </ul>
+
+
+                <h4>Grid-auto-flow</h4>
+
+                <ul>
+                    <li>This is a property set on a grid container when the developer doesn't know exactly how many rows / columns the grid will 
+                        have.
+                    </li>
+
+                    <li>Take an example of a grid that comes as a result of a search inquiry on a site. Sometimes, these grids have an option of how 
+                        many search results one wants displayed at a time, making it impossible for the developer to guess how many items will be in that 
+                        grid in a particular point in time. To deal with this, the <code class="inline-code">grid-auto-flow</code> ruleset is used to specify 
+                        whether the additional content that is more that what is specified in the original grid is placed on new columns or rows automatically.
+                    </li>
+
+                    <li>By the way, the grid we have seen so far is called the <em><strong>explicit grid</strong></em>, because it has been explicity designed and structured 
+                        in terms of the number of rows / columns and their sizes.
+                    </li>
+
+                    <li>The additional rows / columns that are added by <code class="inline-code">grid-auto-flow</code> are known as the 
+                        <em><strong>implicit grid</strong></em>. The width and height of the columns and rows of these grids fit the width / height of the content by default, but 
+                        can be specified by using the <code class="inline-code">grid-auto-rows</code> / <code class="inline-code">grid-auto-columns</code> rulesets. More on them 
+                        in a bit.
+                    </li>
+
+                    <li><code class="inline-code">grid-auto-flow</code> accepts <code class="inline-code">row</code>, <code class="inline-code">column</code>, <code class="inline-code">dense</code> 
+                        properties as values. <code class="inline-code">row</code> instructs the browser to add the new content to a new row, <code class="inline-code">column</code> to a new 
+                        column, and <code class="inline-code">dense</code> instructs the browser to fill any empty space that was there in the grid earlier if the added content is of small size.
+                    </li>
+                </ul>
+
+                <h4>Grid-Auto-Rows / Grid-Auto-Columns</h4>
+
+                <ul>
+                    <li>
+                        <code class="inline-code">grid-auto-rows</code> specifies the width of new rows that were added implicitly. By default,
+                        new rows are added automatically when the <code class="inline-code">grid-auto-rows</code> / <code class="inline-code">grid-auto-columns</code>
+                        even when the <code class="inline-code">grid-auto-flow</code> hasn't been set.
+                    </li>
+
+                    <li>To add the new content into columns, one has to explicitly specify by using <code class="inline-code">grid-auto-flow: column;</code> that the new content 
+                        will go into columns. After doing that, they can move on specifying the width of those columns by using the 
+                        <code class="inline-code">grid-auto-columns</code>. It is better to assign this the same width as the columns assigned explicitly using 
+                        <code class="inline-code">grid-template-columns</code>. 
+                    </li>
+                </ul>
+            </article>
+        </main>
+
+        <script src="../../english_teaching/TESOL/resources/index.js"></script>
+    </body>
+</html>

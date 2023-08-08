@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+
+<html>
+    <head>
+        <title>Element Selectors</title>
+        <meta name="viewport" content="width=device-width initial-scale=1.0">
+        <meta name="keywords" content="Mukajanga, David Mukajanga">
+
+        <!-- Style -->
+        <link rel="stylesheet" type="text/css" href="../../english_teaching/TESOL/resources/index.css" />
+
+        <!-- Fonts -->
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Roboto&family=Source+Sans+3:wght@200;300;400;600;700&display=swap" rel="stylesheet">
+        
+        <!-- icons -->
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    </head>
+
+    <body>
+        <header class="top_nav col-12">
+            <a href="index.html"><i class="fa-solid fa-house"></i></a>
+            
+            <a href="index.html"><h3>Home</h3></a>
+            
+            <nav id="main_nav">
+                <div class="toggle">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
+                
+                <ul id="links">
+                    <a href="Instructional htmls/index.html"><li>Technologies</li></a>
+                    <a href="projects.html"><li>Portfolio</li></a>
+                    <a href="../../index.html"><li>Notes</li></a>
+                    <a href="../../../about_page.html"><li>About</li></a>
+                </ul>
+            </nav>
+        </header>
+
+        <section class="main-header col-12">
+            <h1>Element Selectors</h1>
+        </section>
+
+        <nav class="breadcrumb col-12">
+            <ul>
+                <a href="../../../index.html"><li>Home</li></a>
+                <a href="../../index.html"><li>Notes</li></a>
+                <a href="index.html"><li>CSS</li></a>
+                <a href="#"><li>Element Selectors</li></a>
+            </ul>
+        </nav>
+
+        <nav class="side-nav col-3">
+            <a href="index.html"><button>Welcome</button></a>
+            <button class="accordion">Introduction</button>
+            <nav class="dropdown-content">
+                <ul>
+                    <a href="what_is_css.html"><li>What is CSS</li></a>
+                    <a href="element_selectors.html"><li>Element Selectors</li></a>
+                    <a href="order_of_exec.html"><li>Order of Execution</li></a>
+                    <a href="chaining_selectors.html"><li>Chaining Selectors</li></a>
+                </ul>
+            </nav>
+
+            <button class="accordion">CSS Properties</button>
+            <nav class="dropdown-content">
+                <ul>
+                    <a href="intermediate/font.html"><li>Font</li></a>
+                    <a href="intermediate/color.html"><li>Color</li></a>
+                    <a href="intermediate/the_box_model.html"><li>The Box Model</li></a>
+                </ul>
+            </nav>
+
+            <button class="accordion">CSS Layout</button>
+            <nav class="dropdown-content">
+                <ul>
+                    <a href="../advanced/row_columns.html"><li>Rows, Columns, and Gutters</li></a>
+                    <a href="../advanced/the_flex_box.html"><li>The Flexbox</li></a>
+                    <a href="../advanced/css_grid.html"><li>CSS Grid</li></a>
+                </ul>
+            </nav>
+
+            <button class="accordion">CSS Design</button>
+            <nav class="dropdown-content">
+                <ul>
+                    <a href="../advanced/responsive_design.html+"><li>Responsive Design</li></a>
+                    <a href="../advanced/meta.html"><li>Meta tags</li></a>
+                    <a href="../advanced/breadcrumb.html"><li>Breadcrumb Navigation</li></a>
+                    <a href="../advanced/accordion.html"><li>Accordion</li></a>
+                    <a href="../advanced/skeumorphic_styling.html"><li>Buttons</li></a>
+                    <a href="../advanced/pagination.html"><li>Pagination</li></a>
+                    <a href="../advanced/other_design.html"><li>Other Design Properties</li></a>
+                </ul>
+            </nav>
+        </nav>
+
+        <main class="main col-9">
+            <article>
+                <h2 class="secSubHeading">Element Selectors</h2>
+                        
+                <ul>
+                    <li>These are symbols or words you use to select an HTML element.</li>
+                    <li>To select all elements, you use the asterisk (<code>*</code>)</li>
+                    <li>To select a particular type of element, let's say paragraphs, you use the tag name
+                        (<code>p</code>).
+                    </li>
+
+                    <figure>
+                        <code>
+                            p {
+                                font-family: cursive;
+                            }
+                        </code>
+                    </figure>
+                    
+                    <p>In the code above, all paragraph element will be styled by a cursive
+                        family of font.
+                    </p>
+
+                    <li>You can also target specific elements by using the <code>class</code> attribute
+                        in the HTML tag you want to target. Take a following example:  
+                    </li>
+
+                    <figure class="code-fig">
+                        <code>
+                            <h1 class="main">This is a Main Header</h1>
+                        </code>
+                    </figure>
+
+                    <p>To target this, we write our CSS ruleset like so..</p>
+                    
+                    <figure class="code-fig">
+                        <code>
+                            .main {
+                                font-size: 200px;
+                            }
+                        </code>
+                    </figure>
+
+                    <li>You can also target elements by using the <strong><em>id selector</em></strong> (<code>#</code>).</li>
+                    <li>This is especially useful for sections, since the <code>id</code> attribute is usually used
+                    to provide internal linkages to the page</li>
+
+                    <p>Eg:</p>
+
+                    <figure class="code-fig">
+                        <code>
+                            <section id="Educational-History"></section>
+                        </code>
+                    </figure>
+
+                    <figure class="code-fig">
+                        <code>
+                            #Educational-History {
+                                background-color: white;
+                            }
+                        </code>
+                    </figure>
+
+                    <li>You can also target an element by using other attributes, such as the <code>href=""</code> and <code>src</code>
+                    attributes. Check the code below</li>
+
+                    <figure class="code-fig">
+                        <code>
+                            <img src="/some_place/somewhere.jpeg" />
+
+                            <a href="/another_place/somewhere_else.jpeg">Learn More</a>
+
+                        </code>
+                    </figure>
+
+                    <figure class="code-fig">
+                        <code>
+                            img[src*= 'somewhere'] {
+                                background-color: some_color;
+                            }
+
+                            a[src*= 'somewhere_else'] {
+                                font-color: blue;
+                            }
+                        </code>
+                    </figure>
+
+                    <li>As you can observe above, the format of detecting a variable like This
+                        is:  
+                    </li>
+
+                    <figure class="code-fig">
+                        <code>
+                            elementType[the_attribute*='a_word_to_look_for_from_the_given_attribute']
+                        </code>
+                    </figure>
+                </ul>
+            </article>
+
+            <div class="pagination">
+
+            </div>
+        </main>
+
+        <script src="../../english_teaching/TESOL/resources/index.js"></script>
+    </body>
+</html>
