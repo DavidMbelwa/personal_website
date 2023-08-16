@@ -482,6 +482,12 @@
     {
         margin: 20px 0;
     }
+
+    h4
+    {
+        font-size: 17px;
+        margin-top: 20px;
+    }
     
     .the_followings
     {
