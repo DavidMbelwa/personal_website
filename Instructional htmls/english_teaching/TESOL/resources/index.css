@@ -220,6 +220,11 @@
         font-size: 1em;
     }
 
+    p
+    {
+        font-size: 21px;
+    }
+
 
     /* Header */
     .top_nav {
@@ -486,7 +491,7 @@
     h4
     {
         font-size: 17px;
-        margin-top: 20px;
+        margin-top: 32px;
     }
     
     .the_followings
@@ -497,19 +502,31 @@
     article h1
     {
         font-family: "Source Sans 3";
-        font-size: 44px;
+        font-size: 61px;
     }
 
-    article h2, article h3
+    article h2
     {
         font-family: "Source Sans 3";
-        margin-top: 30px;
+        margin-bottom: 32px;
+        font-size: 43px;
+    }
+
+    article h3
+    {
+        font-size: 36px;
+        margin-top: 32px;
+    }
+
+    h4
+    {
+        font-size: 30px;
     }
 
     article ul, article p
     {
         font-family: "Source Sans 3";
-        font-size: 300;
+        font-size: 21px;
         /* line-height: 2em; */
     }
 
