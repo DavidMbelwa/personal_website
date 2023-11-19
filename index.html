@@ -22,30 +22,31 @@
 
     <header class="navbar navbar-expand-md">
         <div class="container d-lg-flex justify-content-auto">
-            <a href="index.html" class="navbar-brand -primary"><i class="fa-solid fa-house"></i></a>
+            <a href="index.html" class="navbar-brand"><i class="fa-solid fa-house text-primary"></i></a>
             
             <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#main_nav" aria-controls="main_nav" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
             </button>
             
-            <nav class="offcanvas offcanvas-start" tabindex="-1" id="main_nav">
-                <ul class="navbar-nav" id="links">
-                    <a class="nav-item" href="Instructional htmls/index.html"><li>Technologies</li></a>
-                    <a class="nav-item" href="projects.html"><li>Portfolio</li></a>
-                    <a class="nav-item" href="Instructional htmls/index.html"><li>Notes</li></a>
-                    <a class="nav-item" href="about/index.html"><li>About</li></a>
-                </ul>
+            <nav class="offcanvas offcanvas-end d-flex flex-column vw-100" data-bs-theme="dark" tabindex="-1" id="main_nav">
+                <div class="offcanvas-header d-flex justify-content-end">
+                    <button type="button" class="btn-close" data-bs-dismiss="offcanvas" data-bs-target="#main_nav" aria_labelledby="main_nav"></button>
+                </div>
+                <div class="navbar-nav offcanvas-body d-grid h-50 border border-success">
+                        <button class="btn nav-item" href="about/index.html">About</button>
+                        <button class="btn nav-item" href="projects.html">Portfolio</button>
+                        <button class="btn nav-item" href="Instructional htmls/index.html">Technologies</button>
+                        <button class="btn nav-item" href="Instructional htmls/index.html">Notes</button>
+                </div>
             </nav>
         </div>
     </header>
     
     
-    <main class="vw-100">
-        <section class="container row align-items-center vw-100 vh-100 border border-success" id="welcome">
-            <div class="border border-secondary w-50" id="welcome-img">
-                <img class="rounded-circle" src="imgs/Profile Picture.jpg" width="150px" height="150px" alt="David's Picture"> <!-- Width can be adjusted to be 400 * 400px-->
-            </div>
-            
+    <main class="vw-100 container">
+        <section class="container d-grid d-md-flex flex-row-reverse justify-content-around border border-primary" id="welcome">
+            <img class="rounded-circle" src="imgs/Profile Picture.jpg" width="150px" height="150px" alt="David's Picture"> <!-- Width can be adjusted to be 400 * 400px-->
+        
             <div class="text-boxes">
                 <p id="welcome-head">Hey!</p>
                 <p id="welcome-content">It's David!</p>
