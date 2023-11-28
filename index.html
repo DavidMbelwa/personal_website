@@ -10,55 +10,57 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Anuphan&family=Roboto+Slab:wght@200;300;400;500&family=Roboto:wght@100;300;400&display=swap" rel="stylesheet">
-
+    
     <!-- Customized Bootstrap's CSS -->
-    <link href="../CSS/main-min.css" rel="stylesheet">
-
+    <link href="resources/css/main-min.css" rel="stylesheet">
+    
     <!-- Font Awesome Icons (CDNJS) -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 </head>
 
 <body>
-
-    <header class="navbar navbar-expand-md">
-        <div class="container d-lg-flex justify-content-auto">
+    
+    <header class="navbar navbar-expand-md border border-primary">
+        <div class="container d-flex d-lg-flex justify-content-auto align-items-center">
             <a href="index.html" class="navbar-brand"><i class="fa-solid fa-house text-primary"></i></a>
             
-            <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#main_nav" aria-controls="main_nav" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
+            <button class="navbar-toggler border border-primary border-1 p-1" type="button" data-bs-toggle="offcanvas" data-bs-target="#main_nav" aria-controls="main_nav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon text-success"></span>
             </button>
             
             <nav class="offcanvas offcanvas-end d-flex flex-column vw-100" data-bs-theme="dark" tabindex="-1" id="main_nav">
                 <div class="offcanvas-header d-flex justify-content-end">
                     <button type="button" class="btn-close" data-bs-dismiss="offcanvas" data-bs-target="#main_nav" aria_labelledby="main_nav"></button>
                 </div>
-                <div class="navbar-nav offcanvas-body d-grid h-50 border border-success">
-                        <button class="btn nav-item" href="about/index.html">About</button>
-                        <button class="btn nav-item" href="projects.html">Portfolio</button>
-                        <button class="btn nav-item" href="Instructional htmls/index.html">Technologies</button>
-                        <button class="btn nav-item" href="Instructional htmls/index.html">Notes</button>
-                </div>
+                <ul class="navbar-nav offcanvas-body h-50 border border-success">
+                    <a class="btn nav-item" href="about/index.html"><li>About</li></a>
+                    <a class="btn nav-item" href="projects.html"><li>Portfolio</li></a>
+                    <a class="btn nav-item" href="Instructional htmls/index.html"><li>Technologies</li></a>
+                    <a class="btn nav-item" href="Instructional htmls/index.html"><li>Notes</li></a>
+                </ul>
             </nav>
         </div>
     </header>
     
     
     <main class="vw-100 container">
-        <section class="container d-grid d-md-flex flex-row-reverse justify-content-around border border-primary" id="welcome">
-            <img class="rounded-circle" src="imgs/Profile Picture.jpg" width="150px" height="150px" alt="David's Picture"> <!-- Width can be adjusted to be 400 * 400px-->
-        
-            <div class="text-boxes">
-                <p id="welcome-head">Hey!</p>
-                <p id="welcome-content">It's David!</p>
-                <p id="welcome-caption">Welcome To My Page</p>
+        <!-- flex-sm-column-reverse flex-md-row justify-content-sm-around justify-content-md-between border border-primary -->
+        <section class="container py-3 vh-100 d-flex flex-column flex-md-row-reverse justify-content-md-between" id="welcome">
+            <div class="container bg-primary" style="max-width: 400px; max-height: 400px;">
+                <img class="rounded-circle mw-100 mh-100" src="imgs/Profile Picture.jpg" alt="David's Picture"> <!-- Width can be adjusted to be 400 * 400px-->
+            </div>
+
+            <div class="container d-flex d-sm-flex flex-column justify-content-center border border-primary">
+                <p class="p-1 bg-secondary text-white text-wrap" id="welcome-head">Hey!</p>
+                <p class="p-1 bg-secondary text-white text-wrap" id="welcome-content">It's David!</p>
+                <p class="p-1 bg-secondary text-white text-wrap" id="welcome-caption">Welcome To My Page</p>
             </div>
         </section>
-        
         
         <section class="col-12" id="intro">
             <h2 class="sec-Heading">About Me</h2>
             <article>
-                <p>My name is Mohammad David Mukajanga, also known as David Mukajanga. I'm a teacher, a student, and a 
+                <p>My name is Mohammad-David Mukajanga, also known as David Mukajanga. I'm a teacher, a student, and a 
                     software engineer in my free time. I've a degree in Agricultural Economics, and my journey into computer programming
                     started from there. I now use computer programming for research and data science, and I'm conversant with both front-end 
                     and back-end technologies such as JavaScript, Python, and SQL. Read down below to see some of my projects.
@@ -67,21 +69,21 @@
         </section>
         
         <section class="col-12" id="daily-life">
-                <h2 class="sec-Heading">Daily Life</h2>
+            <h2 class="sec-Heading">Daily Life</h2>
+            
+            <article>
+                <p>I'm an English Teacher at Isabet Private Schools in Adana, Türkiye. That is my full time job. My job entails recieving small young people
+                    with cute faces and innocent minds, and give them back at the end of the school year with a little bit better English
+                    and a better understanding of the world.
+                </p>
                 
-                <article>
-                    <p>I'm an English Teacher at Isabet Private Schools in Adana, Türkiye. That is my full time job. My job entails recieving small young people
-                        with cute faces and innocent minds, and give them back at the end of the school year with a little bit better English
-                        and a better understanding of the world.
-                    </p>
-                    
-                    <a href="daily_activities/index.html"><button class="gallery-activator">View Gallery</button></a>
-                </article>
+                <a href="daily_activities/index.html"><button class="gallery-activator">View Gallery</button></a>
+            </article>
         </section>
         
         <section class="col-12" id="coding">    
             <h2 class="sec-Heading">Coding</h2>
-
+            
             <article>    
                 <p>I program in my free time. It is an activity that brings me my youthful joy. I'm proficient in both front-end (HTML, CSS, JavaScript) languages and
                     back-end (Python, SQL). I enjoy the work. Click the button below to see a list of projects I've worked on so far.
@@ -93,7 +95,7 @@
         
         <section class="col-12" id="education">    
             <h2 class="sec-Heading">Education</h2>
-
+            
             <article>
                 <p>My background is in Agricultural Economics and Agribusiness. I have a bachelor degree on the subject from the Sokoine 
                     University of Agriculture that is in Morogoro, Tanzania. I'm proud of my educational background. It is the one that caused sprouting
@@ -122,7 +124,7 @@
                     <p>Or checkout my github: </p>
                     <i class="fa-brands fa-github"></i> <span>DavidMbelwa</span>
                 </div>
-
+                
                 <div class="ending">
                     <p>Be Yourself.</p>
                 </div>
