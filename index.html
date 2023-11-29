@@ -20,11 +20,11 @@
 
 <body>
     
-    <header class="navbar navbar-expand-md border border-primary">
-        <div class="container d-flex d-lg-flex justify-content-auto align-items-center">
+    <header class="navbar navbar-expand-md border border-primary" data-bs-theme="light">
+        <div class="container d-flex flex-row align-items-center border border-primary">
             <a href="index.html" class="navbar-brand"><i class="fa-solid fa-house text-primary"></i></a>
             
-            <button class="navbar-toggler border border-primary border-1 p-1" type="button" data-bs-toggle="offcanvas" data-bs-target="#main_nav" aria-controls="main_nav" aria-expanded="false" aria-label="Toggle navigation">
+            <button class="navbar-toggler border-0 p-1" type="button" data-bs-toggle="offcanvas" data-bs-target="#main_nav" aria-controls="main_nav" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon text-success"></span>
             </button>
             
@@ -32,7 +32,7 @@
                 <div class="offcanvas-header d-flex justify-content-end">
                     <button type="button" class="btn-close" data-bs-dismiss="offcanvas" data-bs-target="#main_nav" aria_labelledby="main_nav"></button>
                 </div>
-                <ul class="navbar-nav offcanvas-body h-50 border border-success">
+                <ul class="navbar-nav d-md-flex justify-content-md-end offcanvas-body h-50 border border-success" data-bs-theme="light">
                     <a class="btn nav-item" href="about/index.html"><li>About</li></a>
                     <a class="btn nav-item" href="projects.html"><li>Portfolio</li></a>
                     <a class="btn nav-item" href="Instructional htmls/index.html"><li>Technologies</li></a>
@@ -45,12 +45,12 @@
     
     <main class="vw-100 container">
         <!-- flex-sm-column-reverse flex-md-row justify-content-sm-around justify-content-md-between border border-primary -->
-        <section class="container py-3 vh-100 d-flex flex-column flex-md-row-reverse justify-content-md-between" id="welcome">
-            <div class="container bg-primary" style="max-width: 400px; max-height: 400px;">
+        <section class="container py-3 vh-100 d-md-flex flex-row-reverse justify-content-between align-items-center" id="welcome">
+            <div class="row container bg-secondary p-5"  style="max-width: 400px; max-height: 400px; min-width: 150px; min-height: 150px;">
                 <img class="rounded-circle mw-100 mh-100" src="imgs/Profile Picture.jpg" alt="David's Picture"> <!-- Width can be adjusted to be 400 * 400px-->
             </div>
 
-            <div class="container d-flex d-sm-flex flex-column justify-content-center border border-primary">
+            <div class=" row text-center d-flex flex-sm-column-reverse border border-primary">
                 <p class="p-1 bg-secondary text-white text-wrap" id="welcome-head">Hey!</p>
                 <p class="p-1 bg-secondary text-white text-wrap" id="welcome-content">It's David!</p>
                 <p class="p-1 bg-secondary text-white text-wrap" id="welcome-caption">Welcome To My Page</p>
