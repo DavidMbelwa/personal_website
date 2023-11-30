@@ -5,7 +5,9 @@
         <title>Notes</title>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width initial-scale=1.0">
-        <link rel="stylesheet" type="text/css" href="resources/index.css" />
+
+        <!-- Main stylesheet -->
+        <link rel="stylesheet" type="text/css" href="../resources/css/main-min.css" />
 
         <!-- Fonts -->
         <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -19,25 +21,26 @@
   
     <body>
       
-      <header class="top_nav col-12">
-        <a href="index.html"><i class="fa-solid fa-house"></i></a>
-        
-        <a href="index.html"><h3>Home</h3></a>
-        
-        <nav id="main_nav">
-            <div class="toggle">
-                <span></span>
-                <span></span>
-                <span></span>
-            </div>
-            
-            <ul id="links">
-                <a href="Instructional htmls/index.html"><li>Technologies</li></a>
-                <a href="projects.html"><li>Portfolio</li></a>
-                <a href="../../index.html"><li>Notes</li></a>
-                <a href="../../../about_page.html"><li>About</li></a>
-            </ul>
-        </nav>
+      <header class="navbar navbar-expand-lg border border-primary" style="height: 85px;">
+        <div class="container-fluid border border-secondary d-lg-flex align-items-center">
+          <a class="navbar-brand border border-success" href="index.html"><i class="fa-solid fa-house"></i></a>
+
+          <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#main_nav" aria-controls="main_nav" aria-expanded="false" aria-label="Toggle Navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          
+          <nav class="navbar-nav offcanvas offcanvas-end vw-100 vh-100 bg-body-primary" tabindex="-1" data-bs-theme="dark" id="main_nav">
+              <div class="offcanvas-header d-flex justify-content-end">
+                <button class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+              </div>
+              <ul class="offcanvas-body container-sm d-lg-flex justify-content-end border border-primary" id="links">
+                  <a href="Instructional htmls/index.html"><li class="btn">Technologies</li></a>
+                  <a href="projects.html"><li class="btn">Portfolio</li></a>
+                  <a href="../../index.html"><li class="btn">Notes</li></a>
+                  <a href="../../../about_page.html"><li class="btn">About</li></a>
+              </ul>
+          </nav>
+        </div>
       </header>
 
       
@@ -230,6 +233,12 @@
         </section>
       </section>
 
-      <script src="english_teaching/TESOL/resources/index.js"></script>
+
+      <!-- Bootstrap's JS -->
+      <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+      
+      
+      <!-- My own JS (only so that it is easy to find when I need it) -->
+      <!-- <script src="english_teaching/TESOL/resources/index.js"></script> -->
     </body>
 </html>
