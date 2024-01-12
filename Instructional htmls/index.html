@@ -1,135 +1,200 @@
 <!DOCTYPE html>
 
 <html>
-    <head>
-        <title>Notes</title>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width initial-scale=1.0">
-
-        <!-- Main stylesheet -->
-        <link rel="stylesheet" type="text/css" href="../resources/css/main-min.css" />
-
-        <!-- Fonts -->
-        <link rel="preconnect" href="https://fonts.googleapis.com">
-        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-        <link href="https://fonts.googleapis.com/css2?family=Roboto&family=Source+Sans+3:wght@200;300;400;600;700&display=swap" rel="stylesheet">
-        
-        <!-- icons -->
-        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-    </head>
-
+<head>
+  <title>Notes</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width initial-scale=1.0">
   
-    <body>
-      
-      <header class="navbar navbar-expand-lg border border-primary" style="height: 85px;">
-        <div class="container-fluid border border-secondary d-lg-flex align-items-center">
-          <a class="navbar-brand border border-success" href="index.html"><i class="fa-solid fa-house"></i></a>
+  <!-- Main stylesheet -->
+  <link rel="stylesheet" type="text/css" href="../resources/css/main-min.css" />
+  
+  <!-- Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto&family=Source+Sans+3:wght@200;300;400;600;700&display=swap" rel="stylesheet">
+  
+  <!-- icons -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
 
-          <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#main_nav" aria-controls="main_nav" aria-expanded="false" aria-label="Toggle Navigation">
-            <span class="navbar-toggler-icon"></span>
-          </button>
-          
-          <nav class="navbar-nav offcanvas offcanvas-end vw-100 vh-100 bg-body-primary" tabindex="-1" data-bs-theme="dark" id="main_nav">
-              <div class="offcanvas-header d-flex justify-content-end">
-                <button class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
-              </div>
-              <ul class="offcanvas-body container-sm d-lg-flex justify-content-end border border-primary" id="links">
-                  <a href="Instructional htmls/index.html"><li class="btn">Technologies</li></a>
-                  <a href="projects.html"><li class="btn">Portfolio</li></a>
-                  <a href="../../index.html"><li class="btn">Notes</li></a>
-                  <a href="../../../about_page.html"><li class="btn">About</li></a>
-              </ul>
-          </nav>
+
+<body class="container-fluid p-2 px-sm-4" style="height: 100vh">
+  <header class="navbar navbar-expand-lg" style="height: 85px;" data-bs-theme="light">
+    <div class="container-fluid">
+      
+      <!-- the icon button -->
+      <a class="navbar-brand text-primary" href="index.html"><i class="fa-solid fa-house"></i></a>
+      
+      <!-- the toggler -->
+      <button class="navbar-toggler border border-0" type="button" data-bs-toggle="offcanvas" data-bs-target="#main_nav" aria-controls="main_nav" aria-expanded="false" aria-label="Toggle Navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      
+      <!-- the offcanvas -->
+      <nav class="offcanvas navbar-collapse navbar-nav offcanvas-end col-md-3 bg-body-primary" id="main_nav">
+        <div class="offcanvas-header d-flex justify-content-end w-100">
+          <button class="btn-close d-lg-none" data-bs-dismiss="offcanvas" aria-label="Close"></button>
         </div>
-      </header>
-
-      
-      <section class="main-header col-12">
-          <article>
-            <h1>Resources</h1>
-          </article>
-      </section>
-
-      <nav class="breadcrumb col-12">
-        <ul>
-            <a href="../index.html"><li>Home</li></a>
-            <a href="#"><li>Notes</li></a>
+        <ul class="navbar-nav container-sm d-lg-flex justify-content-end border border-primary" id="links">
+          <a href="Instructional htmls/index.html"><li class="btn">Technologies</li></a>
+          <a href="projects.html"><li class="btn">Portfolio</li></a>
+          <a href="../../index.html"><li class="btn">Notes</li></a>
+          <a href="../../../about_page.html"><li class="btn">About</li></a>
         </ul>
       </nav>
-
-      <nav class="side-nav col-3">
-        <a href="../index.html"><button>Topics</button></a>
-
-        <button class="accordion">Agricultural Economics</button>
-        <nav class="dropdown-content">
-            <ul>
-                <a href="Agecon/cooperatives.html"><li>Agricultural Cooperatives</li></a>
-                <a href="Agecon/rural_development.html"><li>Rural Economics</li></a>
-                <a href="Agecon/food_supply_chain.html"><li>Food Supply Chains</li></a>
-            </ul>
-        </nav>
-
-        <button class="accordion">Web Development</button>
-        <nav class="dropdown-content">
-            <ul>
-                <a href="1._HTML/index.html"><li>HTML</li></a>
-                <a href="Web_Design/Front-End/Coding/02._CSS/introduction/index.html"><li>CSS</li></a>
-                <a href="03._JS/index.html"><li>JavaScript</li></a>
-                <a href="layout/index.html"><li>Design</li></a>
-            </ul>
-        </nav>
-
-        <button class="accordion">English Teaching</button>
-        <nav class="dropdown-content">
-            <ul>
-                <a href="english_teaching/TESOL/index.html"><li>TESOL</li></a>
-                <a href="english_teaching/TESOL/words_and_pronounc/type_of_words.html"><li>Words and Pronounciation</li></a>
-                <a href="english_teaching/TESOL/tenses/tenses.html"><li>Sentences</li></a>
-                <a href="english_teaching/TESOL/index.html"><li>TESOL</li></a>
-                <a href="english_teaching/TESOL/index.html"><li>TESOL</li></a>
-                <a href="english_teaching/TESOL/index.html"><li>TESOL</li></a>
-            </ul>
-        </nav>
-
-        <button class="accordion">Data Science</button>
-        <nav class="dropdown-content">
-            <ul>
-                <a href="#type_of_words"><li>Types of Words</li></a>
-                <li></li>
-                <li></li>
-                <li></li>
-                <li></li>
-            </ul>
-        </nav>
-
-        <button class="accordion">Linux Systems</button>
-        <nav class="dropdown-content">
-            <ul>
-                <a href="#type_of_words"><li>Types of Words</li></a>
-                <li></li>
-                <li></li>
-                <li></li>
-                <li></li>
-            </ul>
-        </nav>
-
-        <button class="accordion">Biochemistry</button>
-        <nav class="dropdown-content">
-            <ul>
-                <a href="#type_of_words"><li>Types of Words</li></a>
-                <li></li>
-                <li></li>
-                <li></li>
-                <li></li>
-            </ul>
-        </nav>
-      </nav>
+    </div>
+  </header>
   
-      <section class="main col-9">
+  
+  <main class="container-fluid h-100">
+    <!-- The Breadcumb -->
+    <div class="container-fluid row px-0">
+      <nav class="container col d-flex align-items-end justify-content-start" aria-label="breadcrumb">
+        <ol class="breadcrumb py-0 my-0">
+          <li class="breadcrumb-item"><a href="../index.html">Home</a></li>
+          <li class="breadcrumb-item active" aria-current="page">Notes</li>
+        </ol>
+      </nav>
+    </div>
+    
+    
+    <!-- Hero -->
+    <section class="container-fluid row h-50">
+      <article class="container-fluid d-flex justify-content-center align-items-center col">
+        <h1>Resources</h1>
+      </article>
+    </section>
+    
+    <!-- Content page -->
+    <section class="container-fluid row g-1 px-0">
+      
+      <!-- The side panel and toggler -->
+      <div class="container ps-0 pe-3 col-md-3">
+        
+        <!-- Toggler -->
+        <i class="bi bi-list ms-2 row d-md-none" type="button" data-bs-toggle="offcanvas" data-bs-target="#left-Offcanvas"></i>
+        
+        <!-- Side panel -->
+        <div class="offcanvas-md offcanvas-start" data-bs-theme="dark" id="left-Offcanvas">
+          
+          <!-- Closing Button -->
+          <div class="offcanvas-header d-flex w-100 d-md-none" style="height: 50px">
+            <button class="bi bi-x" data-bs-dismiss="offcanvas" data-bs-target="#left-Offcanvas" aria-label="Close"></button>
+          </div>
+          
+          <!-- Panel Body -->
+          <div class="container d-flex flex-column offcanvas-body accordion accordion-flush" id="accordions">
+            
+            <div class="accordion-item text-center">
+              <button class="accordion-header btn w-100" href="index.html">Topics</button>
+            </div>
+
+            <div class="accordion-item">
+              <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseOne" aria-expanded="false" aria-controls="flush-collapseOne">
+                Agricultural Economics
+              </button>
+              <nav class="accordion-collapse collapse" data-bs-parent="#accordions" id="flush-collapseOne">
+                <ul class="accordion-body">
+                  <a href="Agecon/cooperatives.html"><li>Agricultural Cooperatives</li></a>
+                  <a href="Agecon/rural_development.html"><li>Rural Economics</li></a>
+                  <a href="Agecon/food_supply_chain.html"><li>Food Supply Chains</li></a>
+                </ul>
+              </nav>
+            </div>
+            
+            <div class="accordion-item">
+              <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseTwo" aria-expanded="false" aria-controls="flush-collapseTwo">
+                Web Development
+              </button>
+              <nav class="accordion-collapse collapse" data-bs-parent="#accordions" id="flush-collapseTwo">
+                <ul class="d-flex flex-column">
+                  <a href="1._HTML/index.html"><li>HTML</li></a>
+                  <a href="Web_Design/Front-End/Coding/02._CSS/introduction/index.html"><li>CSS</li></a>
+                  <a href="03._JS/index.html"><li>JavaScript</li></a>
+                  <a href="layout/index.html"><li>Design</li></a>
+                </ul>
+              </nav>
+            </div>
+            
+            <div class="accordion-item">
+              <div class="accordion-header">
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseThree" aria-expanded="false" aria-controls="flush-collapseThree">English Teaching</button>
+              </div>
+              <nav class="accordion-collapse collapse" data-bs-parent="#accordions" id="flush-collapseThree">
+                <ul class="d-flex flex-column bg-body-primary">
+                  <a href="english_teaching/TESOL/index.html"><li>TESOL</li></a>
+                  <a href="english_teaching/TESOL/words_and_pronounc/type_of_words.html"><li>Words and Pronounciation</li></a>
+                  <a href="english_teaching/TESOL/tenses/tenses.html"><li>Sentences</li></a>
+                  <a href="english_teaching/TESOL/index.html"><li>TESOL</li></a>
+                  <a href="english_teaching/TESOL/index.html"><li>TESOL</li></a>
+                  <a href="english_teaching/TESOL/index.html"><li>TESOL</li></a>
+                </ul>
+              </nav>
+            </div>
+            
+            <div class="accordion-item">
+              <div class="accordion-header">
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseFour" aria-expanded="false" aria-controls="flush-collapseFour">
+                  Data Science
+                </button>
+              </div>
+              <nav class="accordion-collapse collapse" data-bs-parent="#accordions" id="flush-collapseFour">
+                <ul class="accordion-body">
+                  <a href="#type_of_words"><li>Types of Words</li></a>
+                  <li></li>
+                  <li></li>
+                  <li></li>
+                  <li></li>
+                </ul>
+              </nav>
+            </div>
+            
+            <div class="accordion-item">
+              <div class="accordion-header">
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseFive" aria-expanded="false" aria-controls="flush-collapseFive">
+                  Linux Systems
+                </button>
+              </div>
+              
+              <nav class="accordion-collapse collapse" data-bs-parent="#accordions" id="flush-collapseFive">
+                <ul>
+                  <a href="#type_of_words"><li>Types of Words</li></a>
+                  <li></li>
+                  <li></li>
+                  <li></li>
+                  <li></li>
+                </ul>
+              </nav>
+            </div>
+            
+            <div class="accordion-item">
+              <div class="accordion-header">
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseSix" aria-expanded="false" aria-controls="flush-collapseSix">
+                  Biochemistry
+                </button>
+              </div>
+              <nav class="accordion-collapse collapse" data-bs-parent="#accordions" id="flush-collapseSix">
+                <ul>
+                  <a href="#type_of_words"><li>Types of Words</li></a>
+                  <li></li>
+                  <li></li>
+                  <li></li>
+                  <li></li>
+                </ul>
+              </nav>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      
+      <div class="container ps-md-2 mt-3 mt-md-0 col-md-9 ">
         <article>
           <p>Welcome!
             <br><br>
-
+            
             This page contains resources I've created here and there in the course of my life and career. These resources
             include research articles, papers, and study notes on different topics. You can browse whatever interests you
             over in the side panel on your left. <br><br>
@@ -138,18 +203,18 @@
             To preview them and see that they are worth it, ask for the full access via a button below.
           </p>
         </article>
-
-        <section class="gallery">
-          <a href= "english_teaching/TESOL/index.html"><h2>English Teaching</h2></a>
-          <div class="topic_gallery">
-
-            <a href="english_teaching/TESOL/words_and_pronounc/type_of_words.html">
-              <div class="sub_topics">
-                <img src=""/>
-                <h3>Types of Words</h3>
-              </div>
-            </a>
-            
+        
+        <section class="grid">
+          <div class="grid">
+            <a class="g-col-9" href= "english_teaching/TESOL/index.html"><h2>English Teaching</h2></a>
+            <div class="g-col-3">
+              <a href="english_teaching/TESOL/words_and_pronounc/type_of_words.html">
+                <div class="sub_topics">
+                  <img src=""/>
+                  <h3>Types of Words</h3>
+                </div>
+              </a>
+            </div>
             
             <a href="english_teaching/TESOL/words_and_pronounc/class_of_words.html">
               <div class="sub_topics">
@@ -164,16 +229,16 @@
                 <h3>Teaching Verbs</h3>
               </div>
             </a>
-
+            
             <a href="english_teaching/TESOL/words_and_pronounc/punctuation.html">
               <div class="sub_topics">
                 <img />
                 <h3>Punctuation</h3>
               </div>
             </a>  
-
+            
           </div>
-
+          
           <a href= "1._HTML/index.html"><h2>Web Development</h2></a>
           <div class="topic_gallery">
             <a href="1._HTML/01._Intro.html">
@@ -197,7 +262,7 @@
                 <h3>Git and GitHub</h3>
               </div>
             </a>
-
+            
             <a href="03._JS/Introduction.html">
               <div class="sub_topics">
                 <img />
@@ -212,7 +277,7 @@
               </div>
             </a>
           </div>
-
+          
           <a href= "chemistry/index.html"><h2>Biology and Chemistry</h2></a>
           <div class="topic_gallery">
             <a href="chemistry/presequites.html">
@@ -231,14 +296,16 @@
             </a>
           </div>
         </section>
-      </section>
-
-
-      <!-- Bootstrap's JS -->
-      <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
-      
-      
-      <!-- My own JS (only so that it is easy to find when I need it) -->
-      <!-- <script src="english_teaching/TESOL/resources/index.js"></script> -->
-    </body>
+      </div>
+    </section>
+    
+    
+    <!-- Bootstrap's JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+    
+    
+    <!-- My own JS (only so that it is easy to find when I need it) -->
+    <!-- <script src="english_teaching/TESOL/resources/index.js"></script> -->
+  </main>
+</body>
 </html>
