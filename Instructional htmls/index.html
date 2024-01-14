@@ -77,7 +77,15 @@
         <i class="bi bi-list ms-2 row d-md-none" type="button" data-bs-toggle="offcanvas" data-bs-target="#left-Offcanvas"></i>
         
         <!-- Side panel -->
-        <div class="offcanvas-md offcanvas-start" data-bs-theme="dark" id="left-Offcanvas">
+        <div class="offcanvas-md offcanvas-start" data-bs-theme="light" id="left-Offcanvas">
+          
+          <!-- Enabling hover on Accordions -->
+          <style>
+            .accordion-button:hover, .accordion-header:hover{
+              background-color: blue;
+              color: white;
+            }
+          </style>
           
           <!-- Closing Button -->
           <div class="offcanvas-header d-flex w-100 d-md-none" style="height: 50px">
@@ -90,7 +98,7 @@
             <div class="accordion-item text-center">
               <button class="accordion-header btn w-100" href="index.html">Topics</button>
             </div>
-
+            
             <div class="accordion-item">
               <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseOne" aria-expanded="false" aria-controls="flush-collapseOne">
                 Agricultural Economics
@@ -204,108 +212,141 @@
           </p>
         </article>
         
-        <section class="grid">
-          <div class="grid">
-            <a class="g-col-9" href= "english_teaching/TESOL/index.html"><h2>English Teaching</h2></a>
-            <div class="g-col-3">
-              <a href="english_teaching/TESOL/words_and_pronounc/type_of_words.html">
-                <div class="sub_topics">
-                  <img src=""/>
-                  <h3>Types of Words</h3>
-                </div>
-              </a>
+        <section class="px-3 py-4 rounded-2 bg-secondary">
+          <div class="row">
+            <div class="row">
+              <a class="" href= "english_teaching/TESOL/index.html"><h2>English Teaching</h2></a>
             </div>
             
-            <a href="english_teaching/TESOL/words_and_pronounc/class_of_words.html">
-              <div class="sub_topics">
-                <img src=""/>
-                <h3>Classes of Words</h3>
+            <div class="row gx-2">
+              <div class="col-md-4">
+                <a href="english_teaching/TESOL/words_and_pronounc/type_of_words.html">
+                  <div class="container d-flex flex-column align-items-center justify-content-center">
+                    <img class="img-thumbnail img-fluid" src="../imgs/notes/english_teaching/sincerely-media--gG86PdIzUA-unsplash.jpg" style="max-width: auto; max-height: auto; min-width: 200px; min-height: 200px;"/>
+                    <h4 class="text-center">Types of Words</h4>
+                  </div>
+                </a>
               </div>
-            </a>
-            
-            <a href="english_teaching/TESOL/words_and_pronounc/teaching_verbs.html">
-              <div class="sub_topics">
-                <img />
-                <h3>Teaching Verbs</h3>
+              
+              <div class="col-md-4">
+                <a href="english_teaching/TESOL/words_and_pronounc/class_of_words.html">
+                  <div class="container d-flex flex-column align-items-center justify-content-center">
+                    <img class="img-fluid img-thumbnail" src="../imgs/notes/english_teaching/word_classes.jpg" style="max-width: auto; max-height: auto; min-width: 200px; min-height: 200px;"/>
+                    <h4 class="text-center">Classes of Words</h5>
+                    </div>
+                  </a>
+                </div>
+                
+                <div class="col-md-4">
+                  <a href="english_teaching/TESOL/words_and_pronounc/teaching_verbs.html">
+                    <div class="container d-flex flex-column align-items-center justify-content-center text-center">
+                      <img class="img-fluid img-thumbnail" src="../imgs/notes/english_teaching/teaching_verbs.jpg" style="max-width: auto; max-height: auto; min-width: 200px; min-height: 200px;"/>
+                      <h4>Teaching Verbs</h4>
+                    </div>
+                  </a>
+                </div>
+                
+                <div class="col-md-4">
+                  <a href="english_teaching/TESOL/words_and_pronounc/punctuation.html">
+                    <div class="container d-flex flex-column align-items-center justify-content-center text-center">
+                      <img class="img-fluid img-thumbnail" src="../imgs/notes/english_teaching/punctuation.jpg" style="max-width: auto; max-height: auto; min-width: 200px; min-height: 200px;"/>
+                      <h4>Punctuation</h4>
+                    </div>
+                  </a>
+                </div>
               </div>
-            </a>
-            
-            <a href="english_teaching/TESOL/words_and_pronounc/punctuation.html">
-              <div class="sub_topics">
-                <img />
-                <h3>Punctuation</h3>
-              </div>
-            </a>  
-            
-          </div>
-          
-          <a href= "1._HTML/index.html"><h2>Web Development</h2></a>
-          <div class="topic_gallery">
-            <a href="1._HTML/01._Intro.html">
-              <div class="sub_topics">
-                <img src="https://www.w3.org/html/logo/badge/html5-badge-h-solo.png"/>
-                <h3>HTML</h3>
-              </div>
-            </a>
-            
-            
-            <a href="Web_Design/Front-End/Coding/02._CSS/introduction/">
-              <div class="sub_topics">
-                <img src="/imgs/notes/icons8-css-50.png"/>
-                <h3>CSS</h3>
-              </div>
-            </a>
-            
-            <a href="github/index.html">
-              <div class="sub_topics">
-                <img />
-                <h3>Git and GitHub</h3>
-              </div>
-            </a>
-            
-            <a href="03._JS/Introduction.html">
-              <div class="sub_topics">
-                <img />
-                <h3>JavaScript</h3>
-              </div>
-            </a>  
-            
-            <a href="layout/index.html">
-              <div class="sub_topics">
-                <img />
-                <h3>UX Design</h3>
-              </div>
-            </a>
-          </div>
-          
-          <a href= "chemistry/index.html"><h2>Biology and Chemistry</h2></a>
-          <div class="topic_gallery">
-            <a href="chemistry/presequites.html">
-              <div class="sub_topics">
-                <img src="https://www.w3.org/html/logo/badge/html5-badge-h-solo.png"/>
-                <h3>Introduction</h3>
-              </div>
-            </a>
+            </div>
             
             
-            <a href="chemistry/the_atom.html">
-              <div class="sub_topics">
-                <img src="/imgs/notes/icons8-css-50.png"/>
-                <h3>Intro To The Atom</h3>
+            <div class="row gy-3">
+              <div class="row">
+                <a href= "1._HTML/index.html"><h2>Web Development</h2></a>
               </div>
-            </a>
+              
+              <div class="row gx-2">
+                <div class="col-md-4">
+                  <a href="1._HTML/01._Intro.html">
+                    <div class="container d-flex flex-column align-items-center justify-content-center">
+                      <img src="https://www.w3.org/html/logo/badge/html5-badge-h-solo.png"/>
+                      <h3>HTML</h3>
+                    </div>
+                  </a>
+                </div>
+                
+                <div class="col-md-4">  
+                  <a href="Web_Design/Front-End/Coding/02._CSS/introduction/">
+                    <div class="sub_topics">
+                      <img src="/imgs/notes/icons8-css-50.png"/>
+                      <h3>CSS</h3>
+                    </div>
+                  </a>
+                </div>
+                
+                <div class="col-md-4">
+                  <a href="github/index.html">
+                    <div class="sub_topics">
+                      <img />
+                      <h3>Git and GitHub</h3>
+                    </div>
+                  </a>
+                </div>  
+                
+                <div class="col-md-4">
+                  <a href="03._JS/Introduction.html">
+                    <div class="sub_topics">
+                      <img />
+                      <h3>JavaScript</h3>
+                    </div>
+                  </a>
+                </div>
+                
+                <div class="col-md-4">
+                  <a href="layout/index.html">
+                    <div class="sub_topics">
+                      <img />
+                      <h3>UX Design</h3>
+                    </div>
+                  </a>
+                </div>
+              </div>
+              
+              <div class="row">
+                <div>
+                  <a href= "chemistry/index.html"><h2>Biology and Chemistry</h2></a>
+                </div>
+                
+                <div class="row">
+                  <div class="col-md-4">
+                    <a href="chemistry/presequites.html">
+                      <div class="sub_topics">
+                        <img src="https://www.w3.org/html/logo/badge/html5-badge-h-solo.png"/>
+                        <h3>Introduction</h3>
+                      </div>
+                    </a>
+                  </div>
+                  
+                  <div class="col-md-4">
+                    <a href="chemistry/the_atom.html">
+                      <div class="sub_topics">
+                        <img src="/imgs/notes/icons8-css-50.png"/>
+                        <h3>Intro To The Atom</h3>
+                      </div>
+                    </a>
+                  </div>
+                </div>
+              </div>
+            </section>
           </div>
         </section>
-      </div>
-    </section>
+        
+        
+        <!-- Bootstrap's JS -->
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+        
+        
+        <!-- My own JS (only so that it is easy to find when I need it) -->
+        <!-- <script src="english_teaching/TESOL/resources/index.js"></script> -->
+      </main>
+    </body>
+    </html>
     
-    
-    <!-- Bootstrap's JS -->
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
-    
-    
-    <!-- My own JS (only so that it is easy to find when I need it) -->
-    <!-- <script src="english_teaching/TESOL/resources/index.js"></script> -->
-  </main>
-</body>
-</html>
