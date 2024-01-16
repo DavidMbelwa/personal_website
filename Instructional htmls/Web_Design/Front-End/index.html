@@ -1,21 +1,327 @@
 <!DOCTYPE html>
 
 <html>
-    <head>
-        <title></title>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width initial-scale=1.0">
+<head>
+    <title></title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width initial-scale=1.0">
+    
+    <!-- Main stylesheet -->
+    <link rel="stylesheet" type="text/css" href="../../../resources/css/main-min.css" />
+    
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto&family=Source+Sans+3:wght@200;300;400;600;700&display=swap" rel="stylesheet">
+    
+    <!-- icons -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+
+<body class="container-fluid p-2 px-sm-4" style="height: 100vh">
+    <header class="navbar navbar-expand-lg" style="height: 85px;" data-bs-theme="light">
+        <div class="container-fluid">
+            
+            <!-- the icon button -->
+            <a class="navbar-brand text-primary" href="../../../index.html"><i class="fa-solid fa-house"></i></a>
+            
+            <!-- the toggler -->
+            <button class="navbar-toggler border border-0" type="button" data-bs-toggle="offcanvas" data-bs-target="#main_nav" aria-controls="main_nav" aria-expanded="false" aria-label="Toggle Navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            
+            <!-- the offcanvas -->
+            <nav class="offcanvas navbar-collapse navbar-nav offcanvas-end col-md-3 bg-body-primary" id="main_nav">
+                <div class="offcanvas-header d-flex justify-content-end w-100">
+                    <button class="btn-close d-lg-none" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+                </div>
+                <ul class="navbar-nav container-sm d-lg-flex justify-content-end" id="links">
+                    <a href="../../../technologies/index.html"><li class="btn">Technologies</li></a>
+                    <a href="../../../portfolio/index.html"><li class="btn">Portfolio</li></a>
+                    <a href="../../index.html"><li class="btn">Notes</li></a>
+                    <a href="../../../about_page.html"><li class="btn">About</li></a>
+                </ul>
+            </nav>
+        </div>
+    </header>
+    
+    
+    <main class="container-fluid h-100">
+        <!-- The Breadcumb -->
+        <div class="container-fluid row px-0">
+            <nav class="container col d-flex align-items-end justify-content-start" aria-label="breadcrumb">
+                <ol class="breadcrumb py-0 my-0">
+                    <li class="breadcrumb-item"><a href="../../../index.html">Home</a></li>
+                    <li class="breadcrumb-item"><a href="../../index.html">Resources</a></li>
+                    <li class="breadcrumb-item"><a href="../index.html">Web Development</a></li>
+                    <li class="breadcrumb-item active" aria-current="page">Front-End Development</li>
+                </ol>
+            </nav>
+        </div>
         
-        <!-- Main stylesheet -->
-        <link rel="stylesheet" type="text/css" href="../../../resources/css/main-min.css" />
         
-        <!-- Fonts -->
-        <link rel="preconnect" href="https://fonts.googleapis.com">
-        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-        <link href="https://fonts.googleapis.com/css2?family=Roboto&family=Source+Sans+3:wght@200;300;400;600;700&display=swap" rel="stylesheet">
+        <!-- Hero -->
+        <section class="container-fluid row h-50">
+            <article class="container-fluid d-flex justify-content-center align-items-center col">
+                <h1 class="fs-1">Front-End Development</h1>
+            </article>
+        </section>
         
-        <!-- icons -->
-        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
-        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-    </head>
-</html>
+        <!-- Content page -->
+        <section class="container-fluid row g-1 px-0">
+            
+            <!-- The side panel and toggler -->
+            <div class="container ps-0 pe-3 col-md-3">
+                
+                <!-- Toggler -->
+                <i class="bi bi-list ms-2 row d-md-none" type="button" data-bs-toggle="offcanvas" data-bs-target="#left-Offcanvas"></i>
+                
+                <!-- Side panel -->
+                <div class="offcanvas-md offcanvas-start" data-bs-theme="light" id="left-Offcanvas">
+                    
+                    <!-- Enabling hover on Accordions -->
+                    <style>
+                        .accordion-button:hover, .accordion-header:hover{
+                            background-color: #002e63;
+                            color: white;
+                        }
+
+                        .accordion-body a:hover
+                        {
+                            background-color: #198754;
+                            color: white;
+                        }
+                    </style>
+                    
+                    <!-- Closing Button -->
+                    <div class="offcanvas-header d-flex w-100 d-md-none" style="height: 50px">
+                        <button class="bi bi-x" data-bs-dismiss="offcanvas" data-bs-target="#left-Offcanvas" aria-label="Close"></button>
+                    </div>
+                    
+                    <!-- Panel Body -->
+                    <div class="container d-flex flex-column offcanvas-body accordion accordion-flush" id="accordions">
+                        
+                        <div class="accordion-item bg-primary">
+                            <button class="accordion-header btn w-100 text-light text-start" href="index.html">Topics</button>
+                        </div>
+                        
+                        <div class="accordion-item">
+                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseOne" aria-expanded="false" aria-controls="flush-collapseOne">
+                                Design Theory
+                            </button>
+                            <nav class="accordion-collapse collapse" data-bs-parent="#accordions" id="flush-collapseOne">
+                                <ul class="accordion-body d-flex flex-column align-items-start px-0">
+                                    <a class="btn w-100 text-start" style="list-style-type: none;" href="Pre-Coding/shapes_theory.html"><li>Shapes</li></a>
+                                    <a class="btn w-100 text-start" style="list-style-type: none;" href="Pre-Coding/spacing.html"><li>Spacing</li></a>
+                                    <a class="btn w-100 text-start" style="list-style-type: none;" href="Pre-Coding/color_theory.html"><li>Color</li></a>
+                                    <a class="btn w-100 text-start" style="list-style-type: none;" href="Pre-Coding/fonts.html"><li>Fonts</li></a>
+                                    <a class="btn w-100 text-start" style="list-style-type: none;" href="Pre-Coding/tools.html"><li>Tools</li></a>
+                                </ul>
+                            </nav>
+                        </div>
+                        
+                        <div class="accordion-item">
+                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseTwo" aria-expanded="false" aria-controls="flush-collapseTwo">
+                                Design Elements
+                            </button>
+                            <nav class="accordion-collapse collapse" data-bs-parent="#accordions" id="flush-collapseTwo">
+                                <ul class="accordion-body d-flex flex-column align-items-start px-0">
+                                    <a class="btn w-100 text-start" style="list-style-type: none;" href="Pre-Coding/patterns/common_patterns.html"><li>Introduction</li></a>
+                                    <a class="btn w-100 text-start" style="list-style-type: none;" href="Pre-Coding/patterns/headers.html"><li>Headers</li></a>
+                                    <a class="btn w-100 text-start" style="list-style-type: none;" href="Pre-Coding/patterns/hero.html"><li>Hero</li></a>
+                                    <a class="btn w-100 text-start" style="list-style-type: none;" href="Pre-Coding/patterns/hero.html"><li>Buttons</li></a>
+                                    <a class="btn w-100 text-start" style="list-style-type: none;" href="Pre-Coding/patterns/images_and_icon.html"><li>Images and Icons</li></a>
+                                    <a class="btn w-100 text-start" style="list-style-type: none;" href="Pre-Coding/patterns/modals.html"><li>Modals</li></a>
+                                    <a class="btn w-100 text-start" style="list-style-type: none;" href="Pre-Coding/patterns/grids.html"><li>Grids</li></a>
+                                    <a class="btn w-100 text-start" style="list-style-type: none;" href="Pre-Coding/patterns/footers.html"><li>Footers</li></a>
+                                </ul>
+                            </nav>
+                        </div>
+                        
+                        <div class="accordion-item">
+                            <div class="accordion-header">
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseThree" aria-expanded="false" aria-controls="flush-collapseThree">
+                                    The Workflow
+                                </button>
+                            </div>
+                            <nav class="accordion-collapse collapse" data-bs-parent="#accordions" id="flush-collapseThree">
+                                <ul class="accordion-body d-flex flex-column align-items-start px-0">
+                                    <a class="btn w-100 text-start" style="list-style-type: none;" href="Pre-Coding/workflow/project_briefs.html"><li>Project Briefs</li></a>
+                                    <a class="btn w-100 text-start" style="list-style-type: none;" href="Pre-Coding/workflow/wireframes.html"><li>Wireframes</li></a>
+                                    <a class="btn w-100 text-start" style="list-style-type: none;" href="Pre-Coding/workflow/project_briefs.html"><li>Sentences</li></a>
+                                </ul>
+                            </nav>
+                        </div>
+                        
+                        <div class="accordion-item">
+                            <div class="accordion-header">
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseFour" aria-expanded="false" aria-controls="flush-collapseFour">
+                                    Technologies
+                                </button>
+                            </div>
+                            <nav class="accordion-collapse collapse" data-bs-parent="#accordions" id="flush-collapseFour">
+                                <ul class="accordion-body d-flex flex-column align-items-start px-0">
+                                    <a class="btn w-100 text-start" style="list-style-type: none;" href="Coding/1._HTML/index.html"><li>HTML</li></a>
+                                    <a class="btn w-100 text-start" style="list-style-type: none;" href="Coding/02._CSS/introduction/index.html"><li>CSS</li></a>
+                                    <a class="btn w-100 text-start" style="list-style-type: none;" href="Coding/03._JS/index.html"><li>JavaScript</li></a>
+                                    <a class="btn w-100 text-start" style="list-style-type: none;" href="Coding/frameworks/css/index.html"><li>CSS Frameworks</li></a>
+                                    <a class="btn w-100 text-start" style="list-style-type: none;" href="Coding/frameworks/js/index.html"><li>JavaScript Frameworks</li></a>
+                                </ul>
+                            </nav>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            
+            <!-- Body text -->
+            <div class="container ps-md-2 mt-3 mt-md-0 col-md-9 ">
+                <article>
+                    <p>Welcome!
+                        <br><br>
+                        
+                        This page contains resources I've created here and there in the course of my life and career. These resources
+                        include research articles, papers, and study notes on different topics. You can browse whatever interests you
+                        over in the side panel on your left. <br><br>
+                        
+                        The access to some of these resources is based on a yearly partonage of 2 USD a year. You
+                        To preview them and see that they are worth it, ask for the full access via a button below.
+                    </p>
+                </article>
+                
+                
+                <!-- Course Gallery -->
+                <section class="px-3 py-2 rounded-2">
+                    
+                    <!-- English Teaching -->
+                    <div class="row">
+                        <div class="row my-4">
+                            <a class="col-md-4" href= "english_teaching/TESOL/index.html"><h2>English Teaching</h2></a>
+                        </div>
+                        
+                        <div class="row gx-2 py-4 rounded-2">
+                            <div class="col-md-4">
+                                <a href="english_teaching/TESOL/words_and_pronounc/type_of_words.html">
+                                    <div class="container d-flex flex-column align-items-center justify-content-center text-center px-3" style="max-width: 600px;">
+                                        <img class="img-thumbnail img-fluid" src="../imgs/notes/english_teaching/sincerely-media--gG86PdIzUA-unsplash.jpg" style="max-width: auto; max-height: 300px; min-width: 200px; min-height: 200px;"/>
+                                        <h4 class="text-center">Types of Words</h4>
+                                    </div>
+                                </a>
+                            </div>
+                            
+                            <div class="col-md-4">
+                                <a href="english_teaching/TESOL/words_and_pronounc/class_of_words.html">
+                                    <div class="container d-flex flex-column align-items-center justify-content-center text-center px-3" style="max-width: 600px;">
+                                        <img class="img-fluid img-thumbnail" src="../imgs/notes/english_teaching/word_classes.jpg" style="max-width: auto; max-height: 300px; min-width: 200px; min-height: 200px;"/>
+                                        <h4 class="text-center">Classes of Words</h5>
+                                        </div>
+                                    </a>
+                                </div>
+                                
+                                <div class="col-md-4">
+                                    <a href="english_teaching/TESOL/words_and_pronounc/teaching_verbs.html">
+                                        <div class="container d-flex flex-column align-items-center justify-content-center text-center px-3" style="max-width: 600px;">
+                                            <img class="img-fluid img-thumbnail" src="../imgs/notes/english_teaching/teaching_verbs.jpg" style="max-width: auto; max-height: 300px; min-width: 200px; min-height: 200px;"/>
+                                            <h4>Teaching Verbs</h4>
+                                        </div>
+                                    </a>
+                                </div>
+                                
+                                <div class="col-md-4">
+                                    <a href="english_teaching/TESOL/words_and_pronounc/punctuation.html">
+                                        <div class="container d-flex flex-column align-items-center justify-content-center text-center px-3" style="max-width: 600px;">
+                                            <img class="img-fluid img-thumbnail" src="../imgs/notes/english_teaching/punctuation.jpg" style="max-width: auto; max-height: 300px; min-width: 200px; min-height: 200px;"/>
+                                            <h4>Punctuation</h4>
+                                        </div>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        
+                        <!-- Web Development -->
+                        <div class="row">
+                            <div class="row my-3">
+                                <a class="col-md-4" href= "Web_Design/index.html"><h2>Web Development</h2></a>
+                            </div>
+                            
+                            <div class="row gx-2">
+                                <div class="col-md-4">
+                                    <a href="Web_Design/Front-End/index.html">
+                                        <div class="container d-flex flex-column align-items-center justify-content-center">
+                                            <img class="img-fluid img-thumbnail" src="../imgs/notes/web_development/front-end.jpg" style="max-width: auto; max-height: 400px; min-width: 200px; min-height: 200px;"/>
+                                            <h4 class="btn">Front-End Development</h4>
+                                        </div>
+                                    </a>
+                                </div>
+                                
+                                <div class="col-md-4">  
+                                    <a href="Web_Design/back_end/index.html">
+                                        <div class="container d-flex flex-column align-items-center justify-content-between" style="max-width: 600px;">
+                                            <img class="img-fluid img-thumbnail" src="../imgs/notes/web_development/back-end.jpg" style="max-height: 400px; min-height: 200px;"/>
+                                            <h3>Back-End Development</h3>
+                                        </div>
+                                    </a>
+                                </div>
+                                
+                                <div class="col-md-4">
+                                    <a href="Web_Design/mobile_design/index.html">
+                                        <div class="container d-flex flex-column align-items-center justify-content-between" style="max-width: 600px;">
+                                            <img class="img-fluid img-thumbnail" src="../imgs/notes/web_development/mobile_app.jpg" style="max-height: 400px; min-height: 200px;"/>
+                                            <h3>Mobile App Development</h3>
+                                        </div>
+                                    </a>
+                                </div>  
+                                
+                                <div class="col-md-4">
+                                    <a href="Web_Design/cyber_security/index.html">
+                                        <div class="container d-flex flex-column align-items-center justify-content-between" style="max-width: 600px;">
+                                            <img class="img-fluid img-thumbnail" src="../imgs/notes/web_development/cyber_sec.jpg" style="max-height: 400px; min-height: 200px;"/>
+                                            <h3>Cyber Security</h3>
+                                        </div>
+                                    </a>
+                                </div>
+                            </div>
+                            
+                            
+                            <!-- Biology -->
+                            <div class="row">
+                                <div>
+                                    <a class="col-md-4" href= "chemistry/index.html"><h2>Biology and Chemistry</h2></a>
+                                </div>
+                                
+                                <div class="row">
+                                    <div class="col-md-4">
+                                        <a href="chemistry/presequites.html">
+                                            <div class="sub_topics">
+                                                <img src="https://www.w3.org/html/logo/badge/html5-badge-h-solo.png"/>
+                                                <h3>Introduction</h3>
+                                            </div>
+                                        </a>
+                                    </div>
+                                    
+                                    <div class="col-md-4">
+                                        <a href="chemistry/the_atom.html">
+                                            <div class="sub_topics">
+                                                <img src="/imgs/notes/icons8-css-50.png"/>
+                                                <h3>Intro To The Atom</h3>
+                                            </div>
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                        </section>
+                    </div>
+                </section>
+                
+                
+                <!-- Bootstrap's JS -->
+                <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+                
+                
+                <!-- My own JS (only so that it is easy to find when I need it) -->
+                <!-- <script src="english_teaching/TESOL/resources/index.js"></script> -->
+            </main>
+        </body>
+        </html>
