@@ -79,7 +79,7 @@
                 <i class="bi bi-list ms-2 row d-md-none" type="button" data-bs-toggle="offcanvas" data-bs-target="#left-Offcanvas"></i>
                 
                 <!-- Side panel -->
-                <div class="offcanvas-md offcanvas-start" data-bs-theme="light" id="left-Offcanvas">
+                <div class="offcanvas-md sticky-md-top offcanvas-start" data-bs-theme="light" id="left-Offcanvas">
                     
                     <!-- Enabling hover on Accordions -->
                     <style>
@@ -103,64 +103,28 @@
                     <!-- Panel Body -->
                     <div class="container d-flex flex-column offcanvas-body accordion accordion-flush" id="accordions">
                         
-                        <div class="accordion-item bg-primary">
-                            <button class="accordion-header btn w-100 text-light text-start" href="index.html">Topics</button>
-                        </div>
-                        
                         <div class="accordion-item">
-                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" href="#terminology" aria-expanded="false" aria-controls="flush-collapseOne">
+                            <a class="accordion-header btn w-100 text-start rounded-0" type="button" href="#terminology" aria-expanded="false" aria-controls="flush-collapseOne">
                                 Terminology
-                            </button>
+                            </a>
                         </div>
                         
                         <div class="accordion-item">
-                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseTwo" aria-expanded="false" aria-controls="flush-collapseTwo">
-                                Design Elements
-                            </button>
-                            <nav class="accordion-collapse collapse" data-bs-parent="#accordions" id="flush-collapseTwo">
-                                <ul class="accordion-body d-flex flex-column align-items-start px-0">
-                                    <a class="btn w-100 text-start" style="list-style-type: none;" href="Pre-Coding/patterns/common_patterns.html"><li>Introduction</li></a>
-                                    <a class="btn w-100 text-start" style="list-style-type: none;" href="Pre-Coding/patterns/headers.html"><li>Headers</li></a>
-                                    <a class="btn w-100 text-start" style="list-style-type: none;" href="Pre-Coding/patterns/hero.html"><li>Hero</li></a>
-                                    <a class="btn w-100 text-start" style="list-style-type: none;" href="Pre-Coding/patterns/hero.html"><li>Buttons</li></a>
-                                    <a class="btn w-100 text-start" style="list-style-type: none;" href="Pre-Coding/patterns/images_and_icon.html"><li>Images and Icons</li></a>
-                                    <a class="btn w-100 text-start" style="list-style-type: none;" href="Pre-Coding/patterns/modals.html"><li>Modals</li></a>
-                                    <a class="btn w-100 text-start" style="list-style-type: none;" href="Pre-Coding/patterns/grids.html"><li>Grids</li></a>
-                                    <a class="btn w-100 text-start" style="list-style-type: none;" href="Pre-Coding/patterns/footers.html"><li>Footers</li></a>
-                                </ul>
-                            </nav>
+                            <a class="accordion-header btn rounded-0 py-3 w-100 text-start" type="button" href="#psychology" aria-expanded="false" aria-controls="flush-collapseTwo">
+                                Color Psychology
+                            </a>
                         </div>
                         
                         <div class="accordion-item">
-                            <div class="accordion-header">
-                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseThree" aria-expanded="false" aria-controls="flush-collapseThree">
-                                    The Workflow
-                                </button>
-                            </div>
-                            <nav class="accordion-collapse collapse" data-bs-parent="#accordions" id="flush-collapseThree">
-                                <ul class="accordion-body d-flex flex-column align-items-start px-0">
-                                    <a class="btn w-100 text-start" style="list-style-type: none;" href="Pre-Coding/workflow/project_briefs.html"><li>Project Briefs</li></a>
-                                    <a class="btn w-100 text-start" style="list-style-type: none;" href="Pre-Coding/workflow/wireframes.html"><li>Wireframes</li></a>
-                                    <a class="btn w-100 text-start" style="list-style-type: none;" href="Pre-Coding/workflow/project_briefs.html"><li>Sentences</li></a>
-                                </ul>
-                            </nav>
+                            <a class="accordion-header btn rounded-0 py-3 w-100 text-start" type="button" href="#saturation" aria-expanded="false" aria-controls="flush-collapseThree">
+                                Saturation and Brightness
+                            </a>
                         </div>
                         
                         <div class="accordion-item">
-                            <div class="accordion-header">
-                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseFour" aria-expanded="false" aria-controls="flush-collapseFour">
-                                    Technologies
-                                </button>
-                            </div>
-                            <nav class="accordion-collapse collapse" data-bs-parent="#accordions" id="flush-collapseFour">
-                                <ul class="accordion-body d-flex flex-column align-items-start px-0">
-                                    <a class="btn w-100 text-start" style="list-style-type: none;" href="Coding/1._HTML/index.html"><li>HTML</li></a>
-                                    <a class="btn w-100 text-start" style="list-style-type: none;" href="Coding/02._CSS/introduction/index.html"><li>CSS</li></a>
-                                    <a class="btn w-100 text-start" style="list-style-type: none;" href="Coding/03._JS/index.html"><li>JavaScript</li></a>
-                                    <a class="btn w-100 text-start" style="list-style-type: none;" href="Coding/frameworks/css/index.html"><li>CSS Frameworks</li></a>
-                                    <a class="btn w-100 text-start" style="list-style-type: none;" href="Coding/frameworks/js/index.html"><li>JavaScript Frameworks</li></a>
-                                </ul>
-                            </nav>
+                            <a class="accordion-header btn rounded-0 py-3 w-100 text-start" type="button" href="#harmony" aria-expanded="false" aria-controls="flush-collapseFour">
+                                Harmony and Selection Tools
+                            </a>
                         </div>
                     </div>
                 </div>
@@ -201,7 +165,7 @@
                     </ul>
                     
                     
-                    <h3>Secondary Colors</h3>
+                    <h4>Secondary Colors</h4>
                     <ul class="ps-3">
                         <li>Also depends on what someone is talking about; but secondary colors are supposed to mean the combination
                             of primary colors in equal amount. So when you mix blue and red you get purple, red and yellow you get orange,
@@ -214,7 +178,7 @@
                         </li>
                     </ul>
                     
-                    <h3>Tertiary Colors</h3>
+                    <h4>Tertiary Colors</h4>
                     <ul class="ps-3">
                         <li>These are obtained by mixing primary colors with secondary colors; so if you mix blue with purple you get 
                             blue violet for example, blue with green you get cyan, etc.
@@ -223,7 +187,7 @@
                     </ul>
                     
                     
-                    <h3>Hue</h3>
+                    <h4>Hue</h4>
                     <ul class="ps-3">
                         <li>This is the color itself.</li>
                         <li>It doesn't matter if it is primary/secondary/tertiary. As long as it is in its full saturation, hue refers
@@ -231,608 +195,607 @@
                         </li>
                     </ul>
                     
-                    <h3>Tone</h3>
+                    <h4>Tone</h4>
                     <ul class="ps-3">
                         <li>Refers to the degree of brightness in the color.</li>
                     </ul>
                     
                     
-                    <h3>Shade</h3>
+                    <h4>Shade</h4>
                     <ul class="ps-3">
                         <li>Refers to the degree of blackness in the color.</li>
                     </ul>
                     
                     
-                    <h2>Color Models</h2>
+                    <h2 id="psychology">Color Psychology</h2>
+                    <p>Below are some accepted notions of what feelings different colors stimulate. It is not 
+                        an absolute rule/truth, but it works in such a way in a general situation (referenced from <a href="https://www.color-meanings.com/">color-meanings.com</a>).
+                    </p>
                     
-                    <h3>Color Psychology</h3>
-                    
-                    <article>
-                        <p>Below are some accepted notions of what feelings different colors stimulate. It is not 
-                            an absolute rule/truth, but it works in such a way in a general situation.
-                        </p>
+                    <table class="table">
+                        <thead>
+                            <tr>
+                                <th scope="col"></th>
+                                <th scope="col">Symbolizes</th>
+                                <th scope="col">Psychological Effect</th>
+                                <th scope="col">Positive Perception</th>
+                                <th scope="col">Negative Perception</th>
+                                <th scope="col">Relevant Hues</th>
+                            </tr>
+                        </thead>
                         
-                        <table class="table">
-                            <thead>
-                                <tr>
-                                    <th scope="col"></th>
-                                    <th scope="col">Symbolizes</th>
-                                    <th scope="col">Psychological Effect</th>
-                                    <th scope="col">Positive Perception</th>
-                                    <th scope="col">Negative Perception</th>
-                                    <th scope="col">Relevant Hues</th>
+                        <tbody>
+                            <tr id="red">
+                                <th scope="row">Red</td>
+                                    <td>
+                                        <ul>
+                                            <li>Action</li>
+                                            <li>Strength</li>
+                                            <li>Energy</li>
+                                            <li>Passion</li>
+                                        </ul>
+                                    </td>
+                                    
+                                    <td>
+                                        <ul>
+                                            <li>Attention</li>
+                                            <li>Motivation</li>
+                                            <li>Stimulation</li>
+                                            <li>Caution</li>
+                                        </ul>
+                                    </td>
+                                    
+                                    <td>
+                                        <ul>
+                                            <li>Sexuality</li>
+                                            <li>Courage</li>
+                                            <li>Desire</li>
+                                            <li>Confidence</li>
+                                        </ul>
+                                    </td>
+                                    
+                                    <td>
+                                        <ul>
+                                            <li>Anger</li>
+                                            <li>Danger</li>
+                                            <li>Revenge</li>
+                                            <li>Aggresion</li>
+                                        </ul>
+                                    </td>
+                                    
+                                    <td>
+                                        <div class="d-flex flex-column justify-content-center">
+                                            <label class="form-label p-1 text-center" style="background-color: #b00000; color: white;">#B00000</label>
+                                            <label class="form-label p-1 text-center" style="background-color: #c00000; color: white;">#C00000</label>
+                                            <label class="form-label p-1 text-center" style="background-color: #d00000; color: white;">#D00000</label>
+                                            <label class="form-label p-1 text-center" style="background-color: #ff0000; color: white;">#ff0000</label>
+                                        </div>
+                                    </td>
                                 </tr>
-                            </thead>
-                            
-                            <tbody>
-                                <tr id="red">
-                                    <th scope="row">Red</td>
-                                        <td>
-                                            <ul>
-                                                <li>Action</li>
-                                                <li>Strength</li>
-                                                <li>Energy</li>
-                                                <li>Passion</li>
-                                            </ul>
-                                        </td>
-                                        
-                                        <td>
-                                            <ul>
-                                                <li>attention</li>
-                                                <li>Motivation</li>
-                                                <li>Stimulation</li>
-                                                <li>Caution</li>
-                                            </ul>
-                                        </td>
-                                        
-                                        <td>
-                                            <ul>
-                                                <li>Sexuality</li>
-                                                <li>Courage</li>
-                                                <li>Desire</li>
-                                                <li>Confidence</li>
-                                            </ul>
-                                        </td>
-                                        
-                                        <td>
-                                            <ul>
-                                                <li>Anger</li>
-                                                <li>Danger</li>
-                                                <li>Revenge</li>
-                                                <li>Aggresion</li>
-                                            </ul>
-                                        </td>
-                                        
-                                        <td>
-                                            <div class="d-flex flex-column justify-content-between">
-                                                <div class="btn" style="background-color: #b00000; color: white;">#B00000</div>
-                                                <div class="btn" style="background-color: #c00000; color: white;">#C00000</div>
-                                                <div class="btn" style="background-color: #d00000; color: white;">#D00000</div>
-                                                <div class="btn" style="background-color: #ff0000; color: white">#ff0000</div>
-                                            </div>
-                                        </td>
-                                    </tr>
+                                
+                                <tr id="orange">
+                                    <th scope="row">Orange</th>
                                     
-                                    <tr id="orange">
-                                        <th scope="row">Orange</th>
-                                        
-                                        <td>
-                                            <ul>
-                                                <li>Emotion</li>
-                                                <li>Youth</li>
-                                                <li>Optimism</li>
-                                                <li>Enthusiasm</li>
-                                            </ul>
-                                        </td>
-                                        <td>
-                                            <ul>
-                                                <li>Encourages</li>
-                                                <li>Uplifts</li>
-                                                <li>Stimulates</li>
-                                                <li>Communicates</li>
-                                            </ul>
-                                        </td>
-                                        <td>
-                                            <ul>
-                                                <li>Spontaneity</li>
-                                                <li>Creativity</li>
-                                                <li>Warmth</li>
-                                                <li>Positivity</li>
-                                            </ul>
-                                        </td>
-                                        <td>
-                                            <ul>
-                                                <li>Exhibitionism</li>
-                                                <li>Superficial</li>
-                                                <li>Impatient</li>
-                                                <li>Domination</li>
-                                            </ul>
-                                        </td>
-                                        
-                                        <td>
-                                            <div class="d-flex flex-column justify-content-between">
-                                                <div class="btn" style="background-color:#983d00; color: white">#983d00</div>
-                                                <div class="btn" style="background-color:#c14d00; color: white">#c14d00</div>
-                                                <div class="btn" style="background-color:#d95700; color: white">#d95700</div>
-                                                <div class="btn" style="background-color:#ea5e00; color: white">#ea5e00</div>
-                                            </div>
-                                        </td>
-                                    </tr>
+                                    <td>
+                                        <ul>
+                                            <li>Emotion</li>
+                                            <li>Youth</li>
+                                            <li>Optimism</li>
+                                            <li>Enthusiasm</li>
+                                        </ul>
+                                    </td>
+                                    <td>
+                                        <ul>
+                                            <li>Encourages</li>
+                                            <li>Uplifts</li>
+                                            <li>Stimulates</li>
+                                            <li>Communicates</li>
+                                        </ul>
+                                    </td>
+                                    <td>
+                                        <ul>
+                                            <li>Spontaneity</li>
+                                            <li>Creativity</li>
+                                            <li>Warmth</li>
+                                            <li>Positivity</li>
+                                        </ul>
+                                    </td>
+                                    <td>
+                                        <ul>
+                                            <li>Exhibitionism</li>
+                                            <li>Superficial</li>
+                                            <li>Impatient</li>
+                                            <li>Domination</li>
+                                        </ul>
+                                    </td>
                                     
-                                    <tr id="yellow">
-                                        <th scope="row">Yellow</th>
-                                        <td>
-                                            <ul>
-                                                <li>Happiness</li>
-                                                <li>Optimism</li>
-                                                <li>Positivity</li>
-                                                <li>Intellect</li>
-                                            </ul>
-                                        </td>
-                                        
-                                        <td>
-                                            <ul>
-                                                <li>Clarifies</li>
-                                                <li>Inspires</li>
-                                                <li>Amuses</li>
-                                                <li>Energizes</li>
-                                            </ul>
-                                        </td>
-                                        <td>
-                                            <ul>
-                                                <li>Creativity</li>
-                                                <li>Perception</li>
-                                                <li>Mentality</li>
-                                                <li>Warmth</li>
-                                            </ul>
-                                        </td>
-                                        <td>
-                                            <ul>
-                                                <li>Cowardice</li>
-                                                <li>Deception</li>
-                                                <li>Egotism</li>
-                                                <li>Caution</li>
-                                            </ul>
-                                        </td>
-                                        
-                                        <td>
-                                            <div class="d-flex flex-column justify-content-center">
-                                                <div class="btn" style="background-color: #a98600; color: white;">#a98600</div>
-                                                <div class="btn" style="background-color: #dab600; color: white;">#dab600</div>
-                                                <div class="btn" style="background-color: #e9d700; color: white;">#e9d700</div>
-                                                <div class="btn" style="background-color: #f8ed62; color: white;">#f8ed62</div>
-                                            </div>
-                                        </td>
-                                    </tr>
+                                    <td>
+                                        <div class="d-flex flex-column justify-content-center">
+                                            <label class="form-label p-1 text-center" style="background-color:#983d00; color: white">#983d00</label>
+                                            <label class="form-label p-1 text-center" style="background-color:#c14d00; color: white">#c14d00</label>
+                                            <label class="form-label p-1 text-center" style="background-color:#d95700; color: white">#d95700</label>
+                                            <label class="form-label p-1 text-center" style="background-color:#ea5e00; color: white">#ea5e00</label>
+                                        </div>
+                                    </td>
+                                </tr>
+                                
+                                <tr id="yellow">
+                                    <th scope="row">Yellow</th>
+                                    <td>
+                                        <ul>
+                                            <li>Happiness</li>
+                                            <li>Optimism</li>
+                                            <li>Positivity</li>
+                                            <li>Intellect</li>
+                                        </ul>
+                                    </td>
                                     
+                                    <td>
+                                        <ul>
+                                            <li>Clarifies</li>
+                                            <li>Inspires</li>
+                                            <li>Amuses</li>
+                                            <li>Energizes</li>
+                                        </ul>
+                                    </td>
+                                    <td>
+                                        <ul>
+                                            <li>Creativity</li>
+                                            <li>Perception</li>
+                                            <li>Mentality</li>
+                                            <li>Warmth</li>
+                                        </ul>
+                                    </td>
+                                    <td>
+                                        <ul>
+                                            <li>Cowardice</li>
+                                            <li>Deception</li>
+                                            <li>Egotism</li>
+                                            <li>Caution</li>
+                                        </ul>
+                                    </td>
                                     
-                                    <tr id="green">
-                                        <th scope="row">Green</th>
-                                        <td>
-                                            <ul>
-                                                <li>Harmony</li>
-                                                <li>Safety</li>
-                                                <li>Growth</li>
-                                                <li>Health</li>
-                                            </ul>
-                                        </td>
-                                        <td>
-                                            <ul>
-                                                <li>Revitalization</li>
-                                                <li>Balance</li>
-                                                <li>Relaxation</li>
-                                                <li>Encouragement</li>
-                                            </ul>
-                                        </td>
-                                        <td>
-                                            <ul>
-                                                <li>Generosity</li>
-                                                <li>Hope</li>
-                                                <li>Prosperity</li>
-                                                <li>Luck</li>
-                                            </ul>
-                                        </td>
-                                        <td>
-                                            <ul>
-                                                <li>Judgmental</li>
-                                                <li>Envy</li>
-                                                <li>Materialism</li>
-                                                <li>Inexperience</li>
-                                            </ul>
-                                        </td>
-                                        
-                                        <td>
-                                            <div class="d-flex flex-column justify-content-center">
-                                                <div class="btn" style="background-color: #003300; color: white;">#003300</div>
-                                                <div class="btn" style="background-color: #006600; color: white;">#006600</div>
-                                                <div class="btn" style="background-color: #009900; color: white;">#009900</div>
-                                                <div class="btn" style="background-color: #00b500; color: white;">#00b500</div>
-                                            </div>
-                                        </td>
-                                    </tr>
+                                    <td>
+                                        <div class="d-flex flex-column justify-content-center">
+                                            
+                                            <div class="form-label p-1 text-center" style="background-color: #a98600; color: white;">#a98600</div>
+                                            
+                                            <div class="form-label p-1 text-center" style="background-color: #dab600; color: white;">#dab600</div>
+                                            
+                                            <div class="form-label p-1 text-center" style="background-color: #e9d700; color: white;">#e9d700</div>
+                                            
+                                            <div class="form-label p-1 text-center" style="background-color: #f8ed62; color: white;">#f8ed62</div>
+                                        </div>
+                                    </td>
+                                </tr>
+                                
+                                
+                                <tr id="green">
+                                    <th scope="row">Green</th>
+                                    <td>
+                                        <ul>
+                                            <li>Harmony</li>
+                                            <li>Safety</li>
+                                            <li>Growth</li>
+                                            <li>Health</li>
+                                        </ul>
+                                    </td>
+                                    <td>
+                                        <ul>
+                                            <li>Revitalization</li>
+                                            <li>Balance</li>
+                                            <li>Relaxation</li>
+                                            <li>Encouragement</li>
+                                        </ul>
+                                    </td>
+                                    <td>
+                                        <ul>
+                                            <li>Generosity</li>
+                                            <li>Hope</li>
+                                            <li>Prosperity</li>
+                                            <li>Luck</li>
+                                        </ul>
+                                    </td>
+                                    <td>
+                                        <ul>
+                                            <li>Judgmental</li>
+                                            <li>Envy</li>
+                                            <li>Materialism</li>
+                                            <li>Inexperience</li>
+                                        </ul>
+                                    </td>
                                     
+                                    <td>
+                                        <div class="d-flex flex-column justify-content-center">
+                                            <div class="form-label p-1 text-center" style="background-color: #003300; color: white;">#003300</div>
+                                            <div class="form-label p-1 text-center" style="background-color: #006600; color: white;">#006600</div>
+                                            <div class="form-label p-1 text-center" style="background-color: #009900; color: white;">#009900</div>
+                                            <div class="form-label p-1 text-center" style="background-color: #00b500; color: white;">#00b500</div>
+                                        </div>
+                                    </td>
+                                </tr>
+                                
+                                
+                                <tr id="turquoise">
+                                    <th scope="row">Turquoise</th>
+                                    <td>
+                                        <ul>
+                                            <li>Compassion</li>
+                                            <li>Calmness</li>
+                                            <li>Clarity</li>
+                                            <li>Communication</li>
+                                        </ul>
+                                    </td>
+                                    <td>
+                                        <ul>
+                                            <li>Balance</li>
+                                            <li>Clarity</li>
+                                            <li>Calmness</li>
+                                            <li>Stability</li>
+                                        </ul>
+                                    </td>
+                                    <td>
+                                        <ul>
+                                            <li>Concentration</li>
+                                            <li>Growth</li>
+                                            <li>Peace</li>
+                                            <li>Empathy</li>
+                                        </ul>
+                                    </td>
+                                    <td>
+                                        <ul>
+                                            <li>Narcissism</li>
+                                            <li>Stress</li>
+                                            <li>Secrecy</li>
+                                            <li>Boastfulness</li>
+                                        </ul>
+                                    </td>
                                     
-                                    <tr id="turquoise">
-                                        <th scope="row">Turquoise</th>
-                                        <td>
-                                            <ul>
-                                                <li>Compassion</li>
-                                                <li>Calmness</li>
-                                                <li>Clarity</li>
-                                                <li>Communication</li>
-                                            </ul>
-                                        </td>
-                                        <td>
-                                            <ul>
-                                                <li>Balance</li>
-                                                <li>Clarity</li>
-                                                <li>Calmness</li>
-                                                <li>Stability</li>
-                                            </ul>
-                                        </td>
-                                        <td>
-                                            <ul>
-                                                <li>Concentration</li>
-                                                <li>Growth</li>
-                                                <li>Peace</li>
-                                                <li>Empathy</li>
-                                            </ul>
-                                        </td>
-                                        <td>
-                                            <ul>
-                                                <li>Narcissism</li>
-                                                <li>Stress</li>
-                                                <li>Secrecy</li>
-                                                <li>Boastfulness</li>
-                                            </ul>
-                                        </td>
-                                        
-                                        <td>
-                                            <div class="d-flex flex-column">
-                                                <div class="btn" style="background-color: #29958a; color: white;">#29958a</div>
-                                                <div class="btn" style="background-color: #31aea2; color: white;">#31aea2</div>
-                                                <div class="btn" style="background-color: #38c5b7; color: white;">#38c5b7</div>
-                                                <div class="btn" style="background-color: #40e0d0; color: white;">#40e0d0</div>
-                                            </div>
-                                        </td>
-                                    </tr>
+                                    <td>
+                                        <div class="d-flex flex-column">
+                                            <div class="form-label p-1 text-center" style="background-color: #29958a; color: white;">#29958a</div>
+                                            <div class="form-label p-1 text-center" style="background-color: #31aea2; color: white;">#31aea2</div>
+                                            <div class="form-label p-1 text-center" style="background-color: #38c5b7; color: white;">#38c5b7</div>
+                                            <div class="form-label p-1 text-center" style="background-color: #40e0d0; color: white;">#40e0d0</div>
+                                        </div>
+                                    </td>
+                                </tr>
+                                
+                                
+                                <tr id="blue">
+                                    <th scope="row">Blue</th>
+                                    <td>
+                                        <ul>
+                                            <li>Security</li>
+                                            <li>Trust</li>
+                                            <li>Loyalty</li>
+                                            <li>Responsible</li>
+                                        </ul>
+                                    </td>
+                                    <td>
+                                        <ul>
+                                            <li>Protection</li>
+                                            <li>Calmness</li>
+                                            <li>Relaxation</li>
+                                            <li>Support</li>
+                                        </ul>
+                                    </td>
+                                    <td>
+                                        <ul>
+                                            <li>Confidence</li>
+                                            <li>Peace</li>
+                                            <li>Honesty</li>
+                                            <li>Reliability</li>
+                                        </ul>
+                                    </td>
+                                    <td>
+                                        <ul>
+                                            <li>Conservativeness</li>
+                                            <li>Passive</li>
+                                            <li>Depressed</li>
+                                            <li>Predictable</li>
+                                        </ul>
+                                    </td>
+                                    <td>
+                                        <div class="d-flex flex-column justify-content-center">
+                                            <div class="form-label p-1 text-center" style="background-color: #003366; color: white;">#003366</div>
+                                            <div class="form-label p-1 text-center" style="background-color: #003399; color: white;">#003399</div>
+                                            <div class="form-label p-1 text-center" style="background-color: #0033cc; color: white;">#0033cc</div>
+                                            <div class="form-label p-1 text-center" style="background-color: #0033ff; color: white;">#0033ff</div>
+                                        </div>
+                                    </td>
+                                </tr>
+                                
+                                <tr id="purple">
+                                    <th scope="row">Purple</th>
+                                    <td>
+                                        <ul>
+                                            <li>Spirituality</li>
+                                            <li>Mystery</li>
+                                            <li>Royalty</li>
+                                            <li>Imagination</li>
+                                        </ul>
+                                    </td>
+                                    <td>
+                                        <ul>
+                                            <li>Enlightment</li>
+                                            <li>Inspires</li>
+                                            <li>Uplifts</li>
+                                            <li>Encouragement</li>
+                                        </ul>
+                                    </td>
                                     
+                                    <td>
+                                        <ul>
+                                            <li>Compassion</li>
+                                            <li>Fantasy</li>
+                                            <li>Wisdom</li>
+                                            <li>Creativity</li>
+                                        </ul>
+                                    </td>
+                                    <td>
+                                        <ul>
+                                            <li>Sensitive</li>
+                                            <li>Vigilant</li>
+                                            <li>Immature</li>
+                                            <li>Emotional</li>
+                                        </ul>
+                                    </td>
                                     
-                                    <tr id="blue">
-                                        <th scope="row">Blue</th>
-                                        <td>
-                                            <ul>
-                                                <li>Security</li>
-                                                <li>Trust</li>
-                                                <li>Loyalty</li>
-                                                <li>Responsible</li>
-                                            </ul>
-                                        </td>
-                                        <td>
-                                            <ul>
-                                                <li>Protection</li>
-                                                <li>Calmness</li>
-                                                <li>Relaxation</li>
-                                                <li>Support</li>
-                                            </ul>
-                                        </td>
-                                        <td>
-                                            <ul>
-                                                <li>Confidence</li>
-                                                <li>Peace</li>
-                                                <li>Honesty</li>
-                                                <li>Reliability</li>
-                                            </ul>
-                                        </td>
-                                        <td>
-                                            <ul>
-                                                <li>Conservativeness</li>
-                                                <li>Passive</li>
-                                                <li>Depressed</li>
-                                                <li>Predictable</li>
-                                            </ul>
-                                        </td>
-                                        <td>
-                                            <div class="d-flex flex-column">
-                                                <div class="btn" style="background-color: #003366; color: white;">#003366</div>
-                                                <div class="btn" style="background-color: #003399; color: white;">#003399</div>
-                                                <div class="btn" style="background-color: #0033cc; color: white;">#0033cc</div>
-                                                <div class="btn" style="background-color: #0033ff; color: white;">#0033ff</div>
-                                            </div>
-                                        </td>
-                                    </tr>
+                                    <td>
+                                        <div class="d-flex flex-column">
+                                            <div class="form-label p-1 text-center" style="background-color: #400040; color: white;">#400040</div>
+                                            <div class="form-label p-1 text-center" style="background-color: #570057; color: white;">#570057</div>
+                                            <div class="form-label p-1 text-center" style="background-color: #6b006b; color: white;">#6b006b</div>
+                                            <div class="form-label p-1 text-center" style="background-color: #800080; color: white;">#800080</div>
+                                        </div>
+                                    </td>
+                                </tr>
+                                
+                                <tr id="pink">
+                                    <th scope="row">Pink</th>
+                                    <td>
+                                        <ul>
+                                            <li>Compassion</li>
+                                            <li>Love</li>
+                                            <li>Femininity</li>
+                                            <li>Playfulness</li>
+                                        </ul>
+                                    </td>
+                                    <td>
+                                        <ul>
+                                            <li>Sympathy</li>
+                                            <li>Calmness</li>
+                                            <li>Nurture</li>
+                                            <li>Comfort</li>
+                                        </ul>
+                                    </td>
+                                    <td>
+                                        <ul>
+                                            <li>Kindness</li>
+                                            <li>Warmth</li>
+                                            <li>Romance</li>
+                                            <li>Intuition</li>
+                                        </ul>
+                                    </td>
+                                    <td>
+                                        <ul>
+                                            <li>Emotional</li>
+                                            <li>Timid</li>
+                                            <li>Immature</li>
+                                            <li>Unconfident</li>
+                                        </ul>
+                                    </td>
                                     
-                                    <tr id="purple">
-                                        <th scope="row">Purple</th>
-                                        <td>
-                                            <ul>
-                                                <li>Spirituality</li>
-                                                <li>Mystery</li>
-                                                <li>Royalty</li>
-                                                <li>Imagination</li>
-                                            </ul>
-                                        </td>
-                                        <td>
-                                            <ul>
-                                                <li>Enlightment</li>
-                                                <li>Inspires</li>
-                                                <li>Uplifts</li>
-                                                <li>Encouragement</li>
-                                            </ul>
-                                        </td>
-
-                                        <td>
-                                            <ul>
-                                                <li>Compassion</li>
-                                                <li>Fantasy</li>
-                                                <li>Wisdom</li>
-                                                <li>Creativity</li>
-                                            </ul>
-                                        </td>
-                                        <td>
-                                            <ul>
-                                                <li>Sensitive</li>
-                                                <li>Vigilant</li>
-                                                <li>Immature</li>
-                                                <li>Emotional</li>
-                                            </ul>
-                                        </td>
-
-                                        <td>
-                                            <div class="d-flex flex-column">
-                                                <div class="btn" style="background-color: #400040; color: white;">#400040</div>
-                                                <div class="btn" style="background-color: #570057; color: white;">#570057</div>
-                                                <div class="btn" style="background-color: #6b006b; color: white;">#6b006b</div>
-                                                <div class="btn" style="background-color: #800080; color: white;">#800080</div>
-                                            </div>
-                                        </td>
-                                    </tr>
+                                    <td>
+                                        <div class="d-flex flex-column">
+                                            <div class="form-label p-1 text-center" style="background-color: #860051; color: white;">#860051</div>
+                                            <div class="form-label p-1 text-center" style="background-color: #a70064; color: white;">#a70064</div>
+                                            <div class="form-label p-1 text-center" style="background-color: #c60077; color: white;">#c60077</div>
+                                            <div class="form-label p-1 text-center" style="background-color: #e7008b; color: white;">#e7008b</div>
+                                        </div>
+                                    </td>
+                                </tr>
+                                
+                                <tr id="brown">
+                                    <th scope="row">Brown</th>
+                                    <td>
+                                        <ul>
+                                            <li>Reliability</li>
+                                            <li>Stability</li>
+                                            <li>Honesty</li>
+                                            <li>Comfort</li>
+                                        </ul>
+                                    </td>
+                                    <td>
+                                        <ul>
+                                            <li>Simplifying</li>
+                                            <li>Protecting</li>
+                                            <li>Grounding</li>
+                                            <li>Stabilizing</li>
+                                        </ul>
+                                    </td>
+                                    <td>
+                                        <ul>
+                                            <li>Appreciation</li>
+                                            <li>Support</li>
+                                            <li>Wisdom</li>
+                                            <li>Dependability</li>
+                                        </ul>
+                                    </td>
+                                    <td>
+                                        <ul>
+                                            <li>Boring</li>
+                                            <li>Dull</li>
+                                            <li>Timid</li>
+                                            <li>Predictable</li>
+                                        </ul>
+                                    </td>
                                     
-                                    <tr id="pink">
-                                        <th scope="row">Pink</th>
-                                        <td>
-                                            <ul>
-                                                <li>Compassion</li>
-                                                <li>Love</li>
-                                                <li>Femininity</li>
-                                                <li>Playfulness</li>
-                                            </ul>
-                                        </td>
-                                        <td>
-                                            <ul>
-                                                <li>Sympathy</li>
-                                                <li>Calmness</li>
-                                                <li>Nurture</li>
-                                                <li>Comfort</li>
-                                            </ul>
-                                        </td>
-                                        <td>
-                                            <ul>
-                                                <li>Kindness</li>
-                                                <li>Warmth</li>
-                                                <li>Romance</li>
-                                                <li>Intuition</li>
-                                            </ul>
-                                        </td>
-                                        <td>
-                                            <ul>
-                                                <li>Emotional</li>
-                                                <li>Timid</li>
-                                                <li>Immature</li>
-                                                <li>Unconfident</li>
-                                            </ul>
-                                        </td>
-
-                                        <td>
-                                            <div class="d-flex flex-column">
-                                                <div class="btn" style="background-color: #860051; color: white;">#860051</div>
-                                                <div class="btn" style="background-color: #a70064; color: white;">#a70064</div>
-                                                <div class="btn" style="background-color: #c60077; color: white;">#c60077</div>
-                                                <div class="btn" style="background-color: #e7008b; color: white;">#e7008b</div>
-                                            </div>
-                                        </td>
-                                    </tr>
+                                    <td>
+                                        <div class="d-flex flex-column">
+                                            <div class="form-label p-1 text-center" style="background-color: #3e1c00; color: white;">#3e1c00</div>
+                                            <div class="form-label p-1 text-center" style="background-color: #492201; color: white;">#492201</div>
+                                            <div class="form-label p-1 text-center" style="background-color: #562b00; color: white;">#562b00</div>
+                                            <div class="form-label p-1 text-center" style="background-color: #633200; color: white;">#633200</div>
+                                        </div>
+                                    </td>
+                                </tr>
+                                
+                                <tr id="black">
+                                    <th scope="row">Black</th>
+                                    <td>
+                                        <ul>
+                                            <li>Protection</li>
+                                            <li>Power</li>
+                                            <li>Elegance</li>
+                                            <li>Sophistication</li>
+                                        </ul>
+                                    </td>
+                                    <td>
+                                        <ul>
+                                            <li>Mystifies</li>
+                                            <li>Seduces</li>
+                                            <li>Secures</li>
+                                            <li>Intimidates</li>
+                                        </ul>
+                                    </td>
+                                    <td>
+                                        <ul>
+                                            <li>Formality</li>
+                                            <li>Strength</li>
+                                            <li>Prestige</li>
+                                            <li>Authority</li>
+                                        </ul>
+                                    </td>
+                                    <td>
+                                        <ul>
+                                            <li>Depression</li>
+                                            <li>Sadness</li>
+                                            <li>Pessimism</li>
+                                            <li>Dominance</li>
+                                        </ul>
+                                    </td>
                                     
-                                    <tr id="brown">
-                                        <th scope="row">Brown</th>
-                                        <td>
-                                            <ul>
-                                                <li>Reliability</li>
-                                                <li>Stability</li>
-                                                <li>Honesty</li>
-                                                <li>Comfort</li>
-                                            </ul>
-                                        </td>
-                                        <td>
-                                            <ul>
-                                                <li>Simplifying</li>
-                                                <li>Protecting</li>
-                                                <li>Grounding</li>
-                                                <li>Stabilizing</li>
-                                            </ul>
-                                        </td>
-                                        <td>
-                                            <ul>
-                                                <li>Appreciation</li>
-                                                <li>Support</li>
-                                                <li>Wisdom</li>
-                                                <li>Dependability</li>
-                                            </ul>
-                                        </td>
-                                        <td>
-                                            <ul>
-                                                <li>Boring</li>
-                                                <li>Dull</li>
-                                                <li>Timid</li>
-                                                <li>Predictable</li>
-                                            </ul>
-                                        </td>
-
-                                        <td>
-                                            <div class="d-flex flex-column">
-                                                <div class="btn" style="background-color: #3e1c00; color: white;">#3e1c00</div>
-                                                <div class="btn" style="background-color: #492201; color: white;">#492201</div>
-                                                <div class="btn" style="background-color: #562b00; color: white;">#562b00</div>
-                                                <div class="btn" style="background-color: #633200; color: white;">#633200</div>
-                                            </div>
-                                        </td>
-                                    </tr>
+                                    <td>
+                                        <div class="d-flex flex-column">
+                                            <div class="form-label p-1 text-center" style="background-color: #000000; color: white;">#000000</div>
+                                            <div class="form-label p-1 text-center" style="background-color: #131313; color: white;">#131313</div>
+                                            <div class="form-label p-1 text-center" style="background-color: #1c1c1c; color: white;">#1c1c1c</div>
+                                            <div class="form-label p-1 text-center" style="background-color: #212121; color: white;">#212121</div>
+                                        </div>
+                                    </td>
+                                </tr>
+                                
+                                <tr id="gray">
+                                    <th scope="row">Gray</th>
+                                    <td>
+                                        <ul>
+                                            <li>Compromise</li>
+                                            <li>Neutrality</li>
+                                            <li>Control</li>
+                                            <li>Practical</li>
+                                        </ul>
+                                    </td>
+                                    <td>
+                                        <ul>
+                                            <li>Stability</li>
+                                            <li>Calmness</li>
+                                            <li>Relaxation</li>
+                                            <li>Soothes</li>
+                                        </ul>
+                                    </td>
+                                    <td>
+                                        <ul>
+                                            <li>Reliability</li>
+                                            <li>Maturity</li>
+                                            <li>Intellect</li>
+                                            <li>Conservative</li>
+                                        </ul>
+                                    </td>
+                                    <td>
+                                        <ul>
+                                            <li>Pessimistic</li>
+                                            <li>Sad</li>
+                                            <li>Indecisive</li>
+                                            <li>Unemotional</li>
+                                        </ul>
+                                    </td>
                                     
-                                    <tr id="black">
-                                        <th scope="row">Black</th>
-                                        <td>
-                                            <ul>
-                                                <li>Protection</li>
-                                                <li>Power</li>
-                                                <li>Elegance</li>
-                                                <li>Sophistication</li>
-                                            </ul>
-                                        </td>
-                                        <td>
-                                            <ul>
-                                                <li>Mystifies</li>
-                                                <li>Seduces</li>
-                                                <li>Secures</li>
-                                                <li>Intimidates</li>
-                                            </ul>
-                                        </td>
-                                        <td>
-                                            <ul>
-                                                <li>Formality</li>
-                                                <li>Strength</li>
-                                                <li>Prestige</li>
-                                                <li>Authority</li>
-                                            </ul>
-                                        </td>
-                                        <td>
-                                            <ul>
-                                                <li>Depression</li>
-                                                <li>Sadness</li>
-                                                <li>Pessimism</li>
-                                                <li>Dominance</li>
-                                            </ul>
-                                        </td>
-
-                                        <td>
-                                            <div class="d-flex flex-column">
-                                                <div class="btn" style="background-color: #000000; color: white;">#000000</div>
-                                                <div class="btn" style="background-color: #131313; color: white;">#131313</div>
-                                                <div class="btn" style="background-color: #1c1c1c; color: white;">#1c1c1c</div>
-                                                <div class="btn" style="background-color: #212121; color: white;">#212121</div>
-                                            </div>
-                                        </td>
-                                    </tr>
+                                    <td>
+                                        <div class="d-flex flex-column">
+                                            <div class="form-label p-1 text-center" style="color: white; background-color: #696969;">#696969</div>
+                                            <div class="form-label p-1 text-center" style="color: white; background-color: #9a9a9a;">#9a9a9a</div>
+                                            <div class="form-label p-1 text-center" style="color: white; background-color: #bbbbbb;">#bbbbbb</div>
+                                            <div class="form-label p-1 text-center" style="color: white; background-color: #cccccc;">#cccccc</div>
+                                        </div>
+                                    </td>
+                                </tr>
+                                
+                                <tr id="white">
+                                    <th scope="row">White</th>
+                                    <td>
+                                        <ul>
+                                            <li>Cleanliness</li>
+                                            <li>Purity</li>
+                                            <li>Innocence</li>
+                                            <li>Perfection</li>
+                                        </ul>
+                                    </td>
+                                    <td>
+                                        <ul>
+                                            <li>Refreshes</li>
+                                            <li>Balance</li>
+                                            <li>Purifies</li>
+                                            <li>Simplifies</li>
+                                        </ul>
+                                    </td>
+                                    <td>
+                                        <ul>
+                                            <li>Goodness</li>
+                                            <li>Hope</li>
+                                            <li>Clarity</li>
+                                            <li>Openness</li>
+                                        </ul>
+                                    </td>
+                                    <td>
+                                        <ul>
+                                            <li>Boring</li>
+                                            <li>Cold</li>
+                                            <li>Empty</li>
+                                            <li>Distant</li>
+                                        </ul>
+                                    </td>
                                     
-                                    <tr id="gray">
-                                        <th scope="row">Gray</th>
-                                        <td>
-                                            <ul>
-                                                <li>Compromise</li>
-                                                <li>Neutrality</li>
-                                                <li>Control</li>
-                                                <li>Practical</li>
-                                            </ul>
-                                        </td>
-                                        <td>
-                                            <ul>
-                                                <li>Stability</li>
-                                                <li>Calmness</li>
-                                                <li>Relaxation</li>
-                                                <li>Soothes</li>
-                                            </ul>
-                                        </td>
-                                        <td>
-                                            <ul>
-                                                <li>Reliability</li>
-                                                <li>Maturity</li>
-                                                <li>Intellect</li>
-                                                <li>Conservative</li>
-                                            </ul>
-                                        </td>
-                                        <td>
-                                            <ul>
-                                                <li>Pessimistic</li>
-                                                <li>Sad</li>
-                                                <li>Indecisive</li>
-                                                <li>Unemotional</li>
-                                            </ul>
-                                        </td>
-
-                                        <td>
-                                            <div class="d-flex flex-column">
-                                                <div class="btn" style="color: white; background-color: #696969;">#696969</div>
-                                                <div class="btn" style="color: white; background-color: #9a9a9a;">#9a9a9a</div>
-                                                <div class="btn" style="color: white; background-color: #bbbbbb;">#bbbbbb</div>
-                                                <div class="btn" style="color: white; background-color: #cccccc;">#cccccc</div>
-                                            </div>
-                                        </td>
-                                    </tr>
-                                    
-                                    <tr id="white">
-                                        <th scope="row">White</th>
-                                        <td>
-                                            <ul>
-                                                <li>Cleanliness</li>
-                                                <li>Purity</li>
-                                                <li>Innocence</li>
-                                                <li>Perfection</li>
-                                            </ul>
-                                        </td>
-                                        <td>
-                                            <ul>
-                                                <li>Refreshes</li>
-                                                <li>Balance</li>
-                                                <li>Purifies</li>
-                                                <li>Simplifies</li>
-                                            </ul>
-                                        </td>
-                                        <td>
-                                            <ul>
-                                                <li>Goodness</li>
-                                                <li>Hope</li>
-                                                <li>Clarity</li>
-                                                <li>Openness</li>
-                                            </ul>
-                                        </td>
-                                        <td>
-                                            <ul>
-                                                <li>Boring</li>
-                                                <li>Cold</li>
-                                                <li>Empty</li>
-                                                <li>Distant</li>
-                                            </ul>
-                                        </td>
-
-                                        <td>
-                                            <div class="d-flex flex-column bg-secondary">
-                                                <div class="btn" style="background-color: #f8f8ff;">#f8f8ff</div>
-                                                <div class="btn" style="background-color: #fbfbf4;">#fbfbf4</div>
-                                                <div class="btn" style="background-color: #fafafa;">#fafafa</div>
-                                                <div class="btn" style="background-color: #fffafa;">#fffafa</div>
-                                            </div>
-                                        </td>
-                                    </tr>
-                                </tbody>
-                            </table>
-                            
-                            
-                            <h3>Saturation and Brigthness</h3>
-                            <ul class="ps-3">
-                                <li><b>Low Saturation / Brightness:</b> Conveys soft emotions, absence of danger</li>
-                                <li><b>Low Brightness:</b> Conveys luxury, wealth, and elegance, which lean well with feelings of passiveness/contentment
-                                    created by low saturated colors.
-                                </li>
-                                <li><b>High Saturation / Brightness</b> Conveys strong emotions such as boldness and confidence etc.
-                                    They're used to grab attention and create a memorable impression.
-                                </li>
-                            </ul>
-                            
-                            <p></p>
-                        </article>
+                                    <td>
+                                        <div class="d-flex flex-column">
+                                            <div class="form-label p-1 text-center" style="background-color: #f8f8ff;">#f8f8ff</div>
+                                            <div class="form-label p-1 text-center" style="background-color: #fbfbf4;">#fbfbf4</div>
+                                            <div class="form-label p-1 text-center" style="background-color: #fafafa;">#fafafa</div>
+                                            <div class="form-label p-1 text-center" style="background-color: #fffafa;">#fffafa</div>
+                                        </div>
+                                    </td>
+                                </tr>
+                            </tbody>
+                        </table>
                         
-                        <h2>Color Harmony and Selection Tools</h2>
                         
-                        <h3>Color Rules</h3>
+                        <h2 id="saturation">Saturation and Brigthness</h2>
+                        <ul class="ps-3">
+                            <li><b>Low Saturation / Brightness:</b> Conveys soft emotions, absence of danger</li>
+                            <li><b>Low Brightness:</b> Conveys luxury, wealth, and elegance, which lean well with feelings of passiveness/contentment
+                                created by low saturated colors.
+                            </li>
+                            <li><b>High Saturation / Brightness</b> Conveys strong emotions such as boldness and confidence etc.
+                                They're used to grab attention and create a memorable impression.
+                            </li>
+                        </ul>
+                        
+                        <p></p>
+                        
+                        <h2 id="harmony">Color Harmony and Selection Tools</h2>
+                        
+                        <h4>Color Rules</h4>
                         
                         <ul class="ps-3">
                             <li>These are general schemes used in the creation of color palettes. They are as following:</li>
@@ -849,46 +812,21 @@
                             <li>You can find these palette creation modes in most of the palette creators mentioned below.</li>
                         </ul>
                         
-                        <h3>Color Scheme Generators</h3>
+                        <h4>Color Scheme Generators</h4>
                         
                         <ul class="ps-3">
                             <li>These are tools you can use to create color palette for your project.</li>
                             
                             <li>They are many. Most of them are mentioned below.</li>
-                        </ul>
-                        
-                        <h4>Adobe Color Wheel</h4>
-                        <ul>
-                            <li>This is one of the most popular. You can find it <a href="https://color.adobe.com/create/color-wheel">here</a></li>
-                        </ul>
-                        <h4>Color Space</h4>
-                        
-                        <ul>
-                            <li>Also a very good and handy tool which has a lot of options. You can find it <a href="https://mycolor.space/">here</a></li>
-                        </ul>
-                        
-                        <h4>Color Hunt</h4>
-                        
-                        <h4>Muzli Color</h4>
-                        
-                        <h4>Web Gradients</h4>
-                        
-                        <ul>
-                            <li>This website has a collection of color gradients that are usually used as background in web pages. 
-                                You go in the website and choose the gradient you want and export its code which you put in you css file.
-                            </li>
                             
-                            <li>Remember, the code is css. They don't give you the color code itself (RGB or HSL).</li>
-                            
-                            <li><a href= "https://webgradients.com">This</a> is the website</li>
-                        </ul>
-                        
-                        <h4>Dribble</h4>
-                        
-                        <ul>
-                            <li>This gives you shows you different pictures which have items of different colors. When you want the color of any 
-                                item therein, you just hover above the color and it shows you the color code.
-                            </li>
+                            <ul class="ps-4">
+                                <li><b>Adobe Color Wheel</b>: This is one of the most popular. You can find it <a href="https://color.adobe.com/create/color-wheel">here</a></li>
+                                <li><b>Color Space</b>: Also a very good and handy tool which has a lot of options. You can find it <a href="https://mycolor.space/">here</a></li>
+                                <li><b>Color Hunt</b></li>
+                                <li><b>Muzli Color</b>: Great for finding different palettes from a single color. Find it <a href="https://colors.muz.li/">here.</a></li>
+                                <li><b>Web Gradients</b>: Good for gradients, especially as backgrounds to webpages. You go to the website, choose the gradient you want, and the site will give you that gradient in css code. The site is <a href= "https://webgradients.com">here.</a></li>
+                                <li><b>Dribble</b>: This gives you shows you different pictures which have items of different colors. When you want the color of any item therein, you just hover above the color and it shows you the color code.</li>
+                            </ul>
                         </ul>
                     </article>
                 </section>

@@ -1,143 +1,209 @@
 <!DOCTYPE html>
 
 <html>
-    <head>
-        <title>TESOL Writing</title>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width initial-scale=1.0">
-        <link rel="stylesheet" type="text/css" href="../../../english_teaching/TESOL/resources/index.css" />
+<head>
+    <title></title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width initial-scale=1.0">
+    
+    <!-- Main stylesheet -->
+    <link rel="stylesheet" type="text/css" href="../../../../resources/css/main-min.css" />
+    
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto&family=Source+Sans+3:wght@200;300;400;600;700&display=swap" rel="stylesheet">
+    
+    <!-- icons -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
 
-        <!-- Fonts -->
-        <link rel="preconnect" href="https://fonts.googleapis.com">
-        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-        <link href="https://fonts.googleapis.com/css2?family=Roboto&family=Source+Sans+3:wght@200;300;400;600;700&display=swap" rel="stylesheet">
-        
-        <!-- icons -->
-        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-    </head>
-
-    <body>
-
-        <header class="top_nav col-12">
-            <a href="../../../../index.html"><i class="fa-solid fa-house"></i></a>
+<body class="container-fluid p-2 px-sm-4" style="height: 100vh;">
+    <header class="navbar navbar-expand-lg" style="height: 85px;" data-bs-theme="light">
+        <div class="container-fluid">
             
-            <nav id="main_nav">
-                <div class="toggle">
-                    <span></span>
-                    <span></span>
-                    <span></span>
+            <!-- the icon button -->
+            <a class="navbar-brand text-primary" href="../../../index.html"><i class="fa-solid fa-house"></i></a>
+            
+            <!-- the toggler -->
+            <button class="navbar-toggler border border-0" type="button" data-bs-toggle="offcanvas" data-bs-target="#main_nav" aria-controls="main_nav" aria-expanded="false" aria-label="Toggle Navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            
+            <!-- the offcanvas -->
+            <nav class="offcanvas navbar-collapse navbar-nav offcanvas-end col-md-3 bg-body-primary" id="main_nav">
+                <div class="offcanvas-header d-flex justify-content-end w-100">
+                    <button class="btn-close d-lg-none" data-bs-dismiss="offcanvas" aria-label="Close"></button>
                 </div>
+                <ul class="navbar-nav container-sm d-lg-flex justify-content-end" id="links">
+                    <a href="../../../technologies/index.html"><li class="btn">Technologies</li></a>
+                    <a href="../../../portfolio/index.html"><li class="btn">Portfolio</li></a>
+                    <a href="../../index.html"><li class="btn">Notes</li></a>
+                    <a href="../../../about_page.html"><li class="btn">About</li></a>
+                </ul>
+            </nav>
+        </div>
+    </header>
+    
+    <main class="container-fluid h-100">
+        
+        <!-- The Breadcumb -->
+        <div class="container-fluid row px-0">
+            <nav class="container col d-flex align-items-end justify-content-start" aria-label="breadcrumb">
+                <ol class="breadcrumb py-0 my-0">
+                    <li class="breadcrumb-item"><a href="../../../index.html">Home</a></li>
+                    <li class="breadcrumb-item"><a href="../../index.html">Resources</a></li>
+                    <li class="breadcrumb-item"><a href="../../index.html">Web Development</a></li>
+                    <li class="breadcrumb-item"><a href="../index.html">Front-End Development</a></li>
+                    <li class="breadcrumb-item active" aria-current="page">Shapes</li>
+                </ol>
+            </nav>
+        </div>
+        
+        <!-- Hero -->
+        <section class="container-fluid row h-50">
+            <article class="container-fluid d-flex justify-content-center align-items-center col">
+                <h1 class="fs-1">Shapes</h1>
+            </article>
+        </section>
+        
+        
+        <!-- Content -->
+        <section class="container-fluid row g-1 px-0">
+            
+            <!-- The side panel and toggler -->
+            <div class="container ps-0 pe-3 col-md-3">
                 
-                <ul id="links">
-                    <a href="Instructional htmls/index.html"><li>Technologies</li></a>
-                    <a href="projects.html"><li>Portfolio</li></a>
-                    <a href="../../index.html"><li>Notes</li></a>
-                    <a href="../../../about_page.html"><li>About</li></a>
-                </ul>
-            </nav>
-        </header>
+                <!-- Toggler -->
+                <i class="bi bi-list ms-2 row d-md-none" type="button" data-bs-toggle="offcanvas" data-bs-target="#left-Offcanvas"></i>
+                
+                <!-- Side panel -->
+                <div class="offcanvas-md sticky-md-top offcanvas-start" data-bs-theme="light" id="left-Offcanvas">
+                    
+                    <!-- Enabling hover on Accordions -->
+                    <style>
+                        .accordion-button:hover, .accordion-header:hover{
+                            background-color: #002e63;
+                            color: white;
+                        }
+                        
+                        .accordion-body a:hover
+                        {
+                            background-color: #198754;
+                            color: white;
+                        }
+                    </style>
+                    
+                    <!-- Closing Button -->
+                    <div class="offcanvas-header d-flex w-100 d-md-none" style="height: 50px">
+                        <button class="bi bi-x" data-bs-dismiss="offcanvas" data-bs-target="#left-Offcanvas" aria-label="Close"></button>
+                    </div>
+                    
+                    <!-- Panel Body -->
+                    <div class="container d-flex flex-column offcanvas-body accordion accordion-flush" id="accordions">
+                        
+                        <div class="accordion-item">
+                            <a class="accordion-header btn w-100 text-start rounded-0" type="button" href="#circles" aria-expanded="false" aria-controls="flush-collapseOne">
+                                Circles
+                            </a>
+                        </div>
+                        
+                        <div class="accordion-item">
+                            <a class="accordion-header btn rounded-0 py-3 w-100 text-start" type="button" href="#ovals" aria-expanded="false" aria-controls="flush-collapseTwo">
+                                Ovals
+                            </a>
+                        </div>
+                        
+                        <div class="accordion-item">
+                            <a class="accordion-header btn rounded-0 py-3 w-100 text-start" type="button" href="#squares" aria-expanded="false" aria-controls="flush-collapseThree">
+                                Squares & Rectangles
+                            </a>
+                        </div>
+                        
+                        <div class="accordion-item">
+                            <a class="accordion-header btn rounded-0 py-3 w-100 text-start" type="button" href="#v-lines" aria-expanded="false" aria-controls="flush-collapseFour">
+                                Straight Vertical Lines
+                            </a>
+                        </div>
+                        
+                        <div class="accordion-item">
+                            <a class="accordion-header btn rounded-0 py-3 w-100 text-start" type="button" href="#h-lines" aria-expanded="false" aria-controls="flush-collapseFour">
+                                Horizontal Lines
+                            </a>
+                        </div>
+                        
+                        <div class="accordion-item">
+                            <a class="accordion-header btn rounded-0 py-3 w-100 text-start" type="button" href="#a-lines" aria-expanded="false" aria-controls="flush-collapseFour">
+                                Angled Lines
+                            </a>
+                        </div>
 
-        <section class="main-header col-12">
-            <h1>Design Theory</h1>
-        </section>
+                        <div class="accordion-item">
+                            <a class="accordion-header btn rounded-0 py-3 w-100 text-start" type="button" href="#c-lines" aria-expanded="false" aria-controls="flush-collapseFour">
+                                Curved Lines
+                            </a>
+                        </div>
 
-        <section>
-            <nav class="side-nav col-3">
-                <a href="../index.html"><button>Introduction</button></a>
-                <button class="accordion">Module 1: Words and Punctuation</button>
-                <nav class="dropdown-content">
-                    <ul>
-                        <a href="../words_and_pronounc/type_of_words.html"><li>Types of Words</li></a>
-                        <a href="../words_and_pronounc/class_of_words.html"><li>Classes of Words</li></a>
-                        <a href="../words_and_pronounc/teaching_verbs.html"><li>Teaching Verbs</li></a>
-                        <a href="../words_and_pronounc/affixes.html"><li>Affixes</li></a>
-                        <a href="../words_and_pronounc/punctuation.html"><li>Punctuation</li></a>
-                    </ul>
-                </nav>
+                        <div class="accordion-item">
+                            <a class="accordion-header btn rounded-0 py-3 w-100 text-start" type="button" href="#symmetry" aria-expanded="false" aria-controls="flush-collapseFour">
+                                Symmetry
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            
+            <!-- Body Text -->
+            <section class="container col-md-9 ps-md-4">
 
-                <button class="accordion">Module 2: Sentences and tenses</button>
-                <nav class="dropdown-content">
-                    <ul>
-                        <a href="../tenses/tenses.html"><li>English Tenses</li></a>
-                        <a href="../tenses/sentence_structure.html"><li>Sentence Structure</li></a>
-                    </ul>
-                </nav>
-
-                <button class="accordion">Module 3: Language skills</button>
-                <nav class="dropdown-content">
-                    <ul>
-                        <a href="#type_of_words"><li>Types of Words</li></a>
-                        <a href=""></a>
-                        <a href=""></a>
-                        <a href=""></a>
-                        <a href=""></a>
-                    </ul>
-                </nav>
-
-                <button class="accordion">Module 4: Preparing for Lessons</button>
-                <nav class="dropdown-content">
-                    <ul>
-                        <a href="#type_of_words"><li>Types of Words</li></a>
-                        <li></li>
-                        <li></li>
-                        <li></li>
-                        <li></li>
-                    </ul>
-                </nav>
-            </nav>
-
-            <nav class="breadcrumb col-9">
-                <ul>
-                    <a href="../../../index.html"><li>Home</li></a>
-                    <a href="../../index.html"><li>Notes</li></a>
-                    <a href="#"><li>English Teaching</li></a>
-                </ul>
-            </nav>
-        </section>
-
-        <main>
-            <section class="main col-9">
+                <style>
+                    #introduction h3
+                    {
+                        margin-top: 40px;
+                    }
+                </style>
                 <article id="introduction">
-                    <h2>Shapes</h2>
                     <article class="sec-article">
                         <p>Shapes communicate certain feelings to the audience. Below are some of popular shapes in designing
                             and their perceived emotion.
                         </p>
-
-                        <h3>Circles</h3>
+                        
+                        <h3 id="circles">Circles</h3>
                         <ul>
                             <li>Positivity</li>
                             <li>Community, Friendship, Love</li>
                             <li>Perfection, Attention Seeking</li>
                         </ul>
-
-                        <h3>Oval Shapes</h3>
+                        
+                        <h3 id="ovals">Oval Shapes</h3>
                         <ul>
                             <li>Sturdiness, Endurance, Stability</li>
                         </ul>
-
-
-                        <h3>Squares / Rectangles</h3>
+                        
+                        
+                        <h3 id="squares">Squares / Rectangles</h3>
                         <ul>
                             <li>Power and Strength</li>
                             <li>Professionalism, Efficiency, Stability</li>
                             <li>Balance, Practicality</li>
                             <li>Perfection Moderninsm</li>
                         </ul>
-
-                        <h3>Straight Vertical Lines</h3>
+                        
+                        <h3 id="v-lines">Straight Vertical Lines</h3>
                         <ul>
                             <li>Strength, Masculinity, Energy</li>
                             <li></li>
                         </ul>
-
-                        <h3>Horizontal Lİnes</h3>
+                        
+                        <h3 id="h-lines">Horizontal Lİnes</h3>
                         <ul>
                             <li>Calmness, Balance, Tranquility</li>
                             <li>Secure, Settled</li>
                         </ul>
-
-                        <h3>Angled Lines</h3>
+                        
+                        <h3 id="a-lines">Angled Lines</h3>
                         <ul>
                             <li>Movement, speed</li>
                             <li>Energy, dynamic movement</li>
@@ -147,23 +213,24 @@
                             themes in your design list, don't hesitate to start with squares and rectangles
                             and then experiment with angled lines later in your design.
                         </p>
-
-
-                        <h3>Curved Lines</h3>
+                        
+                        
+                        <h3 id="c-lines">Curved Lines</h3>
                         <ul>
                             <li>Femininity, happiness, generosity, sense of rythm</li>
                             <li>Innovation (when used with angular lines)</li>
                         </ul>
                     </article>
-
-                    <h2>Symmetry</h2>
+                    
+                    <h2 id="symmetry">Symmetry</h2>
                     <article>
                         
                     </article>
                 </article>
             </section>
-        </main>
-
-        <script src="resources/index.js"></script>
-    </body>
+        </section>
+    </main>
+    
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+</body>
 </html>
