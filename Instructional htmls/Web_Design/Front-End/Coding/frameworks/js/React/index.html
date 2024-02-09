@@ -1,250 +1,228 @@
 <!DOCTYPE html>
 
 <html>
-    <head>
-        <title>TESOL Writing</title>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width initial-scale=1.0">
-        <link rel="stylesheet" type="text/css" href="../../../english_teaching/TESOL/resources/index.css" />
+<head>
+    <title></title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width initial-scale=1.0">
+    
+    <!-- Main stylesheet -->
+    <link rel="stylesheet" type="text/css" href="../../../../../../../resources/css/main-min.css" />
+    
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto&family=Source+Sans+3:wght@200;300;400;600;700&display=swap" rel="stylesheet">
+    
+    <!-- icons -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
 
-        <!-- Fonts -->
-        <link rel="preconnect" href="https://fonts.googleapis.com">
-        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-        <link href="https://fonts.googleapis.com/css2?family=Roboto&family=Source+Sans+3:wght@200;300;400;600;700&display=swap" rel="stylesheet">
-        
-        <!-- icons -->
-        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-    </head>
-
-    <body>
-
-        <header class="top_nav col-12">
-            <a href="../../../../index.html"><i class="fa-solid fa-house"></i></a>
+<body class="container-fluid px-0 px-sm-4" style="height: 100vh">
+    <header class="navbar navbar-expand-lg" style="height: 85px;" data-bs-theme="light">
+        <div class="container-fluid">
             
-            <nav id="main_nav">
-                <div class="toggle">
-                    <span></span>
-                    <span></span>
-                    <span></span>
+            <!-- the icon button -->
+            <a class="navbar-brand text-primary" href="../../../index.html"><i class="fa-solid fa-house"></i></a>
+            
+            <!-- the toggler -->
+            <button class="navbar-toggler border border-0" type="button" data-bs-toggle="offcanvas" data-bs-target="#main_nav" aria-controls="main_nav" aria-expanded="false" aria-label="Toggle Navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            
+            <!-- the offcanvas -->
+            <nav class="offcanvas navbar-collapse navbar-nav offcanvas-end col-md-3 bg-body-primary" id="main_nav">
+                <div class="offcanvas-header d-flex justify-content-end w-100">
+                    <button class="btn-close d-lg-none" data-bs-dismiss="offcanvas" aria-label="Close"></button>
                 </div>
+                <ul class="navbar-nav container-sm d-lg-flex justify-content-end" id="links">
+                    <a href="../../../technologies/index.html"><li class="btn">Technologies</li></a>
+                    <a href="../../../portfolio/index.html"><li class="btn">Portfolio</li></a>
+                    <a href="../../index.html"><li class="btn">Notes</li></a>
+                    <a href="../../../about_page.html"><li class="btn">About</li></a>
+                </ul>
+            </nav>
+        </div>
+    </header>
+    
+    
+    <main class="container-fluid h-100">
+        <!-- The Breadcumb -->
+        <div class="container-fluid row px-0">
+            <nav class="container col d-flex align-items-end justify-content-start" aria-label="breadcrumb">
+                <ol class="breadcrumb py-0 my-0">
+                    <li class="breadcrumb-item"><a href="../../../../../../../index.html">Home</a></li>
+                    <li class="breadcrumb-item"><a href="../../../../../../index.html">Resources</a></li>
+                    <li class="breadcrumb-item"><a href="../../../../index.html">Web Development</a></li>
+                    <li class="breadcrumb-item"><a href="../../../../../Front-End/index.html">Front-End Development</a></li>
+                    <li class="breadcrumb-item active" aria-current="page">React</li>
+                </ol>
+            </nav>
+        </div>
+        
+        
+        <!-- Hero -->
+        <section class="container-fluid row h-75">
+            <article class="container-fluid d-flex justify-content-center align-items-center col">
+                <h1 class="fs-1">React JS</h1>
+            </article>
+        </section>
+        
+        <!-- Content page -->
+        <section class="container-fluid row g-1 px-0">
+            
+            <!-- The side panel and toggler -->
+            <div class="container ps-0 pe-3 col-md-3">
                 
-                <ul id="links">
-                    <a href="Instructional htmls/index.html"><li>Technologies</li></a>
-                    <a href="projects.html"><li>Portfolio</li></a>
-                    <a href="../../index.html"><li>Notes</li></a>
-                    <a href="../../../about_page.html"><li>About</li></a>
-                </ul>
-            </nav>
-        </header>
-
-        <section class="main-header col-12">
-            <h1>Front-End Frameworks: React</h1>
-        </section>
-
-        <section>
-            <nav class="side-nav col-3">
-                <a href="../index.html"><button>Introduction</button></a>
-                <button class="accordion">Module 1: Words and Punctuation</button>
-                <nav class="dropdown-content">
-                    <ul>
-                        <a href="../words_and_pronounc/type_of_words.html"><li>Types of Words</li></a>
-                        <a href="../words_and_pronounc/class_of_words.html"><li>Classes of Words</li></a>
-                        <a href="../words_and_pronounc/teaching_verbs.html"><li>Teaching Verbs</li></a>
-                        <a href="../words_and_pronounc/affixes.html"><li>Affixes</li></a>
-                        <a href="../words_and_pronounc/punctuation.html"><li>Punctuation</li></a>
-                    </ul>
-                </nav>
-
-                <button class="accordion">Module 2: Sentences and tenses</button>
-                <nav class="dropdown-content">
-                    <ul>
-                        <a href="../tenses/tenses.html"><li>English Tenses</li></a>
-                        <a href="../tenses/sentence_structure.html"><li>Sentence Structure</li></a>
-                    </ul>
-                </nav>
-
-                <button class="accordion">Module 3: Language skills</button>
-                <nav class="dropdown-content">
-                    <ul>
-                        <a href="#type_of_words"><li>Types of Words</li></a>
-                        <a href=""></a>
-                        <a href=""></a>
-                        <a href=""></a>
-                        <a href=""></a>
-                    </ul>
-                </nav>
-
-                <button class="accordion">Module 4: Preparing for Lessons</button>
-                <nav class="dropdown-content">
-                    <ul>
-                        <a href="#type_of_words"><li>Types of Words</li></a>
-                        <li></li>
-                        <li></li>
-                        <li></li>
-                        <li></li>
-                    </ul>
-                </nav>
-            </nav>
-
-            <nav class="breadcrumb col-9">
-                <ul>
-                    <a href="../../../index.html"><li>Home</li></a>
-                    <a href="../../index.html"><li>Notes</li></a>
-                    <a href="#"><li>English Teaching</li></a>
-                </ul>
-            </nav>
-        </section>
-
-        <main>
-            <section class="main col-9">
-                <article id="introduction">
-                    <h2>Shapes</h2>
-                    <article class="sec-article">
-                        <p>Shapes communicate certain feelings to the audience. Below are some of popular shapes in designing
-                            and their perceived emotion.
-                        </p>
-
-                        <ul>
-                            <li></li>
-                        </ul>
-                    </article>
-
-                    <h2>Color</h2>
+                <!-- Toggler -->
+                <i class="bi bi-list ms-2 row d-md-none" type="button" data-bs-toggle="offcanvas" data-bs-target="#left-Offcanvas"></i>
+                
+                <!-- Side panel -->
+                <div class="offcanvas-md offcanvas-start" data-bs-theme="light" id="left-Offcanvas">
                     
-                    <h3>Terminology</h3>
-                    <h4>Primary Colors</h4>
-                    <ul>
-                        <li>Depending who is talking about this, primary colors can either be the three primary colors which
-                            are the most basic: Blue, Red, and Yellow; or the base color one is using for one's project. The textbook
-                            definition is the three most basic color though.
-                        </li>
-                    </ul>
-
-
-                    <h3>Secondary Colors</h3>
-                    <ul>
-                        <li>Also depending on what someone is talking about; but secondary colors are supposed to mean the combination
-                            of primary colors in equal amount. So when you mix blue and red you get purple, red and yellow you get orange,
-                            and yellow and blue creates green. Those are what are known as secondary colors in the textbook.
-                        </li>
-
-                        <li>However, the term is also loosely used to refer to the secondary color in a color scheme used in a website.
-                            So forexample one has used red as his base color and yellow as a secondary color in their website, yellow becomes 
-                            the secondary color.
-                        </li>
-                    </ul>
-
-                    <h3>Tertiary Colors</h3>
-                    <ul>
-                        <li>These are obtained by mixing primary colors with secondary colors; so if you mix blue with purple you get 
-                            blue violet for example, blue with green you get cyan, etc.
-                        </li>
-                        <li>They are sometimes called intermediary colors.</li>
-                    </ul>
-
-
-                    <h3>Hue</h3>
-                    <ul>
-                        <li>This is the color itself.</li>
-                        <li>It doesn't matter if it is primary/secondary/tertiary. As long as it is in its full saturation, hue refers
-                            to any color.
-                        </li>
-                    </ul>
-
-                    <h3>Tone</h3>
-                    <ul>
-                        <li>Refers to the degree of brightness in the color.</li>
-                    </ul>
-
-
-                    <h3>Shade</h3>
-                    <ul>
-                        <li>Refers to the degree of blackness in the color.</li>
-                    </ul>
-
-
-                    <h2>Color Models</h2>
-
-                    <h2>Color Psychology</h2>
-
-                    <p>Below are some accepted notions of what feelings different stimulate. It is not 
-                        an absolute rule/truth, but it works in such a way in a general situation.
+                    <!-- Enabling hover on Accordions -->
+                    <style>
+                        .accordion-button:hover, .accordion-header:hover{
+                            background-color: #002e63;
+                            color: white;
+                        }
+                        
+                        .accordion-body a:hover
+                        {
+                            background-color: #198754;
+                            color: white;
+                        }
+                    </style>
+                    
+                    <!-- Closing Button -->
+                    <div class="offcanvas-header d-flex w-100 d-md-none" style="height: 50px">
+                        <button class="bi bi-x" data-bs-dismiss="offcanvas" data-bs-target="#left-Offcanvas" aria-label="Close"></button>
+                    </div>
+                    
+                    <!-- Panel Body -->
+                    <div class="container d-flex flex-column offcanvas-body accordion accordion-flush" id="accordions">
+                        
+                        <div class="accordion-item">
+                            <button class="accordion-header btn w-100 rounded-0 text-start p-3" href="#introduction">Introduction</button>
+                        </div>
+                        
+                        <div class="accordion-item">
+                            <button class="accordion-header btn w-100 rounded-0 text-start p-3" href="#create">
+                                Creating a React App
+                            </button>
+                        </div>
+                        
+                        <div class="accordion-item">
+                            <button class="accordion-header btn w-100 rounded-0 text-start p-3" href="">
+                                Design Elements
+                            </button>
+                        </div>
+                        
+                        <div class="accordion-item">
+                            <button class="accordion-header btn w-100 rounded-0 text-start p-3" href="">
+                                The Workflow
+                            </button>
+                        </div>
+                        
+                        <div class="accordion-item">
+                            <button class="accordion-header btn w-100 rounded-0 text-start p-3" href="">
+                                Technologies
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            
+            <!-- Body text -->
+            <div class="container ps-md-2 mt-3 mt-md-0 col-md-9 ">
+                <article>
+                    <h2>Hello! Welcome!</h2>
+                    <p>
+                        This is page contains introductory notes on react. <br><br>
                     </p>
-
+                    
+                    <h3 id="introduction">What is React JS</h3>
+                    <p>React is a JavaScript framework used to make interactive websites, especially <i>Single Page Applications (SPAs)</i>. It is also quite popular. You won't go wrong learning it.</p> <br>
+                    
+                    <h3 id="create">How to Create A React App</h3>
                     <ul>
-                        <li>Red: Passion, grabbing attention, Optimism</li>
-                        <li>Blue: Trust, calm, peace, intelligence, security</li>
-                        <li>Yellow: Fun, bold, warth, energy,</li>
-                        <li>Green: Healthy, well-being, balance, fertility</li>
-                        <li>Orange: Happiness, Joy, Confidence</li>
-                        <li>Purple: Luxury, sophistication, wealth</li>
-                    </ul>
-
-                    <h2>Color Harmony and Selection Tools</h2>
-
-                    <h3>Color Rules</h3>
-
-                    <ul>
-                        <li>These are general schemes used in the creation of color palettes. They are as following:
-                            <ul>
-                                <li><b>Analogous:</b> Picks two colors in the similar vicinity to the base color chosen.</li>
-                                <li><b>Monochromatics:</b> Tints and Shades</li>
-                                <li><b>Triad:</b></li>
-                                <li><b>Complimentary:</b> Most contrasting color to the base color</li>
-                                <li><b>Split complimentary:</b> Gives you two options of the contrasting color from the complimentary scheme.</li>
-                                <li><b>Double Split complimentary:</b> Gives you two more options from the base color side of the complimentary color scheme</li>
-                                <li><b>Shades</b> Just gives you different shades of the base color.</li>
-                            </ul>
+                        <li>Download the latest <a href="https://nodejs.org/en">node</a> into your computer.</li>
+                        <li>Navigate to where you want to open your new React app and open the terminal there.</li>
+                        <li>In the terminal, type <code>npx create-react-app name_of_the_app_goes_here</code></li>
+                        <li>After everything downloads and sets up, open your code editor and navigate to the repository of your React app. There, you'll 
+                            see various folders named: node_modules, public, and src, and other json files. You'll be mainly working on a file called <i>App.js</i> that is under the <i>"src"</i> folder.
+                            Locate it now if you can.
                         </li>
-
-                        <li>You can find these palette creation modes in most of the palette creators mentioned below.</li>
-                    </ul>
-
-                    <h3>Color Scheme Generators</h3>
-
-                    <ul>
-                        <li>These are tools you can use to create color palette for your project.</li>
-
-                        <li>They are many. Most of them are mentioned below.</li>
-                    </ul>
-
-                    <h4>Adobe Color Wheel</h4>
-                    <ul>
-                        <li>This is one of the most popular. You can find it <a href="https://color.adobe.com/create/color-wheel">here</a></li>
-                    </ul>
-                    <h4>Color Space</h4>
-
-                    <ul>
-                        <li>Also a very good and handy tool which has a lot of options. You can find it <a href="https://mycolor.space/">here</a></li>
-                    </ul>
-
-                    <h4>Color Hunt</h4>
-
-                    <h4>Muzli Color</h4>
-
-                    <h4>Web Gradients</h4>
-
-                    <ul>
-                        <li>This website has a collection of color gradients that are usually used as background in web pages. 
-                            You go in the website and choose the gradient you want and export its code which you put in you css file.
+                        <li>In the "src" there are some files that you won't need as a beginner. The file names are: <i>reportWebVitals.js</i> and <i>setupTests.js</i>.
+                            You have to delete them for now so that they don't confuse you. After deleting them, go into the index.js folder and delete the line 
+                            <code>"import reportWebVitals from './reportWebVitals';"</code> and <code>"reportWebVitals()"</code>. You're good to go after you do that.
                         </li>
-
-                        <li>Remember, the code is css. They don't give you the color code itself (RGB or HSL).</li>
-
-                        <li><a href= "https://webgradients.com">This</a> is the website</li>
-                    </ul>
-
-                    <h4>Dribble</h4>
-
-                    <ul>
-                        <li>This gives you shows you different pictures which have items of different colors. When you want the color of any 
-                            item therein, you just hover above the color and it shows you the color code.
+                        <li>There are some things you should know about and they're located inside the <i>package.json</i> file. Go inside there now.</li>
+                        <li>Inside the file, find the word <i>"scripts"</i>. It should be inside quotation marks. Inside it are some of the scripts that you'll use to carry out
+                            some functionalities with your React app. One of them that is important to you right now is the <i>"start"</i> script. It enables you to preview the changes you're making on your React
+                            app as you code, in real time. To see how it works, open a terminal in your working directory and type <code>npm run start</code> to execute it. Your React App should
+                            show up in your default browser in a few moments.
                         </li>
                     </ul>
+                    
+                    <h3>Initiating Your React App</h3>
+                    <ul>
+                        <li>Now that you can preview your app, you would automatically want to remove that React logo and everything else and start coding your own interface.</li>
+                        <li>To do this, go to your <code>App.js</code> and delete the line <code>import logo from './logo.svg';</code> as well as all the <i>jsx</i> code that is within the <code>div</code> with a class name <i>"App"</i>.
+                            After you do that, you can go to the <i>src</i> folder and delete the <code>logo.svg</code> file that is there. You should now see a blank page in the preview window of your browser when you save the changes you just made.
+                        </li>
+                        <li>To start creating on your React App, you're supposed to know about React components. Read the next section below.</li>
+                    </ul>
+                    
+                    <h3 id="components">React Components</h3>
+                    <ul>
+                        <li>React compoonents are essentially design components such as navbars, accordions, etc. </li>
+                        <li>You usually code them in separate files and then import them inside the 
+                            <code>App.js</code>'s root function. Consider the example below.
+                        </li>
+                        <img src="" alt="">
+                    </ul>
+
+                    <h3>React and Stylesheets</h3>
+                    <ul>
+                        <li>The React app comes natively with two major style files: <code>App.css</code> and <code>index.css</code>. They are located on the <code>src</code> folder.</li>
+                        <li>To insert your own css, you can delete the <code>App.css</code> file from the <i>src</i> folder, delete its import line from <code>App.js</code>, and then put all your styling in the 
+                            <code>index.css</code> file. You're then good to go.</li>
+                        <li>If you're planning to use a css libray like Bootstrap, install that library in your working directory, hook it up to your project by importing its css on the <code>index.js</code> file, and then 
+                            delete the <code>index.css</code> file from the <i>src</i> folder and its import on the <code>index.js</code> file after this.</li> 
+                        <li>For bootstrap, there 
+                            are instructions on how to hook up bootstrap css on a project on the section about <a href="../../css/bootstrap/bootstrap.html">bootstrap</a>.
+                        </li>
+                    </ul>
+
+                    
+                    
+                    <div>
+                        <img src="" alt="">
+                    </div>
+                    
+                    
+                    <h3>The "node_modules" Folder</h3>
+                    <ul>
+                        <li>This is the folder that will contain all frameworks that your React app will depend on, even React itself.</li>
+                        <li>It is usually quite large, so it usually doesn't get uploaded into version controll managers such as git and github. Instead, since all the dependencies
+                            in this folder are listed in the <i>"package.json"</i> file of your project, when you clone a project, let's say on Github, and it doesn't have the <i>"node_modules"</i> folder inside of it,
+                            the only thing you need to do is to type <code>npm install</code> in a terminal inside your working directory, and npm will read the <i>"package.json"</i> file and download all the required 
+                            frameworks. You don't need to sweat over that.
+                        </li>
+                    </ul>
+                    
                 </article>
-            </section>
-        </main>
-
-        <script src="resources/index.js"></script>
-    </body>
-</html>
+                
+                
+                <!-- Bootstrap's JS -->
+                <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+                
+                
+                <!-- My own JS (only so that it is easy to find when I need it) -->
+                <!-- <script src="english_teaching/TESOL/resources/index.js"></script> -->
+            </main>
+        </body>
+        </html>
